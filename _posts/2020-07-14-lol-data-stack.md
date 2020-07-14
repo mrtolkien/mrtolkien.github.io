@@ -41,7 +41,7 @@ as well as its python interactive console.
 Unfortunately, I feel like PyCharm is starting to stagnate when it comes to the very latest development technologies, 
 and I would like to learn using VS Code in the future. I always try to use open source tools as it simplifies collaboration,
 and VS Code has been growing at a staggering pace. 
-As Jetbrain’s Javascript IDE does not have a community version, I have started using VS Code for Javascript, 
+As Jetbrain’s Javascript IDE does not have a community version, I will start using VS Code for Javascript, 
 and will work on moving my python workflow there too!
 
 # Environment and deployment
