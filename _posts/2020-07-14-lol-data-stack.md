@@ -36,7 +36,7 @@ This is a tall mountain to climb, but it is going to be a great learning experie
 ## IDE
 Regarding my IDEs, I am still sticking with Jetbrain’s products at the moment, and in particular PyCharm. 
 I bought its pro version and the database management features are really great, 
-as well as its python interactive console which is really great.
+as well as its python interactive console.
 
 Unfortunately, I feel like PyCharm is starting to stagnate when it comes to the very latest development technologies, 
 and I would like to learn using VS Code in the future. I always try to use open source tools as it simplifies collaboration,
