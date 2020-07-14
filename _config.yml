@@ -1,0 +1,11 @@
+title: Tolki’s blog
+author:
+  name: Tolki
+  email: gary.mialaret@gmail.com
+description: > # this means to ignore newlines until "show_excerpts:"
+  Tolki’s blog is focused on data analysis and esports, talking about everything
+  from development environment to relevant metrics in League of Legends.
+
+social_links:
+  twitter: tolkicasts
+  github:  mrtolkien
