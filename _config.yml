@@ -9,3 +9,5 @@ description: > # this means to ignore newlines until "show_excerpts:"
 social_links:
   twitter: tolkicasts
   github:  mrtolkien
+
+theme: minima
