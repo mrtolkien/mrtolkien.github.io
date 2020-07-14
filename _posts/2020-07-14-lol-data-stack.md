@@ -48,7 +48,7 @@ and will work on moving my python workflow there too!
 
 ## Python environment management
 At the very beginning I used [conda](https://docs.conda.io/en/latest/) to handle environments. 
-As it was poorly documented and way too big, I moved on pretty fast.
+As it was poorly documented and very big for deployment, I moved on pretty fast.
 
 I first switched to using [venv](https://docs.python.org/3/library/venv.html), managed mostly by PyCharm. 
 While fully featured, it is squarely separated from package managements that if left in pip’s hands,
