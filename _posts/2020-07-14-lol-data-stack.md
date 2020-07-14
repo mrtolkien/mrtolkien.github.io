@@ -143,7 +143,7 @@ Discord is pretty ubiquitous in the gaming community by now, and [discord.py](ht
 is a great package to create powerful bots.
 With embeds, files attachment, and pure python code, you can give access to the data in multiple formats.
 
-![team stats example](https://i.imgur.com/fzNX1B9.jpg "team stats example")
+![team stats example](https://i.imgur.com/fzNX1B9.jpg){:height="515px" width="294px"}
 
 For example, my !team_stats command outputs an embed table, a kill heat map file attachment, as well as a google
  sheets link to have a complete data export.
