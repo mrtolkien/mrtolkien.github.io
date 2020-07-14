@@ -82,7 +82,7 @@ I would not recommend using Docker if you are just starting to develop in python
 
 Despite that, suffering through all this was definitely worth it, as I can now run the latest version of my parser on any server by simply typing:
 
-```shell script
+```
 docker-compose pull && docker-compose run -d
 ```
 
