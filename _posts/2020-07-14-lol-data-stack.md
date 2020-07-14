@@ -81,9 +81,11 @@ as I haven’t found any good source regarding full python development in Docker
 I would not recommend using Docker if you are just starting to develop in python.
 
 Despite that, suffering through all this was definitely worth it, as I can now run the latest version of my parser on any server by simply typing:
+
 ```shell script
 docker-compose pull && docker-compose run -d
 ```
+
 The only things I need to do to enable that on a new server is to install Docker, 
 register to my Docker repository, and create the right environment and docker-compose file. 
 That’s definitely way easier and sustainable than installing a full python environment
