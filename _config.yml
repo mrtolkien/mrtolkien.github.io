@@ -10,7 +10,7 @@ social_links:
   twitter: tolkicasts
   github:  mrtolkien
 
-theme: minima
+remote_theme: jekyll/minima
 
 minima:
   skin: dark
