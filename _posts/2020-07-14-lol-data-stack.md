@@ -163,8 +163,9 @@ In particular, this will allow me to be language-agnostic and to access the data
 which will make developing user-facing tools much easier.
 
 # Data back-end
-I was hesitating between RDBMS and NoSQL solutions when I started, and by now I don’t think learning how to use a
- document-based database like MongoDB would bring me anything that my SQL experience does not.
+I was hesitating between RDBMS and NoSQL solutions when I started, and quickly settled on SQL RDBMS.
+By now, I don’t think learning how to use a document-based database like MongoDB would bring me anything more than an
+ SQL database. As LoL game data is heavily structured, SQL allows for very complex querying at crazy speeds.
 
 SQL and python usually means [SQLAlchemy](https://www.sqlalchemy.org/), and this is no exception. 
 My SQLAlchemy package is the core of my work, and I am always working to add functionality to it. 
