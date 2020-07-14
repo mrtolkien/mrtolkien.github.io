@@ -3,16 +3,17 @@ layout: page
 title: About
 permalink: /about/
 ---
+# Who am I?
+- The first [polytechnicien](https://en.wikipedia.org/wiki/%C3%89cole_Polytechnique) working in esports
+- One of the most popular [French Starcraft 2 youtubers](https://www.youtube.com/watch?v=NLGEicSuYys) in the early 2010s
+- Associate producer on [Mario + Rabbids: Kingdom Battle](https://www.mobygames.com/developer/sheet/view/developerId,873821/)
+- CEO and coach of Japanese LoL team [Hokuto Esports](https://alienwarezone.jp/post/339)
+- Top 8 at League of Legends Worlds 2019 with [Splyce](https://lol.gamepedia.com/Splyce)
+- First non-Korean coaching staff in an LCK team at [T1](https://twitter.com/T1LoL/status/1205459727632621568)
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+# What do I blog about?
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+- Retrospective on my professional experiences
+- Reflections on organisational structure in esports
+- Performance metrics in esports
+- Software craftsmanship and development tools
