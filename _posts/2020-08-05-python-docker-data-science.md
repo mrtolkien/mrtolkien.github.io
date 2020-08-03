@@ -1,4 +1,8 @@
-# Docker & Python for data science
+---
+layout: post
+title: "Python & Docker for data science"
+categories: development
+---
 
 Docker is the new be-all-end-all of environment management for software development. By providing a concise and heavily customisable way to handle dependencies resolution for multiple programming languages as well as providing a de-facto runtime system for everything, it is slowly but surely supplanting other options. WSL2 for Windows in particular is a huge boon for Docker, making it run with close to native performance on Windows.
 
