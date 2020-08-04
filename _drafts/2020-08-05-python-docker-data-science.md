@@ -3,7 +3,6 @@ layout: post
 title: "Python & Docker for data science"
 categories: development
 toc: true
-toc_float: true
 ---
 
 If you want to jump to the step-by-step installation on Windows, [click here](#step-by-step-setup-with-pycharm-on-windows).
