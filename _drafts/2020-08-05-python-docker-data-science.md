@@ -8,7 +8,7 @@ toc_float: true
 
 If you want to jump to the step-by-step installation on Windows, [click here](#step-by-step-setup-with-pycharm-on-windows).
 
-Docker is the new be-all-end-all of environment management for software development. By providing a concise and heavily customizable way to handle dependencies resolution for multiple programming languages as well as providing a "runtime system" for just about everything, it is slowly but surely supplanting other options. WSL 2 for Windows is also a huge boon for Docker, making it much easier to use in my opinion.
+Docker is the new be-all-end-all of environment management for software development. By providing a concise and heavily customizable way to handle dependencies resolution for multiple programming languages as well as providing a "runtime system" for just about everything, it is slowly but surely supplanting other options. WSL 2 for Windows is also a huge boon for Docker, making it much more convenient to use.
 
 Python, on the other hand, suffers from relatively poor tooling regarding environment management and particularly clumsy deployment processes. I personally cannot count the times I could easily write a script to solve a friend’s issue but it took me 2+ hours to help them run it on their machine.
 

@@ -17,3 +17,4 @@ minima:
 
 plugins:
   - jekyll-feed
+  - jekyll-toc
