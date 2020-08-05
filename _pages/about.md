@@ -1,8 +1,21 @@
 ---
-permalink: /about/
+permal
+nk: /about/
 title: "About"
+layout: single
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+# Who am I?
+- The first [polytechnicien](https://en.wikipedia.org/wiki/%C3%89cole_Polytechnique) working in esports
+- One of the most popular [French Starcraft 2 youtubers](https://www.youtube.com/watch?v=NLGEicSuYys) in the early 2010s
+- Associate producer on [Mario + Rabbids: Kingdom Battle](https://www.mobygames.com/developer/sheet/view/developerId,873821/)
+- Ex CEO and coach of Japanese LoL team [Hokuto Esports](https://alienwarezone.jp/post/339)
+- Top 8 at League of Legends Worlds 2019 with [Splyce](https://lol.gamepedia.com/Splyce)
+- First non-Korean coaching staff in an LCK team at [T1](https://twitter.com/T1LoL/status/1205459727632621568)
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+# What do I blog about?
+
+- Software craftsmanship and development tools
+- Retrospective on my professional experiences
+- Reflections on organisational structure in esports
+- Performance metrics in esports
