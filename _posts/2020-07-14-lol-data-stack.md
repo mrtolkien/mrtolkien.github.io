@@ -6,6 +6,7 @@ tags:
   - Docker
   - PostgreSQL
   - SQLAlchemy
+toc_max_header: 1
 ---
 
 A year and a half ago, [my first blog post](https://medium.com/@gary.mialaret/pioneering-data-driven-esports-analysis-b57d5079abda) was about the tech stack I had settled on for League of Legends data analysis. At that time, I had only re-started software development for about a month.
