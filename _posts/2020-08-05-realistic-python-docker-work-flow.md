@@ -7,7 +7,6 @@ tags:
   - PyCharm
 header:
   image: /assets/images/docker-python.png
-toc_h_max: 2
 ---
 
 Docker is the new be-all-end-all of environment management for software development. By providing a concise and heavily customizable way to handle dependencies resolution for multiple programming languages as well as providing a "runtime system" for just about everything, it is slowly but surely supplanting other options. WSL 2 for Windows is also a huge boon for Docker, making it much easier to use in my opinion.
@@ -141,7 +140,7 @@ My work flow was to create the `lol_data_parser` environment with its own depend
 
 But updating it was a pain. Updates to `lol_data/setup.py` did of course not ripple to `lol_data_parser` and required a re installation of `lol_data`. While serviceable, this solution was cumbersome.
 
-### Subsequent failures
+### Subsequent fail
 
 I tried many other solutions before moving to Docker.
 
