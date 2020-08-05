@@ -324,7 +324,7 @@ Also, only using a `Dockerfile` and relying on the host to build it means every 
 
 The reason is that **this is not how Docker is supposed to be used**, even though I have seen it advocated many times. Docker is built to share **images themselves**, not `Dockerfile`s. Sharing the images themselves is the strength of Docker, creating a full snapshot of a particular version of your environment, guaranteeing its exact behavior on any host. 
 
-Personally, I use a [private Docker registry](https://aws.amazon.com/ecr/) to host my images, but the `docker save` function allows you to simply create a `.tar.gz` archive of your image ready to be deployed anywhere. The benefit of using a registry is the ease of sharing it with collaborators.
+Personally, I use a [private Docker registry](https://aws.amazon.com/ecr/) to host my images, but the `docker save` function allows you to simply create a `.tar.gz` archive of your image ready to be deployed anywhere. The benefit of using a registry is the ease of sharing it with collaborators. For example, I can give anybody at T1 a fully working python environment to run simple scripts simply by sharing my `lol_data_scripts_env` image.
 
 Once I have built and uploaded the latest version of my parser to my registry, I can run `docker container stop lol_data_parser && docker-compose pull && docker-compose up -d` on my server and it will automatically update to the latest version and restart. This reduces what I have to do on a new server to simply installing Docker, identifying to my registry, and creating a `docker-compose.yml` file to specify run arguments.
 
