@@ -231,11 +231,9 @@ Copying the source code inside the image is the "obvious" way of doing it. The b
 
 But mounting a folder with your source code inside a container is the way most people use Docker during development. Both PyCharm and VS Code even do it transparently when you tell them to use a Docker image for your environment. They create a container, mount your source folder into it, and define it as the working directory.
 
-Usually you will use a bind mount during development, as seen by it being the paradigm chosen by the two most popular python IDEs. But when moving to production you will want to copy your source code inside your Docker image, creating a self-sufficient image.
-
 ### Multi-stage builds
 
-Using [multi-stage builds](https://docs.docker.com/develop/develop-images/multistage-build/) is key to not repeating yourself. You can use a single `Dockerfile` to define multiple images, usually images that will be dependent on one another. You can then create a specific image with `docker build --target`.
+Using [multi-stage builds](https://docs.docker.com/develop/develop-images/multistage-build/) is key to not repeating yourself when defining similar environment, in particular one for development and one for production. You can use a single `Dockerfile` to define multiple images dependent on one another. You can then build a specific image with `docker build --target`.
 
 It was useful to generate both dev and prod images without code duplication, and also allowed made it easy to create multiple applications based on the same `lol_data` base image.
 
