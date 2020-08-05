@@ -181,7 +181,7 @@ Compose is pretty much a way to execute complex `docker` commands through a simp
 
 Now that all the groundwork has been laid we can start talking about how to go about using Docker and python together.
 
-One of my biggest pet peeves with Docker is that there are 10 000 ways to do any particular thing. While the documentation is very exhaustive it can be hard to find out what is the *"right"* way to do something. I am not sure mine is the right one, but at least it makes sense to me.
+One of my biggest pet peeves with Docker is that there are 10 000 ways to do any particular thing. While the documentation is very exhaustive it can be hard to find out what is the *"right"* way to do something. I am not sure mine is the right one, but at least it is coherent.
 
 Another important thing to note is that almost everything you will do with Docker is through the command line. Thankfully, if you are using WSL 2 inside Windows everything can be done from your Linux virtual machine. In my experience, this was much smoother than using cmd.exe or PowerShell.
 
