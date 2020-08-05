@@ -378,7 +378,7 @@ I won’t make better doc than Docker itself, so follow it for troubleshooting!
 
 Since Docker is mostly a command line tool I advise taking a bit of time to create a good command line environment on your WSL 2 virtual machine.
 
-Start by downloading Windows Terminal, the new official terminal for Windows: https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701
+Start by downloading Windows Terminal, the new official terminal for Windows: [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701)
 
 Install [zsh](https://linuxhint.com/install_zsh_shell_ubuntu_1804/) and [oh-my-zsh](https://ohmyz.sh/#install) on your WSL machine.
 
