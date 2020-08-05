@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Realistic Python & Docker work flow"
 categories: development
 ---

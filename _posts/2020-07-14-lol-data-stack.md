@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Tolki’s LoL data tech stack - 2020"
 categories: development
 ---
