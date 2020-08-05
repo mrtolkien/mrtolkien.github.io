@@ -461,7 +461,7 @@ If PyCharm created a `main.py` and run configuration by itself, you can run it (
 
 ![main](https://i.imgur.com/npckSGq.png)
 
-As you can see in this output, PyCharm used Docker to create a container named `hello_world_end_1`, mounted `main.py` into it, ran it, and after the container exited it stopped the program.
+As you can see in this output, PyCharm used Docker to create a container named `hello_world_hello_world_env_1`, mounted `main.py` into it, ran it, and after the container exited it stopped the program.
 
 You can also check your python console has access to your local files as PyCharm should mount them in your container. Try importing the `main.py` file.
 
