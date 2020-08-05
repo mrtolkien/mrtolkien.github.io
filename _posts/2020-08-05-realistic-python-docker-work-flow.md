@@ -5,6 +5,7 @@ tags:
   - Python
   - Docker
   - PyCharm
+toc_max_header: 2
 ---
 
 If you want to jump to the step-by-step installation on Windows, [click here](#step-by-step-setup-with-pycharm-on-windows).
