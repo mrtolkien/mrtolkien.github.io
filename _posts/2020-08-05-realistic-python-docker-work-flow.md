@@ -344,8 +344,6 @@ services:
       target: /app/logs
 ```
 
-During development, I use a different `.env` file to connect to a local test database.
-
 ## PyCharm vs VS Code paradigm
 
 Before moving to the step-by-step, to highlight how nobody agrees on how to use Docker let us look at Docker’s integration in PyCharm and VS Code.
