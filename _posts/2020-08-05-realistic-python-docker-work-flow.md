@@ -12,7 +12,7 @@ toc_sticky: false
 
 Docker is the new be-all-end-all of environment management for software development. By providing a concise and heavily customizable way to handle dependencies resolution for multiple programming languages as well as providing a "runtime system" for just about everything, it is slowly but surely supplanting other options. WSL 2 for Windows is also a huge boon for Docker, making it much easier to use in my opinion.
 
-If you want to jump to the step-by-step installation on Windows, [click here](#step-by-step-setup-with-pycharm-on-windows).
+If you want to jump to the step-by-step setup, [click here](#step-by-step-setup-with-pycharm-on-windows).
 
 Python, on the other hand, suffers from relatively poor tooling regarding environment management and particularly clumsy deployment processes. I personally cannot count the times I could easily write a script to solve a friend’s issue but it took me 2+ hours to help them run it on their machine.
 
@@ -356,9 +356,9 @@ VS Code on the other hand makes you work **inside** a specific container, also m
 
 As I am using PyCharm currently I am getting used to its way of using Docker, but I find it interesting that the two biggest python IDE fundamentally disagree on something as basic as how to use a Docker image.
 
-# Step-by-step setup with PyCharm on Windows
+# Step-by-step setup
 
-As I currently am working from Windows in PyCharm I will focus on this specific install process. But I did the same install process on Linux and MacOS and the steps were roughly the same.
+As I currently am working from Windows in PyCharm I will focus on this specific install process. The install process on Linux and Mac OS is very similar.
 
 ## Installation
 
