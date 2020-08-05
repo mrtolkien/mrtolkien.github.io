@@ -233,9 +233,7 @@ But mounting a folder with your source code inside a container is the way most p
 
 ### Multi-stage builds
 
-Using [multi-stage builds](https://docs.docker.com/develop/develop-images/multistage-build/) is key to not repeating yourself when defining similar environment, in particular one for development and one for production. You can use a single `Dockerfile` to define multiple images dependent on one another. You can then build a specific image with `docker build --target`.
-
-It was useful to generate both dev and prod images without code duplication, and also allowed made it easy to create multiple applications based on the same `lol_data` base image.
+Using [multi-stage builds](https://docs.docker.com/develop/develop-images/multistage-build/) is key to not repeating yourself when defining similar environments, in particular one for development and one for production. You can use a single `Dockerfile` to define multiple images dependent on one another. You can then build a specific image with `docker build --target`.
 
 As I use bind mounts for development but copy my source code inside the image for production, I am making 3 images for a given application:
 - A base image only installing dependencies common to dev and prod (that I will not use directly)
