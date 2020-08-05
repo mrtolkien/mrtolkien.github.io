@@ -519,7 +519,7 @@ Build it with `docker-compose build`.
 
 ![build prod](https://i.imgur.com/yLjcNI2.png) 
 
-And finally, let’s try our groundbreaking application with `docker-compose up`.
+And finally, let’s try running our groundbreaking application with `docker-compose up`.
 
 ![prod](https://i.imgur.com/ZMCdaXF.png)
 
