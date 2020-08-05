@@ -99,7 +99,7 @@ lol_data						python package
 
 ### lol_data
 
-`lol_data` is my base package, relying heavily on [SQLAlchemy](https://www.sqlalchemy.org/) to handle everything that is database-related. It handles the connection, data structure, and querying. As this package is the first building block for any tool I build, it is minimal in its dependencies and focused on performance. It is not meant to be used as-is because of how bare bones it is.
+`lol_data` is my base package, relying heavily on [SQLAlchemy](https://www.sqlalchemy.org/) to handle everything that is database-related. It manages the connection, data structure, and querying. As this package is the first building block for any tool I build, it is minimal in its dependencies and focused on performance. It is not meant to be used as-is because of how bare bones it is.
 
 ### lol_data_parser
 
