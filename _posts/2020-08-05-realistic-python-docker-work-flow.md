@@ -86,7 +86,7 @@ Let’s look at my personal use case, using python for data analysis and having 
 
 Here is the approximate structure of my python projects:
 ```
-lol_data 						python package
+lol_data						python package
 ├── lol_data_parser				app requiring lol_data
 ├── lol_data_scripts			scripts requiring lol_data and other dependencies
 └── lol_data_api				app requiring lol_data
