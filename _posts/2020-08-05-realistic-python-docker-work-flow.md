@@ -153,7 +153,7 @@ After many solutions, all more inconvenient than the last, I decided to go all-i
 
 # Docker vocabulary
 
-It took me some time to wrap my head around Docker. It is actually simpler than it looks, but you need to understand the vocabulary. So let’s walk you through it!
+It took me some time to wrap my head around Docker. It is actually simpler than it looks, but you need to understand the vocabulary. Let us therefore start with a quick rundown of the important terms.
 
 ## Images
 
