@@ -140,7 +140,7 @@ My work flow was to create the `lol_data_parser` environment with its own depend
 
 But updating it was a pain. Updates to `lol_data/setup.py` did of course not ripple to `lol_data_parser` and required a re installation of `lol_data`. While serviceable, this solution was cumbersome.
 
-### Subsequent fail
+### Subsequent failures
 
 I tried many other solutions before moving to Docker.
 
@@ -150,7 +150,7 @@ I tried importing everything together in a single folder, but it made developmen
 
 After many solutions, all more inconvenient than the last, I decided to go all-in on Docker as it was clearly the right tool for the job.
 
-# What exactly is Docker?
+# Docker vocabulary
 
 It took me some time to wrap my head around Docker. It is actually simpler than it looks, but you need to understand the vocabulary. So let’s walk you through it!
 
@@ -166,7 +166,7 @@ Containers are running images. They are pretty much virtual machines started fro
 
 An image usually has a default command it will run when a container is created. It is defined by the `CMD` line in the `Dockerfile`. For my parser it is a shell script, `CMD [ "/bin/bash", "/app/run_parser.sh" ]`.
 
-## Accessing data
+## Volumes and mounts
 
 Volumes are persistent storage across containers. While you can write to files inside a container, those files will be destroyed if you destroy the container. Using a Docker volume allows for persistence.
 
@@ -176,16 +176,15 @@ Instead of volumes, you can also use [bind mounting](https://docs.docker.com/sto
 
 Compose is pretty much a way to execute complex `docker` commands through a simple `docker-compose.yml` file. It can be used to control multiple inter-dependent services, but more importantly it can replace `docker run` options. Even for single-services projects, you will use it as it will make your work flow much smoother.
 
-# Python & Docker for data science
+# Python & Docker
 
-Now that all the groundwork has been laid we can start talking about how to go about setting up Docker and python for data science.
+Now that all the groundwork has been laid we can start talking about how to go about using Docker and python together.
 
 One of my biggest pet peeves with Docker is that there are 10 000 ways to do any particular thing. While the documentation is very exhaustive it can be hard to find out what is the *"right"* way to do something. I am not sure mine is the right one, but at least it makes sense to me.
 
 Another important thing to note is that almost everything you will do with Docker is through the command line. Thankfully, if you are using WSL 2 inside Windows everything can be done from your Linux virtual machine. In my experience, this was much smoother than using cmd.exe or PowerShell.
 
 ## Defining a python environment
-
 
 ### Interpreter
 
@@ -221,7 +220,9 @@ sqlalchemy
 psycopg2
 ```
 
-## Mounting vs copying
+## Development vs production
+
+### Mounting vs copying
 
 There are two **very** different ways to access your source code inside a Docker image. You can copy it inside the image or mount it from your local file system. Those two solutions achieve wildly different goals. I never really see it pointed out when in my opinion it is crucial to understand.
 
@@ -229,7 +230,7 @@ Copying the source code inside the image is the "obvious" way of doing it. The b
 
 But mounting a folder with your source code inside a container is the way most people use Docker during development. Both PyCharm and VS Code even do it transparently when you tell them to use a Docker image for your environment. They create a container, mount your source folder into it, and define it as the working directory.
 
-## Dev vs Prod
+### Multi-stage builds
 
 Using [multi-stage builds](https://docs.docker.com/develop/develop-images/multistage-build/) is key to not repeating yourself. You can use a single `Dockerfile` to define multiple images, usually images that will be dependent on one another. You can then create a specific image with `docker build --target`.
 
@@ -316,7 +317,7 @@ As you can see, all of of my images "inherit" from `lol_data_env` and add what t
 
 Once it’s all said and done, I only use `lol_data_parser_dev`, `lol_data_api_dev`, and `lol_data_scripts_env` during development. But having my `Dockerfile` set that way guarantees that at the end of my development period, it is trivially easy for me to build a production-ready image.
 
-## Replicability and distribution
+## Replicability
 
 There is another elephant in the room I haven’t touched upon. `python:latest` may change with time. `pip install` might not yield the same packages in the future with non-pinned versions. Only having a `Dockerfile` does absolutely nothing to guarantee replicability in python.
 
@@ -346,7 +347,7 @@ services:
 
 ## PyCharm vs VS Code paradigm
 
-Before moving to a practical example, to highlight how nobody agrees on how to use Docker let us look at Docker’s integration in PyCharm and VS Code.
+Before moving to the step-by-step, to highlight how nobody agrees on how to use Docker let us look at Docker’s integration in PyCharm and VS Code.
 
 PyCharm can be told to use Docker as a python environment and will create a new container whenever you open a console or run unit tests. You will still mostly be on your local machine, only using Docker to provide you with python environments on demand. You can use a `docker-compose.yml` file to supply your environment with specific bind mounts or environment variables.
 
@@ -354,11 +355,11 @@ VS Code on the other hand makes you work **inside** a specific container, also m
 
 As I am using PyCharm currently I am getting used to its way of using Docker, but I find it interesting that the two biggest python IDE fundamentally disagree on something as basic as how to use a Docker image.
 
-# Step by step setup with PyCharm on Windows
+# Step-by-step setup with PyCharm on Windows
 
 As I currently am working from Windows in PyCharm I will focus on this specific install process. But I did the same install process on Linux and MacOS and the steps were roughly the same.
 
-## Required programs
+## Installation
 
 ### WSL 2
 
@@ -389,7 +390,7 @@ I also advise installing [fzf for easier auto-completion](https://github.com/jun
 Once this is all done, your shell should actually look like something that is humanly usable:
 ![console](https://i.imgur.com/6IJDWkc.png)
 
-## hello_world
+## Creating our development environment
 
 After all those installations, let’s get started on our project.
 
@@ -403,7 +404,7 @@ Open this empty `hello_world` folder with PyCharm. Normally, PyCharm will pick u
 
 As you can see, currently it uses my Windows, system-wide python environment. We don’t want that.
 
-## Dockerfile and docker-compose.yml
+### Dockerfile and docker-compose.yml
 
 Create a new file in your `hello_world` folder called `Dockerfile`.
 
@@ -435,7 +436,7 @@ Now, build the image by running `docker-compose -f docker-compose-dev.yml build`
 
 ![build](https://i.imgur.com/01DWW7l.png)
 
-## PyCharm settings
+### PyCharm settings
 
 Now, let’s tell PyCharm to use this python environment for our development environment.
 
@@ -451,7 +452,7 @@ That’s it! Give PyCharm a few seconds to update its package skeletons and once
 
 ![interpreter 2](https://i.imgur.com/Y6WyjL4.png)
 
-## Testing it out
+### Testing
 
 Try it out by opening a console and verifying you’re properly inside a Linux OS environment.
 
@@ -467,7 +468,7 @@ You can also check your python console has access to your local files as PyCharm
 
 ![import](https://i.imgur.com/THj3RoD.png)
 
-## Understanding what PyCharm did
+### Understanding what PyCharm did
 
 If you open your docker dashboard by right-clicking the whale in the system tray, it should look like this:
 
@@ -479,7 +480,7 @@ If you open your docker dashboard by right-clicking the whale in the system tray
 
 `hello_world_hello_world_dev_1` is the container that PyCharm created when you ran `main.py`, and by default it is not deleted when exited.
 
-## Releasing
+## Packaging for production
 
 Let’s get to packaging. Open the `Dockerfile` again and replace it all with:
 
@@ -539,4 +540,8 @@ It is important to remember that you share **images**, and then you usually need
 
 If you made it there, congratulations. I did not expect this blog post to get that long, but the more I typed the more I wanted to make sure things were clear and practical. This post is what I wish I came across when I started using Docker.
 
-Don’t hesitate to contact me on twitter [@TolkiCasts](https://twitter.com/TolkiCasts) if you have any question or feedback about the article!
+Despite all the hardships to get used to it, it is obvious that Docker is the future of software development. It’s an incredibly powerful tool that I am only scratching the surface of.
+
+Learning how to use it is definitely worth it in the long run, and it is not actually as obscure as it may seem.
+
+I hope you enjoyed this thorough run-through and that it made you want to use Docker for your own python projects!
