@@ -395,7 +395,7 @@ After all those installations, let’s get started on our project.
 
 Create a folder called `hello_world` in one of your Windows folders. I personally use `C:\Users\garym\Development\xxx`, following the Linux trend of putting personal files in your user folder.
 
-While the [best practice](https://docs.docker.com/docker-for-windows/wsl/#best-practices) for Docker is to create project inside the Linux file system, PyCharm interacts poorly with it. You can access the Windows file system easily from inside WSL 2 at `/mnt/c/`.
+While the [best practice](https://docs.docker.com/docker-for-windows/wsl/#best-practices) for Docker is to create projects inside the Linux file system, PyCharm interacts poorly with it. You can access the Windows file system easily from inside WSL 2 at `/mnt/c/`.
 
 Open this empty `hello_world` folder with PyCharm. Normally, PyCharm will pick up the `hello_world` folder name and create a basic `main.py` file as well as a default run configuration. If it did not, don’t fret, and create a basic `main.py` file containing only `print("Hello there.")`
 
