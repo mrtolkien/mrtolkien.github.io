@@ -473,9 +473,9 @@ If you open your docker dashboard by right-clicking the whale in the system tray
 
 ![docker dashboard](https://i.imgur.com/yCIkuCT.png)
 
-`hello_world` is your `docker-compose` project name, that PyCharm derived from your folder name.
+`hello_world` is your `docker-compose` project name that PyCharm derived from your folder name.
 
-`hello_world_hello_world_dev_run_8a1a37757829` is the container that PyCharm created when you opened a python console.
+`hello_world_hello_world_dev_run_8a1a37757829` is the container that PyCharm created when you opened a python console. It follows a `{project name}_{service name}_run_{container id}` nomenclature.
 
 `hello_world_hello_world_dev_1` is the container that PyCharm created when you ran `main.py`, and by default it is not deleted when exited.
 
