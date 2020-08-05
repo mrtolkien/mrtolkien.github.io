@@ -2,7 +2,6 @@
 permal
 nk: /about/
 title: "About"
-layout: single
 ---
 
 # Who am I?
