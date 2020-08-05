@@ -5,6 +5,8 @@ tags:
   - Python
   - Docker
   - PyCharm
+header:
+  image: /assets/images/docker-python.png
 toc_max_header: 2
 ---
 
