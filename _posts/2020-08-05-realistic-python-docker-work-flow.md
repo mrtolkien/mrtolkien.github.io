@@ -7,12 +7,12 @@ tags:
   - PyCharm
 header:
   image: /assets/images/docker-python.png
-toc_max_header: 2
+toc_h_max: 2
 ---
 
-If you want to jump to the step-by-step installation on Windows, [click here](#step-by-step-setup-with-pycharm-on-windows).
-
 Docker is the new be-all-end-all of environment management for software development. By providing a concise and heavily customizable way to handle dependencies resolution for multiple programming languages as well as providing a "runtime system" for just about everything, it is slowly but surely supplanting other options. WSL 2 for Windows is also a huge boon for Docker, making it much easier to use in my opinion.
+
+If you want to jump to the step-by-step installation on Windows, [click here](#step-by-step-setup-with-pycharm-on-windows).
 
 Python, on the other hand, suffers from relatively poor tooling regarding environment management and particularly clumsy deployment processes. I personally cannot count the times I could easily write a script to solve a friend’s issue but it took me 2+ hours to help them run it on their machine.
 
@@ -117,9 +117,9 @@ lol_data 						python package
 
 `lol_data_discord_bot` is the user-facing part of this stack and is a [`discord.py`](http://discordpy.readthedocs.io/) based bot. It used to be based directly on `lol_data`, but with me moving to an API structure it is now an independent app that gets its data through the `lol_data_api`.
 
-## Old deployment practices
+## My old deployment practices
 
-### v1
+### First try
 
 When I wrote my v1 I had been using python for about a week. I was still discovering it all.
 
@@ -131,7 +131,7 @@ To update `lol_data` or `lol_data_parser`, I would just do a `git pull`, then ru
 
 As you can guess, that was not particular stable, convenient, or clean. But hey, it worked for a month!
 
-### v2
+### Second try
 
 Shortly after, I discovered `pipenv`, and I used it until I made the switch to Docker.
 
@@ -141,7 +141,7 @@ My work flow was to create the `lol_data_parser` environment with its own depend
 
 But updating it was a pain. Updates to `lol_data/setup.py` did of course not ripple to `lol_data_parser` and required a re installation of `lol_data`. While serviceable, this solution was cumbersome.
 
-### v2.1, 2.2, ...
+### Subsequent failures
 
 I tried many other solutions before moving to Docker.
 
