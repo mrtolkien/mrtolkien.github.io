@@ -46,13 +46,13 @@ So every python developer uses [**virtual environments**](https://docs.python.or
 
 So as you see, every time you have to start by installing the interpreter you want. There are many versions of python available, with every new one bringing non backwards-compatible changes. If a single of your packages uses the [walrus operator](https://docs.python.org/3/whatsnew/3.8.html#assignment-expressions), you **need** 3.8 or higher.
 
-One of the most popular tools for that is [`pyenv`](https://github.com/pyenv/pyenv). Unfortunately it is almost unusable on Windows, so on Windows you usually use [pre-built Windows binaries](https://www.python.org/downloads/windows/). Of course, on Mac OS you can use [`brew`](https://brew.sh/) to install python directly, but you can also use it to install `pyenv` that you can then use to install an interpreter. See the mess already?
+One of the most popular tools for that is [pyenv](https://github.com/pyenv/pyenv). Unfortunately it is almost unusable on Windows, so on Windows you usually use [pre-built Windows binaries](https://www.python.org/downloads/windows/). Of course, on Mac OS you can use [brew](https://brew.sh/) to install python directly, but you can also use it to install `pyenv` that you can then use to install an interpreter. See the mess already?
 
 ## Environment tools
 
 ### venv + pip
 
-Python interpreters usually have [`venv`](https://docs.python.org/3/library/venv.html) packaged with it. This means that `venv` is part of the default environment of one of your interpreters. To call `venv`, you must first select the right interpreter or it can get messy.
+Python interpreters usually have [venv](https://docs.python.org/3/library/venv.html) packaged with it. This means that `venv` is part of the default environment of one of your interpreters. To call `venv`, you must first select the right interpreter or it can get messy.
 
 It is the recommended tool to use, and many higher level tools simply call `venv` themselves.
 
@@ -68,7 +68,7 @@ It works pretty well when you are simply installing packages from `pypi` as you 
 
 One way to make things slightly easier is `pipenv`. `pipenv` can use `pyenv` to download and use the right python interpreter. `pipenv` also handles virtual environment creation, installation of packages, and replicability.
 
-It can be called from the command line outside of the virtual environment. Its list of installed packages is stored in a [`Pipfile`](https://github.com/pypa/pipfile) and you can directly add a package to the list and run `pipenv update` to install it. It guarantees replicability by storing checksums of each installed package in a `Pipfile.lock` file.
+It can be called from the command line outside of the virtual environment. Its list of installed packages is stored in a [Pipfile](https://github.com/pypa/pipfile) and you can directly add a package to the list and run `pipenv update` to install it. It guarantees replicability by storing checksums of each installed package in a `Pipfile.lock` file.
 
 `pipenv` is a huge step in the right direction for python environment management. Alternatives like `Poetry` exist, but it seems that `pipenv` is the one gaining traction at the moment.
 
@@ -103,7 +103,7 @@ lol_data 						python package
 
 ### lol_data_parser
 
-`lol_data_parser` is my parser, *ie* an app that is designed to run continuously and parse LoL data from all around the world and insert it into my database. It uses heavier packages like [`scikit-learn`](https://scikit-learn.org/) for role classification.
+`lol_data_parser` is my parser, *ie* an app that is designed to run continuously and parse LoL data from all around the world and insert it into my database. It uses heavier packages like [scikit-learn](https://scikit-learn.org/) for role classification.
 
 ### lol_data_scripts
 
@@ -111,11 +111,11 @@ lol_data 						python package
 
 ### lol_data_api
 
-`lol_data_api` is a [`FastAPI`](https://fastapi.tiangolo.com/) based API that serves data in JSON. It allows me to build tools in other languages than python, namely websites with [React](https://en.wikipedia.org/wiki/React_(web_framework)).
+`lol_data_api` is a [FastAPI](https://fastapi.tiangolo.com/) based API that serves data in JSON. It allows me to build tools in other languages than python, namely websites with [React](https://en.wikipedia.org/wiki/React_(web_framework)).
 
 ### lol_data_discord_bot
 
-`lol_data_discord_bot` is the user-facing part of this stack and is a [`discord.py`](http://discordpy.readthedocs.io/) based bot. It used to be based directly on `lol_data`, but with me moving to an API structure it is now an independent app that gets its data through the `lol_data_api`.
+`lol_data_discord_bot` is the user-facing part of this stack and is a [discord.py](http://discordpy.readthedocs.io/) based bot. It used to be based directly on `lol_data`, but with me moving to an API structure it is now an independent app that gets its data through the `lol_data_api`.
 
 ## My old deployment practices
 
@@ -139,7 +139,7 @@ It was very convenient for finally having a virtual environment and having a bet
 
 My work flow was to create the `lol_data_parser` environment with its own dependencies, activate the environment with `pipenv shell`, move to the `lol_data` folder, and use `pip install -e .`. Having now defined the `lol_data` dependencies in its `setup.py`, it automatically installed the dependencies in the virtual environment as well.
 
-But updating it was a pain. Updates to `lol_data/setup.py` did of course not ripple to `lol_data_parser` and required a re installation of `lol_data`. While serviceable, this solution was cumbersome.
+But updating it was a pain. Updates to `lol_data/setup.py` did of course not ripple to `lol_data_parser` and required a re-installation of `lol_data`. While serviceable, this solution was cumbersome.
 
 ### Subsequent failures
 
@@ -157,7 +157,7 @@ It took me some time to wrap my head around Docker. It is actually simpler than 
 
 ## Images
 
-You can see a Docker image as an archive of files that are sufficient to define a Linux environment. It is a folder of binaries and files that can be run on a Linux *kernel*. They are **built** from a [`Dockerfile`](https://docs.docker.com/engine/reference/builder/).
+You can see a Docker image as an archive of files that are sufficient to define a Linux environment. It is a folder of binaries and files that can be run on a Linux *kernel*. They are **built** from a [Dockerfile](https://docs.docker.com/engine/reference/builder/).
 
 By itself, a `Dockerfile` does not guarantee replicability in any way. But a built image does. 
 
