@@ -238,7 +238,7 @@ Using [multi-stage builds](https://docs.docker.com/develop/develop-images/multis
 As I use bind mounts for development but copy my source code inside the image for production, I am making 3 images for a given application:
 - A base image only installing dependencies common to dev and prod (that I will not use directly)
 - A dev image that relies on bind mounting my source code and installs dev-specific dependencies like `pytest`
-- A prod image that copies all the source code inside the image and finishes with a `CMD` to execute when spawning a container from this image.
+- A prod image that copies all the source code inside the image and finishes with a `CMD` that starts my application
 
 Let’s have a look at my current Dockerfile. It is pretty lengthy, but it gives a good taste of what you can do with it:
 
