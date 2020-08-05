@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "Python & Docker for data science"
+title: "Realistic Python & Docker work flow"
 categories: development
 toc: true
 ---
 
-TOC PLUGIN ADDED
+{:toc}
+
+TOC TAG ADDED
 
 If you want to jump to the step-by-step installation on Windows, [click here](#step-by-step-setup-with-pycharm-on-windows).
 
