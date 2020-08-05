@@ -5,7 +5,7 @@ categories: development
 toc: true
 ---
 
-TOC ADDED
+TOC PLUGIN ADDED
 
 If you want to jump to the step-by-step installation on Windows, [click here](#step-by-step-setup-with-pycharm-on-windows).
 
