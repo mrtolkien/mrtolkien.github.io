@@ -159,7 +159,7 @@ It took me some time to wrap my head around Docker. It is actually simpler than 
 
 You can see a Docker image as an archive of files that are sufficient to define a Linux environment. It is a folder of binaries and files that can be run on a Linux *kernel*. They are **built** from a [Dockerfile](https://docs.docker.com/engine/reference/builder/).
 
-By itself, a `Dockerfile` does not guarantee replicability in any way. But a built image does. 
+By itself, a `Dockerfile` does not guarantee replicability in any way, but a built image does. 
 
 ## Containers
 
