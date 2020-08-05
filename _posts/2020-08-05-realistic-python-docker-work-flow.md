@@ -382,7 +382,7 @@ Start by downloading Windows Terminal, the new official terminal for Windows: [W
 
 Install [zsh](https://linuxhint.com/install_zsh_shell_ubuntu_1804/) and [oh-my-zsh](https://ohmyz.sh/#install) on your WSL machine.
 
-Once done with the installs, edit your zsh config file, `.zshrc`, and add the `docker` and `docker-compose` plugins. This will turn on auto completion for every docker command, automatically completing functions and container names and providing help. This package is [officially maintained by the Docker team](https://docs.docker.com/compose/completion/#zsh).
+Once done with the installs, edit your zsh config file, `.zshrc`, and add the `docker` and `docker-compose` plugins. This will turn on auto completion for every docker command, automatically completing functions and container names as well as providing help. This plugin is [officially maintained by the Docker team](https://docs.docker.com/compose/completion/#zsh).
 
 I also advise installing [fzf for easier auto-completion](https://github.com/junegunn/fzf), [z for directory jumping](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/z), [fast-syntax-highlighting](https://github.com/zdharma/fast-syntax-highlighting), [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions), and the [powerlevel10K](https://github.com/romkatv/powerlevel10k) theme.
 
