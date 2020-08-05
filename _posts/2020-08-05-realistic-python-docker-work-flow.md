@@ -8,6 +8,8 @@ tags:
 toc_max_header: 2
 ---
 
+TEST MAX HEADER
+
 If you want to jump to the step-by-step installation on Windows, [click here](#step-by-step-setup-with-pycharm-on-windows).
 
 Docker is the new be-all-end-all of environment management for software development. By providing a concise and heavily customizable way to handle dependencies resolution for multiple programming languages as well as providing a "runtime system" for just about everything, it is slowly but surely supplanting other options. WSL 2 for Windows is also a huge boon for Docker, making it much easier to use in my opinion.
@@ -62,7 +64,7 @@ If you are using this method, the recommended way to replicate the virtual envir
 
 It works pretty well when you are simply installing packages from `pypi` as you will be able to grab the right version every time, but it gets pretty messy when you want to install packages from git and automatically update them.
 
-## pipenv
+### pipenv
 
 One way to make things slightly easier is `pipenv`. `pipenv` can use `pyenv` to download and use the right python interpreter. `pipenv` also handles virtual environment creation, installation of packages, and replicability.
 
@@ -70,37 +72,19 @@ It can be called from the command line outside of the virtual environment. Its l
 
 `pipenv` is a huge step in the right direction for python environment management. Alternatives like `Poetry` exist, but it seems that `pipenv` is the one gaining traction at the moment.
 
-## What about code that is NOT on pypi?
+### What about code that is not on pypi?
 
 While a very convenient tool, `pipenv` is only a wrapper for the other tools we have just seen. It still does not make it much easier to work with editable dependencies and git-based packages. You can make it work, but it makes your development environment clumsy and inconvenient in my opinion.
 
 # Real life example
 
+## Code structure
+
 Let’s look at my personal use case, using python for data analysis and having multiple inter-dependent moving pieces.
 
-## lol_data
+### Overview
 
-`lol_data` is my base package, relying heavily on [SQLAlchemy](https://www.sqlalchemy.org/) to handle everything that is database-related. It handles the connection, data structure, and querying. As this package is the first building block for any tool I build, it is minimal in its dependencies and focused on performance. It is not meant to be used as-is because of how bare bones it is.
-
-## lol_data_parser
-
-`lol_data_parser` is my parser, *ie* an app that is designed to run continuously and parse LoL data from all around the world and insert it into my database. It uses heavier packages like [`scikit-learn`](https://scikit-learn.org/) for role classification.
-
-## lol_data_scripts
-
-`lol_data_scripts` is my collection of scripts. It holds the scripts I whip up when coaches or players have a question or when I need to do some exploratory analysis. It is mostly made of Jupyter notebook files that I run in Pycharm’s python console. It has a humongous number of packages installed as it is built for convenience and not performance.
-
-## lol_data_api
-
-`lol_data_api` is a [`FastAPI`](https://fastapi.tiangolo.com/) based API that serves data in JSON. It allows me to build tools in other languages than python, namely websites with [React](https://en.wikipedia.org/wiki/React_(web_framework)).
-
-## lol_data_discord_bot
-
-`lol_data_discord_bot` is the user-facing part of this stack and is a [`discord.py`](http://discordpy.readthedocs.io/) based bot. It used to be based directly on `lol_data`, but with me moving to an API structure it is now an independent app that gets its data through the `lol_data_api`.
-
-## Structure
-
-Here is the approximate structure of my "hierarchy" of projects:
+Here is the approximate structure of my python projects:
 ```
 lol_data 						python package
 ├── lol_data_parser				app requiring lol_data
@@ -109,9 +93,29 @@ lol_data 						python package
 	└── lol_data_discord_bot	app using lol_data_api
 ```
 
-`lol_data`, `lol_data_parser`, `lol_data_scripts`, and `lol_data_api` are all part of the same git repository as they are strongly interconnected. Updates to one usually begets updates to the others, and I want to keep it all together.
+`lol_data`, `lol_data_parser`, `lol_data_scripts`, and `lol_data_api` are all part of the same git repository as they are strongly interconnected. Updates to one usually begets updates to the others.
 
-`lol_data_discord_bot` is in another repository as it does not use `lol_data` directly.
+`lol_data_discord_bot` is in another repository as it does not use `lol_data` directly but uses my API.
+
+### lol_data
+
+`lol_data` is my base package, relying heavily on [SQLAlchemy](https://www.sqlalchemy.org/) to handle everything that is database-related. It handles the connection, data structure, and querying. As this package is the first building block for any tool I build, it is minimal in its dependencies and focused on performance. It is not meant to be used as-is because of how bare bones it is.
+
+### lol_data_parser
+
+`lol_data_parser` is my parser, *ie* an app that is designed to run continuously and parse LoL data from all around the world and insert it into my database. It uses heavier packages like [`scikit-learn`](https://scikit-learn.org/) for role classification.
+
+### lol_data_scripts
+
+`lol_data_scripts` is my collection of scripts. It holds the scripts I whip up when coaches or players have a question or when I need to do some exploratory analysis. It is mostly made of Jupyter notebook files that I run in Pycharm’s python console. It has a humongous number of packages installed as it is built for convenience and not performance.
+
+### lol_data_api
+
+`lol_data_api` is a [`FastAPI`](https://fastapi.tiangolo.com/) based API that serves data in JSON. It allows me to build tools in other languages than python, namely websites with [React](https://en.wikipedia.org/wiki/React_(web_framework)).
+
+### lol_data_discord_bot
+
+`lol_data_discord_bot` is the user-facing part of this stack and is a [`discord.py`](http://discordpy.readthedocs.io/) based bot. It used to be based directly on `lol_data`, but with me moving to an API structure it is now an independent app that gets its data through the `lol_data_api`.
 
 ## Old deployment practices
 
