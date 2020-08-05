@@ -312,7 +312,7 @@ COPY /config/gspread_pandas /root/.config/gspread_pandas
 (...)
 ```
 
-As you can see, all of my base images "inherit" from `lol_data_env` and add what they each need. The parser creates an intermediary `lol_data_parser_env` image that it then splits it into a `dev` image that will use mounted source code and a `prod` that copies the source code and has the `CMD` to start the app.
+As you can see, all of my base images "inherit" from `lol_data_env` and add what they each need. For example, I create an intermediary `lol_data_parser_env` image that I then split it into a `dev` image that will use mounted source code and a `prod` that copies the source code and has the `CMD` to automatically start the parser.
 
 Once it’s all said and done, I only use `lol_data_parser_dev`, `lol_data_api_dev`, and `lol_data_scripts_env` during development. But having my `Dockerfile` set that way guarantees that at the end of my development period, it is trivially easy for me to build a production-ready image.
 
