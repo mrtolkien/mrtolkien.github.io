@@ -497,6 +497,7 @@ WORKDIR /app
 # Copying our script
 COPY main.py main.py
 
+# Starting our script when we spawn a container from the image
 CMD python main.py
 ```
 
