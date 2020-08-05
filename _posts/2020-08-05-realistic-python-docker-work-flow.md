@@ -163,7 +163,7 @@ By itself, a `Dockerfile` does not guarantee replicability in any way, but a bui
 
 ## Containers
 
-Containers are running images. They are pretty much virtual machines started from one of the given images. You can access their logs, stop and restart them, and usually you destroy them once you’re done with them.
+Containers are running images. They are pretty much virtual machines started from one of the given images. You can access their logs, stop and restart them, and you often destroy them once they are exited.
 
 An image usually has a default command it will run when a container is created. It is defined by the `CMD` line in the `Dockerfile`. For my parser it is a shell script, `CMD [ "/bin/bash", "/app/run_parser.sh" ]`.
 
