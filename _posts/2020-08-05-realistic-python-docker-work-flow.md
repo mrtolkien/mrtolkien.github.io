@@ -1,6 +1,10 @@
 ---
 title: "Realistic Python & Docker work flow"
-categories: development
+categories: Development
+tags:
+	- Python
+	- Docker
+	- PyCharm
 ---
 
 If you want to jump to the step-by-step installation on Windows, [click here](#step-by-step-setup-with-pycharm-on-windows).
