@@ -362,7 +362,7 @@ As I currently am working from Windows in PyCharm I will focus on this specific 
 
 ### WSL 2
 
-Follow the instructions there: https://docs.microsoft.com/en-us/windows/wsl/install-win10
+Follow the instructions there: [Install WSL 2](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
 Personally, I recommend using [Ubuntu for WSL 2](https://docs.microsoft.com/en-us/windows/wsl/install-win10#install-your-linux-distribution-of-choice) as they seem to pay special attention to this specific use case of their distribution.
 
@@ -370,7 +370,7 @@ If you cannot use WSL 2 because you cannot update to the latest Windows version,
 
 ### Docker desktop
 
-Then, install Docker: https://docs.docker.com/docker-for-windows/install/
+Then, install Docker: [Install Docker](https://docs.docker.com/docker-for-windows/install/)
 
 I won’t make better doc than Docker itself, so follow it for troubleshooting!
 
