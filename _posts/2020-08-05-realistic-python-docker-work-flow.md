@@ -318,13 +318,13 @@ Once it is all said and done, I only use `lol_data_parser_dev`, `lol_data_api_de
 
 ## Replicability
 
-There is another elephant in the room I haven’t touched upon. `python:latest` may change with time. `pip install` might not yield the same packages in the future with non-pinned versions. Only having a `Dockerfile` does absolutely nothing to guarantee replicability in python.
+There is another elephant in the room I haven’t touched upon. `python:latest` may change with time. `pip install` might not yield the same packages in the future with non-pinned versions. Simply put, only having a `Dockerfile` does absolutely nothing to guarantee replicability.
 
-Also, only using a `Dockerfile` and relying on the host to build it means every server you deploy would need to install git, get access to your repositories, pull them after every change, and rebuild the image after each change. This is far from convenient.
+Also, only using a `Dockerfile` and relying on the host to build it means every server you deploy to would need to install git, get access to your repositories, pull them after every change, and rebuild the image every time. This is far from convenient.
 
 The reason is that **this is not how Docker is supposed to be used**, even though I have seen it advocated many times. Docker is built to share **images themselves**, not `Dockerfile`s. Sharing the images themselves is the strength of Docker, creating a full snapshot of a particular version of your environment, guaranteeing its exact behavior on any host. 
 
-Personally, I use a [private Docker registry](https://aws.amazon.com/ecr/) to host my images, but the `docker save` function allows you to simply create a `.tar.gz` archive of your image ready to be deployed anywhere. The benefit of using a registry is the ease of update on your deployment servers.
+Personally, I use a [private Docker registry](https://aws.amazon.com/ecr/) to host my images, but the `docker save` function allows you to simply create a `.tar.gz` archive of your image ready to be deployed anywhere. The benefit of using a registry is the ease of sharing it with collaborators.
 
 Once I have built and uploaded the latest version of my parser to my registry, I can run `docker container stop lol_data_parser && docker-compose pull && docker-compose up -d` on my server and it will automatically update to the latest version and restart. This reduces what I have to do on a new server to simply installing Docker, identifying to my registry, and creating a `docker-compose.yml` file to specify run arguments.
 
