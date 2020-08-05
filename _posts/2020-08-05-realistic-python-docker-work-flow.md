@@ -348,11 +348,11 @@ services:
 
 Before moving to the step-by-step, to highlight how nobody agrees on how to use Docker let us look at Docker’s integration in PyCharm and VS Code.
 
-PyCharm can be told to use Docker as a python environment and will create a new container whenever you open a console or run unit tests. You will still mostly be on your local machine, only using Docker to provide you with python environments on demand. You can use a `docker-compose.yml` file to supply your environment with specific bind mounts or environment variables.
+PyCharm can be told to use Docker as a python environment and will create a new container whenever you open a console or run code. You will still mostly be on your local machine, only using Docker to provide you with python environments on demand. You can use a `docker-compose.yml` file to supply your environment with specific bind mounts or environment variables.
 
 VS Code on the other hand makes you work **inside** a specific container, also mounting your work folder in it. It will not spawn any other containers, but you can open multiple python interpreters inside of this specific container. I will be honest, it kind of lost me, but overall its Docker integration looked very neat.
 
-As I am using PyCharm currently I am getting used to its way of using Docker, but I find it interesting that the two biggest python IDE fundamentally disagree on something as basic as how to use a Docker image.
+As I am using PyCharm currently I am getting used to its way of using Docker, but I find it interesting that the two biggest python IDE fundamentally disagree on something as basic as how to use a Docker image. Docker is still very young, and the development processes around it will evolve as it reaches maturity.
 
 # Step-by-step setup
 
