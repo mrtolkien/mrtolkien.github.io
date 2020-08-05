@@ -1,6 +1,5 @@
 ---
-permal
-nk: /about/
+permalink: /about/
 title: "About"
 ---
 
