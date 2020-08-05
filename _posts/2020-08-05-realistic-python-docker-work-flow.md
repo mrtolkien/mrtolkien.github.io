@@ -534,7 +534,7 @@ Docker generously tells us there are orphan containers for this project, referri
 
 I will not go into setting up private registries, but you can use [Docker Hub](https://hub.docker.com/) for free for all your open source projects. For example, I made a simple Docker image for my [inhouse bot](https://hub.docker.com/r/mrtolkien/inhouse_bot), and thanks to docker hub you can simply get it with `docker pull mrtolkien/inhouse_bot`.
 
-It is important to remember that you share **images**, and then you usually need a **local docker-compose file** that supplies the required arguments to run the image properly.
+It is important to remember that you share **images**, which you then use with a **local docker-compose file** that supplies the required arguments to run the image properly.
 
 # Closing words
 
