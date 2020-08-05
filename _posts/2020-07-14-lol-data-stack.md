@@ -2,10 +2,10 @@
 title: "Tolki’s LoL data tech stack - 2020"
 categories: Development
 tags:
-	- Python
-	- Docker
-	- PostgreSQL
-	- SQLAlchemy
+  - Python
+  - Docker
+  - PostgreSQL
+  - SQLAlchemy
 ---
 
 A year and a half ago, [my first blog post](https://medium.com/@gary.mialaret/pioneering-data-driven-esports-analysis-b57d5079abda)

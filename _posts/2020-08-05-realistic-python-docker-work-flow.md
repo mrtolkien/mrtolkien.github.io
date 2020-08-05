@@ -2,6 +2,10 @@
 title: "Realistic Python & Docker work flow"
 categories: Development
 tags:
+  - Post Formats
+  - readability
+  - standard
+tags:
 	- Python
 	- Docker
 	- PyCharm
