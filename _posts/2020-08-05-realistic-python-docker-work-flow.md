@@ -401,7 +401,7 @@ Open this empty `hello_world` folder with PyCharm. Normally, PyCharm will pick u
 
 ![hello_world](https://i.imgur.com/pvPO5Lu.png)
 
-As you can see, currently it uses my Windows, system-wide python environment. We don’t want that.
+As you can see, currently this run configuration uses my Windows, system-wide python environment. We don’t want that.
 
 ### Dockerfile and docker-compose.yml
 
