@@ -7,6 +7,7 @@ tags:
   - PyCharm
 header:
   image: /assets/images/docker-python.png
+toc_sticky: false
 ---
 
 Docker is the new be-all-end-all of environment management for software development. By providing a concise and heavily customizable way to handle dependencies resolution for multiple programming languages as well as providing a "runtime system" for just about everything, it is slowly but surely supplanting other options. WSL 2 for Windows is also a huge boon for Docker, making it much easier to use in my opinion.
