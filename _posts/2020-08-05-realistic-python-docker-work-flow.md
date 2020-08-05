@@ -5,8 +5,9 @@ tags:
   - Python
   - Docker
   - PyCharm
-header:
-  image: /assets/images/docker-python.png
+image:
+  feature: docker-python.png
+  thumb: docker-python-thumb.png
 toc_sticky: false
 ---
 
