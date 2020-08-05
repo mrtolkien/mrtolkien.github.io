@@ -443,7 +443,7 @@ Go to `Settings -> Project -> Python Interpreter -> Add`:
 
 ![interpreter](https://i.imgur.com/3aoEzss.png)
 
-Then here, choose Docker Compose and choose `Configuration File -> docker-compose-dev.yml` as well as `Service -> hello_world_dev`:
+Select Docker Compose and choose `Configuration File -> docker-compose-dev.yml` as well as `Service -> hello_world_dev`:
 
 ![service](https://i.imgur.com/qnv4NUh.png)
 
