@@ -1,14 +1,10 @@
 ---
-title: "Realistic Python & Docker work flow"
+title: "Realistic Python and Docker work flow"
 categories: Development
 tags:
-  - Post Formats
-  - readability
-  - standard
-tags:
-	- Python
-	- Docker
-	- PyCharm
+  - Python
+  - Docker
+  - PyCharm
 ---
 
 If you want to jump to the step-by-step installation on Windows, [click here](#step-by-step-setup-with-pycharm-on-windows).
@@ -354,7 +350,7 @@ VS Code on the other hand makes you work **inside** a specific container, also m
 
 As I am using PyCharm currently I am getting used to its way of using Docker, but I find it interesting that the two biggest python IDE fundamentally disagree on something as basic as how to use a Docker image.
 
-#Step by step setup with PyCharm on Windows
+# Step by step setup with PyCharm on Windows
 
 As I currently am working from Windows in PyCharm I will focus on this specific install process. But I did the same install process on Linux and MacOS and the steps were roughly the same.
 
