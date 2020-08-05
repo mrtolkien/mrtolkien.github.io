@@ -203,7 +203,7 @@ Unfortunately, other available solutions are not better. `pipenv` development pa
 
 I saw two options:
 - Directly write the pip commands inside the Dockerfile
-- Write a `.txt` file with dependencies
+- Write a `.txt` file with dependencies but name it differently for clarity
 
 Writing pip commands inside the Dockerfile actually allows for faster rebuilding of images. As each command generates its own Docker "layer", adding a new package starts where the preceding one left off. Unfortunately, it makes the Dockerfile verbose and package dependencies start getting all over the place when doing multi-stage builds, which we will come to very shortly.
 
