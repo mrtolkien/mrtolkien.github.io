@@ -115,7 +115,7 @@ lol_data						python package
 
 ### lol_data_discord_bot
 
-`lol_data_discord_bot` is the user-facing part of this stack and is a [discord.py](http://discordpy.readthedocs.io/) based bot. It used to be based directly on `lol_data`, but with me moving to an API structure it is now an independent app that gets its data through the `lol_data_api`.
+`lol_data_discord_bot` is the user-facing part of this stack and is a [discord.py](http://discordpy.readthedocs.io/) based bot. It used to be based directly on `lol_data`, but with me moving to an API structure it is now an independent app that gets its data through `lol_data_api`.
 
 ## My old deployment practices
 
@@ -147,7 +147,7 @@ I tried many other solutions before moving to Docker.
 
 I tried running my own private `pypi-server`, first directly on my server then [in a Docker image](https://hub.docker.com/r/pypiserver/pypiserver).
 
-I tried importing everything together in a single folder, but it made development and environment management annoying locally.
+I tried importing everything together in a single folder, but it made development and environment management annoying locally as PyCharm and `pipenv` are not made for this use-case.
 
 After many solutions, all more inconvenient than the last, I decided to go all-in on Docker as it was clearly the right tool for the job.
 
