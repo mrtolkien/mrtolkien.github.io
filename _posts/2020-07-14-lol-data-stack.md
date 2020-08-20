@@ -4,6 +4,7 @@ categories: Development
 tags:
   - Python
   - Docker
+  - PyCharm
   - PostgreSQL
   - SQLAlchemy
 header:

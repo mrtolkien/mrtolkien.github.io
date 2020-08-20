@@ -1,9 +1,8 @@
 ---
-title: "From underdogs to Worlds quarterfinalists — A year at Splyce"
+title: "From underdogs to Worlds quarter finalists — A year at Splyce"
 categories: Personal
 tags:
   - Esports
-  - LoL
 ---
 
 This is the first in a series of articles looking back at my year 2019. As the introduction, this one is pretty personal and focused on what I learned during this year.

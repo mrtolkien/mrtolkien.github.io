@@ -1,5 +1,5 @@
 ---
-title: Optimising LoL builds through Machine Learning
+title: Optimizing LoL builds through Machine Learning
 categories: Development
 tags:
   - Python

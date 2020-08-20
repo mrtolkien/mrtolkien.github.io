@@ -3,10 +3,6 @@ title: "The perfect League of Legends coaching staff"
 categories: Coaching
 tags:
   - Esports
-  - LoL
-  - Management
-header:
-  image: /assets/images/0__iBOWgLMErZsiNKDr.jpg
 ---
 
 How to organize coaching in League of Legends is still a pretty contentious point. Each team has its own way of doing it, and the coaching staffs varies wildly from one team to the other. Working at Splyce with maybe the most renowned coaching staff in the west taught me a lot.

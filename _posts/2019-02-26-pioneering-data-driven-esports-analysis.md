@@ -3,7 +3,6 @@ title: "Pioneering data-driven esports analysis"
 categories: Development
 tags:
   - Python
-  - PostgreSQL
 ---
 
 As the lead member of our data analysis branch, I had to build our system from scratch and choose which technologies to use for every part of the stack. I think exploring the process I followed to create an efficient work environment can be helpful for people interested in data science and wanting to discover it with data they love!
