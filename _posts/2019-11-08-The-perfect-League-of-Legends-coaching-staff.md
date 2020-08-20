@@ -5,7 +5,7 @@ tags:
   - Esports
   - LoL
   - Management
- header:
+header:
   image: /assets/images/0__iBOWgLMErZsiNKDr.jpg
 ---
 
