@@ -16,7 +16,8 @@ During my time at Splyce I have experienced a successful coaching organization t
 Before we dive too deeply into what this means, let us talk a little bit about the Splyce organization and how it informed my vision for an ideal coaching staff
 
 ![Splyce’s competitive staff](/assets/images/1__khjcdNWHFJCLTUZnTgn61w.png)
-Splyce’s competitive staff
+
+*Splyce’s competitive staff*
 
 # Splyce’s organization
 
