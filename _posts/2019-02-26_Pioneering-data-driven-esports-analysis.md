@@ -1,10 +1,10 @@
 ---
 title: Pioneering data-driven esports analysis
 description: One month at Splyce — Technology choices and first challenges
-date: '2019-02-26T08:26:23.188Z'
-categories: []
-keywords: []
-slug: /@gary.mialaret/pioneering-data-driven-esports-analysis-b57d5079abda
+categories: Development
+tags:
+	- Python
+	- SQLAlchemy
 ---
 
 #### As the lead member of our data analysis branch, I had to build our system from scratch and choose which technologies to use for every part of the stack. I think exploring the process I followed to create an efficient work environment can be helpful for people interested in data science and wanting to discover it with data they love!
