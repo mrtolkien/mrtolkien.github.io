@@ -1,21 +1,18 @@
 ---
-title: From underdogs to Worlds quarterfinalists — A year at Splyce
-description: >-
-  This is the first in a series of articles looking back at my year 2019. As the
-  introduction, this one is pretty personal and focused on…
-date: '2019-11-07T18:21:43.009Z'
-categories: []
-keywords: []
-slug: >-
-  /@gary.mialaret/from-underdogs-to-worlds-quarterfinalists-a-year-at-splyce-22763e6506b9
+title: "From underdogs to Worlds quarterfinalists — A year at Splyce"
+categories: Personal
+tags:
+  - Esports
+  - LoL
 ---
 
 This is the first in a series of articles looking back at my year 2019. As the introduction, this one is pretty personal and focused on what I learned during this year.
 
 ![Fear the snek](img\1____OUVx1NlkUW50JIF1SfJmg.png)
-Fear the snek
 
-### Before it all started
+*Fear the snek*
+
+# Before it all started
 
 Talking about my year 2019 needs a bit of context. I will turn 30 in December and in the last ten years I have been a:
 
@@ -43,7 +40,7 @@ This was a full time, remote, LoL-related, technical position. It felt like I ju
 
 A week later, I was hired.
 
-### Setting goals
+# Setting goals
 
 I started the year with a simple goal from Duke: see what could be done with LoL data and go as far as possible in a year. From patch understanding and smurf detection to opponent’s scouting or picks and bans prediction, I had _carte blanche_ to implement any method I saw fit to be useful to the team.
 
@@ -51,7 +48,7 @@ I decided to also use this year to get back to a good technical level, as I had 
 
 As LoL data analysis is still in its infancy, I also knew I had to build everything from scratch. There was a long uncharted road ahead of me.
 
-### Coding is fun
+# Coding is fun
 
 To be honest, I never thought of myself as a developer. Even though I have a Master of Science in Machine Learning, I mostly focused on the research side of it and never had to deliver quality code. Even when I was working as an IT consultant I was always suffering from imposter syndrome and felt deeply incompetent.
 
@@ -69,7 +66,7 @@ This script takes 150ms to run, which I consider decent enough since it’s brut
 
 [As Mark Rosewater says](https://magic.wizards.com/en/articles/archive/making-magic/how-get-your-dream-job-2012-06-04), your dream job lies at the intersection of what you are good at, what you like, and what people are willing to pay you for. Focusing on development this year was an eye-opener, making me realise I both enjoyed it and was decent at it. I would now feel confident going back to technical positions in traditional companies, which was far from a given a year ago.
 
-### I love esports
+# I love esports
 
 But going to Google or Microsoft would likely involve abandoning esports, and I can’t bring myself to it. I have been gravitating around the field for more than 10 years and this year cemented my love for it.
 
@@ -83,7 +80,7 @@ Over the course of the year, we took games off Fnatic, G2, FunPlus Phœnix, and 
 
 Despite this, I am not sure if being a data analyst is the position that fits me best in an esports team. Being data-driven shouldn’t be exclusive to data analysts, and looking back on my experience as a coach I feel like it was the kind of position that suit me best. I think my strength lies in being able to understand and get along well with players while staying professional. I will explain in my next article how I see the “optimal” organisation of a coaching staff, which will better explain how I see the role of head coach.
 
-### Understanding LoL data
+# Understanding LoL data
 
 LoL is inherently a game about numbers, and therefore data. I want to talk about creating meaningful metrics for LoL as traditional ones like win-rate or average creep score difference at 15 don’t tell us much, but after starting writing it I was already past 5 pages. It will therefore be the subject of a standalone article in the near future, look out for it!
 
@@ -91,7 +88,7 @@ Anyways, my LoL experience helped me a lot in making sense of the data and it he
 
 I also think studying esports data is a good gateway to data analysis for students. In general, I feel like esports are a great educational starting point for the new generation, as it gives them a field they enjoy and relate to while having a lot of very interesting technical challenges.
 
-### Tokyo life
+# Tokyo life
 
 As I live in Japan, I worked all year remotely from Tokyo, only coming to Berlin for summer split preparation and worlds.
 
@@ -107,15 +104,15 @@ If I had to do it again, I am not sure I could find a solution. Living in Japan 
 
 But as I still wish to stay in Japan, I will also look at other options. For example, I could go deeper on the technical side of LoL data, helping other teams setup their own tools, or develop new ones either by myself or with an existing company.
 
-### TL;DR of my year 2019
+# TL;DR of my year 2019
 
 *   Bounced back from a rough 2018
 *   Gained confidence back in my technical skills
 *   Deepened my conviction that I want to keep working in esports
 *   Went deeper into data analysis, a field I always skirted around in the past
-*   Realised how taxing it was to be working 100% remotely
+*   Realized how taxing it was to be working 100% remotely
 
-### Looking to the future
+# Looking to the future
 
 With our worlds run being over, I am now looking towards 2020. As I see things, here are my options, in order of preference:
 

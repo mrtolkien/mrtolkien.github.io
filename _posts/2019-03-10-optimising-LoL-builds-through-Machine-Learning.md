@@ -1,19 +1,16 @@
 ---
 title: Optimising LoL builds through Machine Learning
-description: >-
-  Finding the right items and runes builds in LoL yields high returns at a
-  minimal cost to players. It is an important part of the analyst’s…
-date: '2019-03-10T13:24:20.929Z'
-categories: []
-keywords: []
-slug: /@gary.mialaret/optimising-lol-builds-through-machine-learning-ae1aa8d0ad8a
+categories: Development
+tags:
+  - Python
+  - Machine Learning
 ---
 
 Finding the right items and runes builds in LoL yields high returns at a minimal cost to players. It is an important part of the analyst’s job as finding those builds is mostly about optimisation and research.
 
 So far, finding the right item builds has mostly been a trial and error process, focused on analytics and experience more than prediction and machine learning. Sometimes, egregiously powerful items have flown under the radar for many months (2016 Ardent Censor) or never got their time to shine despite being incredibly powerful  (Essence Reaver until patch 9.2).
 
-#### Marksmen builds — Damage maximisation
+# Marksmen builds — Damage maximisation
 
 Marksmen are a very particular class of champions in League of Legends. As primary damage dealers, their whole itemization revolves around damage output maximisation.
 
@@ -21,7 +18,7 @@ At the same time, maximizing damage doesn’t mean not buying defensive stats, a
 
 Thankfully, I have at my disposition 300 000 games where I know the final damage output of marksmen as well as their items, the champion the played, their teammates, and so on. Since we have the result on hand, why not use machine learning to try and predict damage output from as few inputs as possible?
 
-#### Predicting DPS from items
+# Predicting DPS from items
 
 My first idea was using a linear regression so I could easily access the model’s coefficients. I had the intuition that damage was highly correlated to items, and that after normalizing damage output on a few factors it would be possible to predict it decently enough only from items. I therefore started to craft a “damage metric” that was as correlated as possible to the items. I also restricted my analysis to games between 20 and 40 minutes, because games outside of this range have a high chance of being outliers.
 
@@ -61,18 +58,20 @@ Even with a neural network, my results were very similar, with only a 10% precis
 I therefore added the champion used as another layer of normalisation on the DPS score I crafted.
 
 ![Same graph as before, but with dps\_score including normalisation on the champion used](/assets/images/1__YiMKy5zmDs5thiM__zIg__Yg.png)
-Same graph as before, but with dps\_score including normalisation on the champion used
+
+*Same graph as before, but with dps\_score including normalisation on the champion used*
 
 That’s even worse. The difficulty at that point was clearly that taking all champions into account at once was very tough, as champions will use items with varying efficiency. Where Infinity Edge increases DPS the most on Sivir, maybe Guinsoo was best at increasing DPS on Kai’Sa. I therefore decided to reduce the scope and run the algorithm on a single champion to see if I would get a higher accuracy.
 
 ![dps score against predictions for a single champion (Sivir)](/assets/images/1__q__A3vXP1KbA9foUOicVtRA.png)
-dps score against predictions for a single champion (Sivir)
+
+*dps score against predictions for a single champion (Sivir)*
 
 Well, that looks a bit better! while our predictions are still too tame, we see that predictions are getting closer to the x=y diagonal.
 
 At this point, I had already spent quite a bit of time on what was supposed to be a small proof of concept, and I cut my research short. I produced coefficients tables for all marksmen used by my team, and wrote a short report analyzing those results. Once again, what matters to my position is to deliver actionable feedback to the team, so that’s where I put my focus!
 
-#### Analyzing items prices
+# Analyzing items prices
 
 But this previous method only works for a very specific use case. Marksman is the only position that is only about damage maximisation, and other positions have way more variables to take into account when deciding on a build order.
 
@@ -87,13 +86,14 @@ To do that, I tried to group similar effects as much as I could. For example, I 
 Finally, I used a one-hot encoding for items which had tough to model effects. This meant the factor in front of those values would represent the price of the effects. You can see this as a constant linked to the item, which means all those items would end up perfectly “predicted” by the linear regression.
 
 ![Items gold price vs predicted gold price from a linear regression](/assets/images/1__PX14VRdwRcmVt1pIzOHB9w.png)
-Items gold price vs predicted gold price from a linear regression
+
+*Items gold price vs predicted gold price from a linear regression*
 
 After running the linear regression, once again using sklearn, I ended up with “actual” gold efficiency for all items in the game, as well as costs for all passives. In the event of nerfs or buffs, I will be able to go back to those to quickly identify how much better the item got!
 
 My next step will be looking at specific use cases for items, for example 3s of auto attacking and one use of all spells, to see how each stat influenced the final result. This will allow me to compute breakpoints for stats, where it becomes more valuable to buy another similar stat because of the added gold efficiency, like armor against HP or attack speed against AD.
 
-#### Conclusion
+# Conclusion
 
 Despite not reaching an indisputable conclusion as to what the best items in LoL are, I still managed to identify strong groups of items. Starting from simple assumptions, and using basic machine learning methods, I was able to provide Splyce’s players with never seen before insights on item builds!
 

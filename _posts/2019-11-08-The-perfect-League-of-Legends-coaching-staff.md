@@ -1,50 +1,50 @@
 ---
-title: The perfect League of Legends coaching staff
-description: >-
-  How to organise coaching in League of Legends is still a pretty contentious
-  point. Each team has its own way of doing it, and the coaching…
-date: '2019-11-08T17:03:05.014Z'
-categories: []
-keywords: []
-slug: /@gary.mialaret/the-perfect-league-of-legends-coaching-staff-faf075582035
+title: "The perfect League of Legends coaching staff"
+categories: Coaching
+tags:
+  - Esports
+  - LoL
+  - Management
+ header:
+  image: /assets/images/0__iBOWgLMErZsiNKDr.jpg
 ---
 
-How to organise coaching in League of Legends is still a pretty contentious point. Each team has its own way of doing it, and the coaching staffs varies wildly from one team to the other. Working at Splyce with maybe the most renowned coaching staff in the west taught me a lot.
+How to organize coaching in League of Legends is still a pretty contentious point. Each team has its own way of doing it, and the coaching staffs varies wildly from one team to the other. Working at Splyce with maybe the most renowned coaching staff in the west taught me a lot.
 
 But what is the perfect LoL coaching staff? How many people do you need, and what should they be doing?
 
 In this article, I will focus only on gameplay-related positions. A team also needs dedicated out-of-game positions, overseeing physical and mental wellbeing, but those are outside my area of expertise.
 
-During my time at Splyce I have experienced a successful coaching organisation that grew an [LEC underdog team into a Worlds quarterfinalist in one year](https://medium.com/@gary.mialaret/from-underdogs-to-worlds-quarterfinalists-a-year-at-splyce-22763e6506b9). I have also spent a lot of time thinking about where that organisation could be improved, and I have developed a vision for some fundamental tenets of an ideal coaching staff.
+During my time at Splyce I have experienced a successful coaching organization that grew an [LEC underdog team into a Worlds quarter finalist in one year](https://medium.com/@gary.mialaret/from-underdogs-to-worlds-quarterfinalists-a-year-at-splyce-22763e6506b9). I have also spent a lot of time thinking about where that organization could be improved, and I have developed a vision for some fundamental tenets of an ideal coaching staff.
 
-Before we dive too deeply into what this means, let us talk a little bit about the Splyce organisation and how it informed my vision for an ideal coaching staff
+Before we dive too deeply into what this means, let us talk a little bit about the Splyce organization and how it informed my vision for an ideal coaching staff
 
 ![Splyce’s competitive staff](/assets/images/1__khjcdNWHFJCLTUZnTgn61w.png)
 Splyce’s competitive staff
 
-### Splyce’s organisation
+# Splyce’s organization
 
 At Splyce, we had the chance of being a team that emphasised coaching a lot. Over the course of the year we built a strong coaching staff that peaked during our world run. From head coach to strategic coach to analyst to data analyst to lane-specific coaches, we had it all.
 
 Among those, we had three main **in-house** positions.
 
-D**uke** was the head coach in LEC terms, but his official title was strategic coach. He oversaw training, overall strategy, and on-stage picks and bans. He usually would be the first one to give feedback after a scrim, and focused a lot on map movement and decision-making. As he was doing picks and bans, he needed to have a great understanding of the current meta, existing counterpicks, and team compositions. This means he needed to digest information from multiple sources, from players to analysts through other coaches.
+Duke was the head coach in LEC terms, but his official title was strategic coach. He oversaw training, overall strategy, and on-stage picks and bans. He usually would be the first one to give feedback after a scrim, and focused a lot on map movement and decision-making. As he was doing picks and bans, he needed to have a great understanding of the current meta, existing counter picks, and team compositions. This means he needed to digest information from multiple sources, from players to analysts through other coaches.
 
-P**eter** was Splyce’s head coach, overseeing both Splyce and Splyce Vipers/Mad Lions. He handled a lot of the opponent’s scouting and was very close to the players. In case of motivation dips, he would be the first interlocutor. He also watched an insane amount of League of Legends, from all the leagues in the world, including a lot of proview. He might very well be the person who watched the most LoL content in 2019!
+Peter was Splyce’s head coach, overseeing both Splyce and Splyce Vipers/Mad Lions. He handled a lot of the opponent’s scouting and was very close to the players. In case of motivation dips, he would be the first interlocutor. He also watched an insane amount of League of Legends, from all the leagues in the world, including a lot of pro view. He might very well be the person who watched the most LoL content in 2019!
 
 M**ac** was Duke’s shadow, in a good sense. He doubled up on Duke’s role, offering balance to it and presenting a counterpoint when needed. He was instrumental in draft preparation, scrims feedback, and team strategy. He would often give feedback in scrims after Duke, going deeper on specific points or raising ones that went unnoticed. He also balanced negative feedback with positive reinforcement when needed.
 
-To those were added three “**remote**” positions, of which I was part of. When I say remote, I mean that most of the work was done outside of the usual team organisation, even though all three of us where there IRL at some point.
+To those were added three “**remote**” positions, of which I was part of. When I say remote, I mean that most of the work was done outside of the usual team organization, even though all three of us where there IRL at some point.
 
-J**ensen** handled a lot of gameplay-related presentations. He would often do a presentation at the beginning of the week, helping the team find a specific point to improve on. He also handled a lot of the scouting work, presenting the team with scouting reports during the week, with the info then being reinforced by Mac on game day.
+Jensen handled a lot of gameplay-related presentations. He would often do a presentation at the beginning of the week, helping the team find a specific point to improve on. He also handled a lot of the scouting work, presenting the team with scouting reports during the week, with the info then being reinforced by Mac on game day.
 
-M**alaclypse** was a top-lane positional coach, heavily focusing on Csacsi during scrims and giving him instant feedback by message after each game. He also worked closely with Orome, our academy top laner, and helped improve our understanding of top lane matchups. Thanks to him, we understood better how to play the matchups and influence them with mid and jungle pressure.
+Malaclypse was a top-lane positional coach, heavily focusing on Csacsi during scrims and giving him instant feedback by message after each game. He also worked closely with Orome, our academy top laner, and helped improve our understanding of top lane matchups. Thanks to him, we understood better how to play the matchups and influence them with mid and jungle pressure.
 
 Finally, as a data analyst I directly supported all those positions, trying to supply everybody with information relevant to their position. I was working most closely with Duke, but would regularly interact directly with players to talk about possible picks or new builds. Whenever I would see someone ask a question on the team chat, I would try and see if it was answerable with available data by crafting relevant metrics.
 
 So we were six, with some responsibilities crossing from one to another, but all bringing different information and skills to the team.
 
-### Answering the team’s needs
+# Answering the team’s needs
 
 In my eyes, a team needs:
 
@@ -56,16 +56,19 @@ In my eyes, a team needs:
 
 At Splyce, we checked all those boxes one way or another. Some points were a joint effort from all the coaching staff, while others were more specific to one or two people.
 
-### Optimizing staff
+# Optimizing staff
 
 In my eyes, the perfect coaching staff should work closely together to only present already-digested information to the players. Players’ time and focus are a premium, and any useless meeting or faulty information can lead to days of lost training. It should also focus on being strongly structured so every member can focus on their strengths while still benefiting from the expertise of others.
 
 I will not shock anybody when I say a setup of head coach, strategic coach, and analyst is likely the best for League of Legends. Despite this, I think it is important to understand what each person is supposed to bring to the team.
 
-![Players’ time is the most valuable commodity, and the head coach role is to ensure only necessary information gets to them. On the other side, the strategic coach and analyst work together and provide the head coach with support to take the right decisions.](/assets/images/0__iBOWgLMErZsiNKDr.jpg)
+![](/assets/images/0__iBOWgLMErZsiNKDr.jpg)
+
 Players’ time is the most valuable commodity, and the head coach role is to ensure only necessary information gets to them. On the other side, the strategic coach and analyst work together and provide the head coach with support to take the right decisions.
 
-### Head coach
+Players’ time is the most valuable commodity, and the head coach role is to ensure only necessary information gets to them. On the other side, the strategic coach and analyst work together and provide the head coach with support to take the right decisions.
+
+# Head coach
 
 There needs to be a **leading figure** who will be the main interface between players and coaching staff.
 
@@ -84,7 +87,7 @@ As you might see, this is a tough position, requiring charisma, human skills, ga
 
 Overall this is mostly a management position, overseeing both players and staff, and I think someone with a background in project management or similar would be the best suited for it.
 
-### Strategic coach
+# Strategic coach
 
 Most teams already have strategic/assistant coaches, but they usually act more as a secondary coach, reinforcing the work of the head coach and supporting them.
 
@@ -104,7 +107,7 @@ Since the strategic coach needs to win people to their way of thinking, I think 
 
 And to properly validate their opinions and convince the head coach as well as the player, they need information.
 
-### Analyst
+# Analyst
 
 In my eyes, the analyst is the ultimate “shadow” position. The analyst should be backing everyone off on the team, and be a very selfless position.
 
@@ -112,7 +115,7 @@ For me, the analyst’s role is to:
 
 *   Validate the strategic coach’s opinion about the game
 *   Make sure the team’s game understanding doesn’t become inbred and bring objectivity to the process
-*   Analyse the opponents (with data and VODs)
+*   Analyze the opponents (with data and VODs)
 *   Do the research pertaining to any question players or coaches have about the game
 
 As I see it, the main interlocutor to the analyst should be the strategic coach. The strategic coach should actively seek validation from the analyst before bringing information to the rest of the team. Conversely, the analyst should go to the strategic coach with new information regularly, making sure they are aware of the latest trends before anybody.
@@ -123,7 +126,7 @@ In my opinion, analysts need to be data-driven at heart but they don’t necessa
 
 With my vision of the position, I think a technical background is key for this position. Being able to not fall for statistical fallacies or understand what a meaningful sample size is is crucial. More than a degree, strong critical thinking skills matter.
 
-### The trifecta
+# The trifecta
 
 It is not by chance that I think a coaching staff needs to be composed of one **management** position, one **endemic** position, and one **technical** position. I think those are the backgrounds and experiences that will best create the environment players need to succeed.
 
@@ -133,7 +136,7 @@ You can of course expand the coaching staff with remote and part-time positions 
 
 But the reception will vary a lot from player to player and from positional coach to positional coach, so I do not see it as mandatory. Players might also find this information through their usual contacts or other pros and find a positional coach to be extraneous.
 
-### Picks and bans
+# Picks and bans
 
 You might have noticed that I didn’t touch upon on-stage picks and bans responsibility in my explanation of roles. It is because I think this depends a lot on the exact people you get in the three coaching positions.
 
@@ -145,7 +148,7 @@ To say it another way, I think drafting is not about discussion, but about the a
 
 Riot might allow multiple coaches on stage very soon, but I also think it is needed to have a single voice with the players during the drafting phase to avoid chaos. Therefore I think it should always be one coach with the analyst, and the analyst should interact scarcely, if any.
 
-### The right stuff
+# The right stuff
 
 Finally, I think everybody on the coaching staff needs to be a paragon of professionalism. Players in esports are young, with no professional experience, and need examples set by the coaches.
 
@@ -153,11 +156,11 @@ This means that anything that wouldn’t fly in a standard company shouldn’t f
 
 As esports will mature, teams will be asking for more. Some teams might currently not see the benefits of “traditional” work requirements, but they exist for a reason. Esports is about excellence and competition, and teams should be asking for more than traditional companies, not less.
 
-### Closing thoughts
+# Closing thoughts
 
 A million things in LoL coaching are deserving of standalone articles. Draft preparation, scrims, scrim and VOD reviews, … Every single part of the coaching job is deep and worthy of attention.
 
-But this blog post is aimed only at covering the human organisation of the coaching staff, so we are reaching its end!
+But this blog post is aimed only at covering the human organization of the coaching staff, so we are reaching its end!
 
 I am more than willing to talk about it on Twitter, especially if you disagree, and to change my point of view. Iteration is always the solution!
 
