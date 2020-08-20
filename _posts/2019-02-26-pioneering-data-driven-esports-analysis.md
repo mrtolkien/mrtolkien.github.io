@@ -48,7 +48,8 @@ I therefore took a look at existing libraries from the community. I chose **Pyth
 This is when I discovered [Cassiopeia](https://github.com/meraki-analytics/cassiopeia), a community-built library including an [SQL storage solution](https://github.com/meraki-analytics/cassiopeia-datastores/tree/master/cassiopeia-sqlstore/cassiopeia_sqlstore). This looked like a godsend, and I spent some time getting it to work before realizing the SQL storage wasn’t updated for the latest version of the API.
 
 ![My first database structure, mirroring Riot’s data](/assets/images/1__5ow4gnMYaN9ZiHdD5eJcYQ.png)
-My first database structure, mirroring Riot’s data
+
+*My first database structure, mirroring Riot’s data*
 
 Thankfully, the person behind the SQL storage solution helped me a lot and told me what I needed to change for it to work. I got to it, and proudly added the Splyce logo to the [list of contributors](https://github.com/meraki-analytics/cassiopeia-datastores/blob/master/cassiopeia-sqlstore/cassiopeia_sqlstore/SQLStore.py). Not gonna lie, it felt pretty good issuing a pull request after 4 years not doing any serious dev and on my first week using the language! But I feel sorry for the people who gave me a hand, because god was I bad…
 
