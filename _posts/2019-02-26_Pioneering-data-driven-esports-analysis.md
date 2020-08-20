@@ -1,6 +1,6 @@
 ---
-title: Pioneering data-driven esports analysis
-description: One month at Splyce — Technology choices and first challenges
+title: "Pioneering data-driven esports analysis"
+description: "One month at Splyce — Technology choices and first challenges"
 categories: Development
 tags:
 	- Python
