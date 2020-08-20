@@ -1,15 +1,14 @@
 ---
 title: "Pioneering data-driven esports analysis"
-description: "One month at Splyce — Technology choices and first challenges"
 categories: Development
 tags:
 	- Python
 	- SQLAlchemy
 ---
 
-#### As the lead member of our data analysis branch, I had to build our system from scratch and choose which technologies to use for every part of the stack. I think exploring the process I followed to create an efficient work environment can be helpful for people interested in data science and wanting to discover it with data they love!
+As the lead member of our data analysis branch, I had to build our system from scratch and choose which technologies to use for every part of the stack. I think exploring the process I followed to create an efficient work environment can be helpful for people interested in data science and wanting to discover it with data they love!
 
-### Available data
+# Available data
 
 The first step when setting up your environment is to look at the kind of data you can gather. For League of Legends in particular, I am very lucky that there is a great [API](https://developer.riotgames.com/) developed by Riot Games. The [Riot API Discord](https://discordapp.com/invite/riotapi) was also a huge boon in setting up everything and finding help when I was struggling.
 
@@ -30,7 +29,7 @@ As you can see, there is a wealth of information at our disposal for ranked LoL 
 
 While it is not as public facing as the ranked API, Riot also maintains an esports API with similar objects for esports games. I will come back to it later, as I first focused on setting up the structure by using the well-documented ranked API.
 
-### Constraints and data usage
+# Constraints and data usage
 
 The data we get from Riot takes the form of multiple JSONs, with fields regularly changing to adapt to the game’s changes. The first step was storing this information myself to be able to query it more efficiently.
 
@@ -40,7 +39,7 @@ So first, I did what any lazy person would do, and I explored **NoSQL** solution
 
 Despite my **very** limited SQL experience I realized it was the right tool for the job here, and I started by doing [SQL Zoo’s](https://sqlzoo.net/wiki/SQL_Tutorial) tutorials to understand it better.
 
-### First solution
+# First solution
 
 Exploring the API and trying out NoSQL solutions already took me a few days, and I wanted to advance fast to serve results to the team as early as possible.
 
@@ -55,7 +54,7 @@ Thankfully, the person behind the SQL storage solution helped me a lot and told 
 
 On the hardware side of things, I decided to give [Amazon Web Services](https://aws.amazon.com/) a shot because I wanted to use it once and see what all the fuss was about. Thanks to their generous [free tier](https://aws.amazon.com/free/), I could setup a Linux instance and a MySQL server for free. I might give a shot at Google’s Cloud solution in the future, as I am currently using TensorFlow for picks and bans analysis and could use their optimized hardware for it.
 
-### Starting to use the data
+# Starting to use the data
 
 At this point, I was well set up. I had my t2.micro instance running a parser calling match.load() and match.timeline.load() on every game I wanted to store. There were of course many issues with setting up the automation and making sure everything ran properly when adding thousands of matches an hour, but it was a good start.
 
@@ -71,7 +70,7 @@ But I pushed onward, because I wanted to show my worth to the team and quickly d
 
 In particular, I spent some time time analyzing the marksmen items changes that came in [patch 9.3](https://na.leagueoflegends.com/en/news/game-updates/patch/patch-93-notes#patch-marksman-items), using a simple machine learning algorithm to find optimized marksmen builds. I won’t delve into much details here as it will be the focus of my second blog post, but let’s just say I was responsible for [this Kobbe build](https://www.youtube.com/watch?v=WHwHD8VbCeA).
 
-### Data reliability and Esports
+# Data reliability and Esports
 
 Very fast, I realized the API data wasn’t entirely reliable. The API flags players with a role, and it is wrong more than 30% of the time. Furthermore, the API uses this data to define CS and XP differentials, so those numbers were unreliable too. I quickly decided to not make use of this data in any of my reports, but kept thinking about ways to fix this crucial information. Spoiler alert, this will be blog post #4.
 
@@ -81,12 +80,13 @@ Unfortunately, the esports API is not gifted with the same kind of support than 
 
 Once again, providing quick results was key in cementing myself as a useful member of the team, but I already knew I would have to make a second pass on the data structure.
 
-### Current solution
+# Current solution
 
 After finishing development of scripts to serve data to the team, I decided to re-start the whole development from scratch!
 
 ![Current database structure](/assets/images/1__bWYt9yiPsLrhAB44yj8hKw.png)
-Current database structure
+
+*Current database structure*
 
 I really want to stress how important it was for me to **start by prototyping** and get a feel for my work flow to better understand the tools at my disposal. A month ago, **I had no clue about anything Python or SQL related**, but directly using those tools and forcing myself to provide results helped me improve fast.
 
@@ -96,7 +96,7 @@ I used [SQL Alchemy](https://www.sqlalchemy.org/) to represent all the tables an
 
 Having full control over the process, I found a lot of optimizations for my parser and brought the speed from 30 games parsed a minute up to 180.
 
-### Conclusion
+# Conclusion
 
 Here are the tools I use currently:
 
