@@ -98,7 +98,7 @@ This reference implementation offers a `TypedDict` class representing a `LolDto`
 Regarding the new fields:
 
 - `game[sources]`, `team[uniqueIdentifiers]`, and `player[uniqueIdentifiers]` contain unique identifiers for the data sources
-	- Keys represent the data source, for example `game[sources][riot]` for the official LoL API
+	- Keys represent the data source, for example `game[sources][riotLolApi]` for the official LoL API
 	- The keys in this dictionary depend in the data source. The Riot API needs a `gameId` as well as a `platformId` to identify a game for example.
 - `game[kills]` is placed at the root of the `game` because it refers to multiple `players`
 - `player[id]` is Riot’s API `participantId` and had to be kept to stay compatible with `MatchTimelineDto` objects which do not contain any other way to reference players
