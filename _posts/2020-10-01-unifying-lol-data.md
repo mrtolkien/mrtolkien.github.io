@@ -162,15 +162,13 @@ Afterwards, the `get_game_details(game: LolGame) -> LolGame` function can be use
 
 The modularity of the `LolGame` format is out in full force here. The same object can be injected with more and more data when new pieces of information are retrieved, making sure all data about the game is always contained in a single JSON-serializable object.
 
-And when you retrieve the associated `MatchDto` and `MatchTimelineDto` objects, you can continue merging them into the existing `LolGame` to arrive at a unique representation of all the information you acquired about the game, which can then easily be dumped to your favorite storage service.
+And when you retrieve the associated `MatchDto` and `MatchTimelineDto` objects, you can continue merging them into the existing `LolGame` to arrive at a unique representation of all the information you acquired about the game which can then easily be dumped to your favorite storage service.
 
 # Moving forward
 
 I have been using `lol-dto`, `riot-transmute`, and `leaguepedia-parser` for 4 months and the parser I wrote for Leaguepedia also relies heavily on those packages. Every new match history information you see on Leaguepedia uses the `LolGame` format in the background to populate Leaguepedia Cargo tables.
 
-This means that those three packages have been heavily tested in real-world conditions and can be safely used in your projects moving forward. And this also means I am currently looking for help to spread the good word and improve the tools around `LolGame`!
-
-While those three packages are far from perfect they are at a good point to start building upon.
+This means that those three packages have been heavily tested in real-world conditions and can be safely used in your projects moving forward. While those three packages are far from perfect they are at a good point to start building upon. And this also means I am currently looking for help to spread the good word and improve the tools around `LolGame`!
 
 The next steps are to:
 
