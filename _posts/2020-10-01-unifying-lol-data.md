@@ -37,7 +37,9 @@ The truth is, I have been thinking about restructuring League of Legends game da
 
 But the current story starts 4 months ago, when I finally made steps towards creating a unique format that could be shared by multiple data sources.
 
-What I wanted most was to not create [another useless standard](https://xkcd.com/927/).
+What I wanted most was to not create another useless standard.
+
+![relevant xkcd](https://imgs.xkcd.com/comics/standards.png)
 
 I therefore started by contacting diverse groups of people working with LoL data to make sure I included as many points of view as possible. This included:
 
