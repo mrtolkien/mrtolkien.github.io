@@ -180,6 +180,6 @@ The next steps are to:
 
 - Write a `Go` implementation of `riot-transmute` running a local API in Docker to allow for much faster parsing and easier compatibility with any programming language
 
-My goal with this standard is to empower developers, simplify compatibility between community tools, and help new developers. I think switching over to this new data format is a net positive for everybody.
+My goal with this standard is to empower experienced developers, simplify compatibility between community tools, and help new developers. I think switching over to this new data format is a net positive for everybody.
 
 And with community support, we can make this switch happen!
