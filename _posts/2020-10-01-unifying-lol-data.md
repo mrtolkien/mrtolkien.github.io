@@ -183,3 +183,4 @@ The next steps are to:
 My goal with this standard is to empower experienced developers, simplify compatibility between community tools, and help new developers. I think switching over to this new data format is a net positive for everybody.
 
 And with community support, we can make this switch happen!
+
