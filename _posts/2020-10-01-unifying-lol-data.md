@@ -159,9 +159,7 @@ Afterwards, the `get_game_details(game: LolGame) -> LolGame` function can be use
 
 The modularity of the `LolGame` format is out in full force here. The same object can be injected with more and more data when new pieces of information are retrieved, making sure all data about the game is always contained in a single JSON-serializable object.
 
-And when you retrieve the associated `MatchDto` and `MatchTimelineDto` objects, you can continue merging them into the existing `LolGame` to arrive at a unique representation of all the information you acquired about the game, which can then easily be dumped to your favorite storage service:
-
-![S3 bucket](/assets/images/esports_data.png)
+And when you retrieve the associated `MatchDto` and `MatchTimelineDto` objects, you can continue merging them into the existing `LolGame` to arrive at a unique representation of all the information you acquired about the game, which can then easily be dumped to your favorite storage service.
 
 # Moving forward
 
