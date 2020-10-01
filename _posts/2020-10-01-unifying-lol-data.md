@@ -88,7 +88,7 @@ game: dict
 │       ├── wardsEvents: list
 │       └── skillsLevelUpEvents: list
 ├── kills: list
-└── picks_bans: list
+└── picksBans: list
 ```
 
 The rest of the data fields are defined in [the python `LolDto` reference implementation](https://github.com/mrtolkien/lol_dto/tree/master/lol_dto/classes/game) as well as [the README of the project](https://github.com/mrtolkien/lol_dto/blob/master/README.md).
