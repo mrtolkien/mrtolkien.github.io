@@ -121,6 +121,7 @@ import lol_dto
 
 # match is a MatchDto acquired from /lol/match/v4/{matchId}
 game_from_match = riot_transmute.match_to_game(match)
+
 # match_timeline is a MatchTimelineDto acquired from /lol/match/v4/timelines/by-match/{matchId}
 game_from_timeline = riot_transmute.match_timeline_to_game(match_timeline, game_id, platform_id)
 
@@ -133,7 +134,7 @@ It also supports the extra fields added inside the `MatchDto` by `roleml` for ac
 
 # Leaguepedia Parser
 
-The most popular source for League of Legends esports data is [Leaguepedia](https://lol.gamepedia.com/League_of_Legends_Esports_Wiki). It is the most accurate source for full picks and bans order as they are not included in Riot’s data.
+The most popular source for League of Legends esports data is [Leaguepedia](https://lol.gamepedia.com/League_of_Legends_Esports_Wiki). It is the only accurate source for full picks and bans order as they are not included in Riot’s data.
 
 Leaguepedia’s data is stored in [Cargo tables](https://lol.gamepedia.com/Special:CargoTables) which can be queried with an SQL-like language.
 
