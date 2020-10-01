@@ -55,7 +55,7 @@ I therefore started by contacting diverse groups of people working with LoL data
 
 The people at Meraki in particular helped me craft an object that was as generic as possible and could easily be used by multiple programming languages and storage solutions while staying humanly readable.
 
-# The LolGame DTO
+# LolGame DTO
 
 Early in the process, we decided the Data Transfer Object (DTO) to be:
 
