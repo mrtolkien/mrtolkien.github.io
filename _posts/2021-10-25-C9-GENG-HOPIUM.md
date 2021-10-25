@@ -1,3 +1,13 @@
+---
+title: "C9 vs Gen.G - Pre quarterfinals notes"
+categories: Analysis
+tags:
+  - LoL
+  - Data
+header:
+  image: /assets/images/worlds_2021_bracket.png
+---
+
 # C9
 
 ## Team Stats
