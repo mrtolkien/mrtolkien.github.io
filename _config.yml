@@ -33,7 +33,7 @@ social:
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
-# Outputting  
+# Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
@@ -64,10 +64,13 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "Gary «Tolki» Mialaret"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "From esports caster to full-stack developer"
+  name: "Gary «Tolki» Mialaret"
+  avatar: "/assets/images/bio-photo.jpg"
+  bio: "From esports caster to full-stack developer"
   links:
+    - label: "Twitch"
+      icon: "fab fa-fw fa-twitch"
+      url: "https://www.twitch.tv/tolkicasts"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/TolkiCasts"
