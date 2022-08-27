@@ -1,0 +1,1929 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Clustering Legends of Runeterra archetypes &#8212; My Jupyter Book</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint single-page" id="site-navigation">
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/clustering.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/clustering.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Clustering Legends of Runeterra archetypes
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#goal">
+     Goal
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#approaches">
+     Approaches
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#intuition">
+       Intuition
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#existing-clustering-algorithms">
+       Existing clustering algorithms
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#preparing-data">
+     Preparing data
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#games-selection">
+       Games selection
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#sql-query">
+       SQL query
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#deck-codes-to-deck-lists">
+       Deck codes to deck lists
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#implementing-incremental-constrained-cluster-growth">
+     Implementing incremental constrained cluster growth
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#basic-idea">
+       Basic idea
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#things-that-didn-t-work-out">
+         Things that didn’t work out
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#deck-factions">
+       Deck factions
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#distance-and-clusters">
+       Distance and clusters
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#distance-between-two-decks">
+         Distance between two decks
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#distance-from-a-deck-to-a-cluster">
+         Distance from a deck to a cluster
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#implementation">
+         Implementation
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#centered-clusters">
+       Centered clusters
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#getting-all-clusters">
+       Getting all clusters
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#clustering-a-list-of-decks">
+       Clustering a list of decks
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#clustering-based-on-common-cards">
+     Clustering based on common cards
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#putting-it-all-together">
+       Putting it all together
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#parameter-selection">
+         Parameter selection
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#analysing-the-results">
+         Analysing the results
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#clustering-based-on-cards-differences">
+     Clustering based on cards differences
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#checking-results">
+       Checking results
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   Conclusion
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Clustering Legends of Runeterra archetypes</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Clustering Legends of Runeterra archetypes
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#goal">
+     Goal
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#approaches">
+     Approaches
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#intuition">
+       Intuition
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#existing-clustering-algorithms">
+       Existing clustering algorithms
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#preparing-data">
+     Preparing data
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#games-selection">
+       Games selection
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#sql-query">
+       SQL query
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#deck-codes-to-deck-lists">
+       Deck codes to deck lists
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#implementing-incremental-constrained-cluster-growth">
+     Implementing incremental constrained cluster growth
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#basic-idea">
+       Basic idea
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#things-that-didn-t-work-out">
+         Things that didn’t work out
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#deck-factions">
+       Deck factions
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#distance-and-clusters">
+       Distance and clusters
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#distance-between-two-decks">
+         Distance between two decks
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#distance-from-a-deck-to-a-cluster">
+         Distance from a deck to a cluster
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#implementation">
+         Implementation
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#centered-clusters">
+       Centered clusters
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#getting-all-clusters">
+       Getting all clusters
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#clustering-a-list-of-decks">
+       Clustering a list of decks
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#clustering-based-on-common-cards">
+     Clustering based on common cards
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#putting-it-all-together">
+       Putting it all together
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#parameter-selection">
+         Parameter selection
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#analysing-the-results">
+         Analysing the results
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#clustering-based-on-cards-differences">
+     Clustering based on cards differences
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#checking-results">
+       Checking results
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   Conclusion
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="clustering-legends-of-runeterra-archetypes">
+<h1>Clustering Legends of Runeterra archetypes<a class="headerlink" href="#clustering-legends-of-runeterra-archetypes" title="Permalink to this headline">#</a></h1>
+<section id="goal">
+<h2>Goal<a class="headerlink" href="#goal" title="Permalink to this headline">#</a></h2>
+<p>Given a list of <code class="docutils literal notranslate"><span class="pre">n</span></code> <a class="reference external" href="https://playruneterra.com/en-sg/">Legends of Runeterra</a> decks, how to automatically group them into <strong>archetypes</strong>, <em>ie</em> groups of similar decks?</p>
+<p>Clustering decks as archetypes allows for better calculation of metrics like win-rate and play-rate. This is a problem that comes back for every card game I have ever played, and is usually “simply” solved by humans sort the decks themselves.</p>
+<p>But what if deck clustering could be automated?</p>
+</section>
+<section id="approaches">
+<h2>Approaches<a class="headerlink" href="#approaches" title="Permalink to this headline">#</a></h2>
+<section id="intuition">
+<h3>Intuition<a class="headerlink" href="#intuition" title="Permalink to this headline">#</a></h3>
+<p>I started to think about how to “simply” group decklists. Two ways came to mind:</p>
+<ul class="simple">
+<li><p>Choosing decks that have a pool of common cards</p></li>
+<li><p>Choosing decks that have few different cards</p></li>
+</ul>
+<p>Whichever distance we choose, we can start from individual decks and add new decks one by one, selecting the “closest” one to the cluster at each step. We can do this process in descending popularity order, so ties are broken by the popularity of decks. We can then select the biggest non-overlapping clusters found as good archetypes and re-start the process.</p>
+<p>It does sound pretty close to k-means as it also relies on a centroid vector for each cluster, but here we don’t have to select how many clusters we want from the start. We can also have clusters of very different sizes and it will not be an issue with our approach.</p>
+<p>We’ll call that method <strong>incremental constrained cluster growth</strong> and it’s the one I’ll be implementing in this blog post.</p>
+</section>
+<section id="existing-clustering-algorithms">
+<h3>Existing clustering algorithms<a class="headerlink" href="#existing-clustering-algorithms" title="Permalink to this headline">#</a></h3>
+<p>Clustery analysis is a complex and heavily researched domain. Algorithms usually exhibit <code class="docutils literal notranslate"><span class="pre">O(n**3)</span></code> complexity.</p>
+<p>The most popular clustering algorithm, or at least the only one I remember from my <a class="reference external" href="http://M.Sc">M.Sc</a>., is <a class="reference external" href="https://en.wikipedia.org/wiki/K-means_clustering">k-means</a>. It’s unfortunately a pretty poor fit here as we don’t know the number of archetypes/clusters we are looking for, and it’s also poorly adapted for clusters of vastly different sizes.</p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Hierarchical_clustering">Hierarchical clustering</a> is a better fit for our use-case:</p>
+<blockquote>
+<div><p>In data mining and statistics, hierarchical clustering (also called hierarchical cluster analysis or HCA) is a method of cluster analysis which seeks to build a hierarchy of clusters.</p>
+</div></blockquote>
+<p>Deck archetypes naturally have multiple levels of “granularity” we can look at. From big macro archetypes being defined only by a few cards to micro archetypes arising from very few card differences. Ordering them in a hierarchy sounds like a great fit even though it will be harder to use for visualisation and analysis.</p>
+<p>I will try hierarchical clustering and visualisation at some point, but I’m keeping it for a future blog post!</p>
+</section>
+</section>
+<section id="preparing-data">
+<h2>Preparing data<a class="headerlink" href="#preparing-data" title="Permalink to this headline">#</a></h2>
+<section id="games-selection">
+<h3>Games selection<a class="headerlink" href="#games-selection" title="Permalink to this headline">#</a></h3>
+<p>As Legends of Runeterra does not offer access to ranks through its API, I use <a class="reference external" href="https://trueskill.org/">TrueSkill</a> to identify the best players on a given server and parse them in descending skill order. I only use ranked results to determine skill ratings.</p>
+<p>I verified the algorithm by verifying that the best players identified by TrueSkill were indeed in Master rank. We can do that by checking account names, which is the only type of rank data available.</p>
+<p>This allows me to parse games for the ~20 000 best players per server, which returns ~35 000 ranked games per day per server. As there are 3 servers in total, we have ~100 000 games per day of data. This likely covers rank until platinum, and maybe even gold. But we have no way to check as LoR’s API doesn’t let us query ranks for players ¯\<em>(ツ)</em>/¯</p>
+</section>
+<section id="sql-query">
+<h3>SQL query<a class="headerlink" href="#sql-query" title="Permalink to this headline">#</a></h3>
+<p>The data parsed from Riot’s API is susceptible to regular model changes and I’ve therefore saved it as a <code class="docutils literal notranslate"><span class="pre">JSONB</span></code> column in <code class="docutils literal notranslate"><span class="pre">Postgres</span></code>.</p>
+<p>I have written that query in many different ways but in the end making a subquery to create a <code class="docutils literal notranslate"><span class="pre">player</span></code> table was the easiest for me to maintain. I’m sure this query can be written in a smarter way but I’m still only starting to get used to <code class="docutils literal notranslate"><span class="pre">JSONB</span></code> direct querying with Postgres:</p>
+<div class="highlight-postgres notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"></span>
+<span class="w">  </span><span class="n">deck_code</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">factions</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">games</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">COUNT</span><span class="p">(</span><span class="k">CASE</span><span class="w"> </span><span class="k">WHEN</span><span class="w"> </span><span class="n">win</span><span class="o">::</span><span class="nb">boolean</span><span class="w"> </span><span class="k">THEN</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="k">END</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">wins</span><span class="w"></span>
+<span class="k">FROM</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="k">SELECT</span><span class="w"></span>
+<span class="w">    </span><span class="n">jsonb_array_elements</span><span class="p">(</span><span class="n">lor_game</span><span class="mf">.</span><span class="k">data</span><span class="o">-&gt;</span><span class="s1">&#39;info&#39;</span><span class="o">-&gt;</span><span class="s1">&#39;players&#39;</span><span class="p">)</span><span class="o">-&gt;&gt;</span><span class="s1">&#39;win&#39;</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">win</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">jsonb_array_elements</span><span class="p">(</span><span class="n">lor_game</span><span class="mf">.</span><span class="k">data</span><span class="o">-&gt;</span><span class="s1">&#39;info&#39;</span><span class="o">-&gt;</span><span class="s1">&#39;players&#39;</span><span class="p">)</span><span class="o">-&gt;&gt;</span><span class="s1">&#39;deck_code&#39;</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">deck_code</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">jsonb_array_elements</span><span class="p">(</span><span class="n">lor_game</span><span class="mf">.</span><span class="k">data</span><span class="o">-&gt;</span><span class="s1">&#39;info&#39;</span><span class="o">-&gt;</span><span class="s1">&#39;players&#39;</span><span class="p">)</span><span class="o">-&gt;&gt;</span><span class="s1">&#39;factions&#39;</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">factions</span><span class="w"></span>
+<span class="w">  </span><span class="k">FROM</span><span class="w"> </span><span class="n">lor_game</span><span class="w"></span>
+<span class="w">  </span><span class="k">WHERE</span><span class="w"> </span><span class="n">lor_game</span><span class="mf">.</span><span class="k">data</span><span class="o">-&gt;</span><span class="s1">&#39;info&#39;</span><span class="o">-&gt;&gt;</span><span class="s1">&#39;game_version&#39;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;live-green-3-13-42&#39;</span><span class="w"></span>
+<span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">player</span><span class="w"></span>
+<span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">deck_code</span><span class="p">,</span><span class="w"> </span><span class="n">factions</span><span class="w"></span>
+<span class="k">HAVING</span><span class="w"> </span><span class="n">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">10</span><span class="w"></span>
+<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">games</span><span class="w"> </span><span class="k">DESC</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Result:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Deck code</p></th>
+<th class="head"><p>Factions</p></th>
+<th class="head"><p>Games</p></th>
+<th class="head"><p>Wins</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CICQCAQDAMAQKBQBAEDA(...)</span></code></p></td>
+<td><p>[“faction_Bilgewater_Name”, “faction_Noxus_Name”]</p></td>
+<td><p>39880</p></td>
+<td><p>24067</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CMCQCAQAAIAQIAADAECA(...)</span></code></p></td>
+<td><p>[“faction_Demacia_Name”, “faction_Shurima_Name”]</p></td>
+<td><p>24118</p></td>
+<td><p>12756</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CUFACAIEGYAQEBR4AEBQ(...)</span></code></p></td>
+<td><p>[“faction_Jhin_Name”, “faction_Noxus_Name”]</p></td>
+<td><p>16387</p></td>
+<td><p>9315</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CMBQCAQAAIBAIB3HQIAQ(...)</span></code></p></td>
+<td><p>[“faction_Demacia_Name”, “faction_Shurima_Name”]</p></td>
+<td><p>16153</p></td>
+<td><p>9146</p></td>
+</tr>
+<tr class="row-even"><td><p>…</p></td>
+<td><p>…</p></td>
+<td><p>…</p></td>
+<td><p>…</p></td>
+</tr>
+</tbody>
+</table>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Loading our env variables before we load our library</span>
+<span class="kn">import</span> <span class="nn">dotenv</span>
+
+<span class="n">dotenv</span><span class="o">.</span><span class="n">load_dotenv</span><span class="p">(</span><span class="n">verbose</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">override</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># We checked for the latest patch value by looking at the most recent games</span>
+<span class="n">latest_version</span> <span class="o">=</span> <span class="s2">&quot;live-green-3-13-42&quot;</span>
+
+<span class="c1"># Connecting to the database</span>
+<span class="kn">from</span> <span class="nn">neotokyo</span> <span class="kn">import</span> <span class="n">db</span>
+
+<span class="n">session</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">connection</span><span class="o">.</span><span class="n">ghost_session_maker</span><span class="o">.</span><span class="n">session_maker</span><span class="p">()</span>
+
+<span class="c1"># ORM</span>
+<span class="kn">import</span> <span class="nn">sqlalchemy</span>
+<span class="kn">from</span> <span class="nn">sqlalchemy.dialects</span> <span class="kn">import</span> <span class="n">postgresql</span>
+
+<span class="c1"># Defining our subquery, already filtered on the right game version</span>
+<span class="c1"># Tbh the postgres JSONB syntax in SQLAlchemy is pretty disgusting</span>
+<span class="n">player_table</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">sqlalchemy</span><span class="o">.</span><span class="n">select</span><span class="p">(</span>
+        <span class="n">sqlalchemy</span><span class="o">.</span><span class="n">func</span><span class="o">.</span><span class="n">jsonb_array_elements</span><span class="p">(</span>
+            <span class="n">db</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">LorGame</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;info&quot;</span><span class="p">][</span><span class="s2">&quot;players&quot;</span><span class="p">],</span>
+            <span class="n">type_</span><span class="o">=</span><span class="n">postgresql</span><span class="o">.</span><span class="n">JSONB</span><span class="p">,</span>
+        <span class="p">)[</span><span class="s2">&quot;deck_code&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">astext</span><span class="o">.</span><span class="n">label</span><span class="p">(</span><span class="s2">&quot;deck_code&quot;</span><span class="p">),</span>
+        <span class="n">sqlalchemy</span><span class="o">.</span><span class="n">func</span><span class="o">.</span><span class="n">jsonb_array_elements</span><span class="p">(</span>
+            <span class="n">db</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">LorGame</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;info&quot;</span><span class="p">][</span><span class="s2">&quot;players&quot;</span><span class="p">],</span>
+            <span class="n">type_</span><span class="o">=</span><span class="n">postgresql</span><span class="o">.</span><span class="n">JSONB</span><span class="p">,</span>
+        <span class="p">)[</span><span class="s2">&quot;factions&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">astext</span><span class="o">.</span><span class="n">label</span><span class="p">(</span><span class="s2">&quot;factions&quot;</span><span class="p">),</span>
+        <span class="n">sqlalchemy</span><span class="o">.</span><span class="n">func</span><span class="o">.</span><span class="n">jsonb_array_elements</span><span class="p">(</span>
+            <span class="n">db</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">LorGame</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;info&quot;</span><span class="p">][</span><span class="s2">&quot;players&quot;</span><span class="p">],</span>
+            <span class="n">type_</span><span class="o">=</span><span class="n">postgresql</span><span class="o">.</span><span class="n">JSONB</span><span class="p">,</span>
+        <span class="p">)[</span><span class="s2">&quot;win&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">astext</span><span class="o">.</span><span class="n">label</span><span class="p">(</span><span class="s2">&quot;win&quot;</span><span class="p">),</span>
+    <span class="p">)</span>
+    <span class="c1"># We put our patch limit here so the subquery return is smaller</span>
+    <span class="o">.</span><span class="n">where</span><span class="p">(</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">LorGame</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;info&quot;</span><span class="p">][</span><span class="s2">&quot;game_version&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">astext</span> <span class="o">==</span> <span class="n">latest_version</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="o">.</span><span class="n">subquery</span><span class="p">()</span>
+<span class="p">)</span>
+
+<span class="n">games_count</span> <span class="o">=</span> <span class="n">sqlalchemy</span><span class="o">.</span><span class="n">func</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">label</span><span class="p">(</span><span class="s2">&quot;games_count&quot;</span><span class="p">)</span>
+<span class="n">wins</span> <span class="o">=</span> <span class="n">sqlalchemy</span><span class="o">.</span><span class="n">func</span><span class="o">.</span><span class="n">count</span><span class="p">(</span>
+    <span class="n">sqlalchemy</span><span class="o">.</span><span class="n">case</span><span class="p">(</span>
+        <span class="p">(</span><span class="n">player_table</span><span class="o">.</span><span class="n">c</span><span class="o">.</span><span class="n">win</span> <span class="o">==</span> <span class="s2">&quot;true&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+    <span class="p">)</span>
+<span class="p">)</span><span class="o">.</span><span class="n">label</span><span class="p">(</span><span class="s2">&quot;wins&quot;</span><span class="p">)</span>
+
+<span class="c1"># The disgusting player_table code lets us write a pretty clean and readable query at least!</span>
+<span class="n">query</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">sqlalchemy</span><span class="o">.</span><span class="n">select</span><span class="p">(</span>
+        <span class="n">player_table</span><span class="o">.</span><span class="n">c</span><span class="o">.</span><span class="n">deck_code</span><span class="p">,</span>
+        <span class="n">player_table</span><span class="o">.</span><span class="n">c</span><span class="o">.</span><span class="n">factions</span><span class="p">,</span>
+        <span class="n">games_count</span><span class="p">,</span>
+        <span class="n">wins</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="o">.</span><span class="n">order_by</span><span class="p">(</span><span class="n">games_count</span><span class="o">.</span><span class="n">desc</span><span class="p">())</span>
+    <span class="o">.</span><span class="n">group_by</span><span class="p">(</span>
+        <span class="n">player_table</span><span class="o">.</span><span class="n">c</span><span class="o">.</span><span class="n">deck_code</span><span class="p">,</span>
+        <span class="n">player_table</span><span class="o">.</span><span class="n">c</span><span class="o">.</span><span class="n">factions</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="o">.</span><span class="n">having</span><span class="p">(</span><span class="n">games_count</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">)</span>
+<span class="p">)</span>
+
+<span class="c1"># We get the results as a list</span>
+<span class="n">latest_patch_decks</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">query</span><span class="p">)</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Games found: </span><span class="si">{</span><span class="nb">sum</span><span class="p">(</span><span class="n">dd</span><span class="o">.</span><span class="n">games_count</span> <span class="k">for</span> <span class="n">dd</span> <span class="ow">in</span> <span class="n">latest_patch_decks</span><span class="p">)</span><span class="si">:</span><span class="s2">,</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/tolki/.cache/pypoetry/virtualenvs/neotokyo-vP6WhsAw-py3.10/lib/python3.10/site-packages/aioredis/connection.py:68: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  hiredis_version = StrictVersion(hiredis.__version__)
+/home/tolki/.cache/pypoetry/virtualenvs/neotokyo-vP6WhsAw-py3.10/lib/python3.10/site-packages/aioredis/connection.py:69: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  if hiredis_version &lt; StrictVersion(&quot;1.0.0&quot;):
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Games found: 2,388,840
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="deck-codes-to-deck-lists">
+<h3>Deck codes to deck lists<a class="headerlink" href="#deck-codes-to-deck-lists" title="Permalink to this headline">#</a></h3>
+<p>Riot gives us <a class="reference external" href="https://github.com/RiotGames/LoRDeckCodes">deck codes</a>, but we want a list of cards to easily compute the distance. <em>Technically</em> one could implement the algorithm in pure SQL, but it’s quite a pain.</p>
+<p>We will instead use <a class="reference external" href="https://github.com/Rafalonso/LoRDeckCodesPython">lor-deckcodes</a> to transform deck codes into a list of card codes and counts, and will then transform card cards into card names using our own database.</p>
+<p>To store decklists in an easy to compare format we will use a <strong>set</strong> of 40 strings with card names postfixed by their occurence number:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="n">Veigar</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span>
+  <span class="n">Veigar</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span>
+  <span class="n">Veigar</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span>
+  <span class="n">Senna</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span>
+  <span class="o">...</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Defining constants</span>
+<span class="n">DECK_SIZE</span> <span class="o">=</span> <span class="mi">40</span>
+
+<span class="c1"># Adding a small utility to compute card names</span>
+<span class="n">card_cache</span> <span class="o">=</span> <span class="p">{}</span>
+
+
+<span class="k">def</span> <span class="nf">get_card_name</span><span class="p">(</span><span class="n">code</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">code</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">card_cache</span><span class="p">:</span>
+        <span class="n">card_cache</span><span class="p">[</span><span class="n">code</span><span class="p">]</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">LorCard</span><span class="p">,</span> <span class="n">code</span><span class="p">)</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">]</span>
+
+    <span class="k">return</span> <span class="n">card_cache</span><span class="p">[</span><span class="n">code</span><span class="p">]</span>
+
+
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Set</span>
+
+
+<span class="c1"># A small function to have more readable card lists</span>
+<span class="c1">#   We don&#39;t do it based on deck codes/decklists because we want to use it with archetypes later</span>
+<span class="k">def</span> <span class="nf">cards_table</span><span class="p">(</span><span class="n">cards</span><span class="p">:</span> <span class="n">Set</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Beautiful output of cards&quot;&quot;&quot;</span>
+    <span class="kn">import</span> <span class="nn">tabulate</span>
+
+    <span class="c1"># We could do all that with complex list comprehensions but the gain in performance is not worth the loss in readability</span>
+    <span class="n">tabulate_input</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">current_row</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">added_cards</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+
+    <span class="k">for</span> <span class="n">card</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span>
+        <span class="n">cards</span><span class="p">,</span>
+        <span class="c1"># The last character is the # of copies and we want to go in descending order</span>
+        <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span>
+        <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="p">):</span>
+        <span class="n">card_name</span> <span class="o">=</span> <span class="n">card</span><span class="p">[:</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>
+
+        <span class="c1"># If we already added the card we continue</span>
+        <span class="k">if</span> <span class="n">card_name</span> <span class="ow">in</span> <span class="n">added_cards</span><span class="p">:</span>
+            <span class="k">continue</span>
+
+        <span class="n">added_cards</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">card_name</span><span class="p">)</span>
+        <span class="n">current_row</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">card</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s2">x </span><span class="si">{</span><span class="n">card_name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="c1"># We put only 4 cards per row</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">current_row</span><span class="p">)</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
+            <span class="n">tabulate_input</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">current_row</span><span class="p">)</span>
+            <span class="n">current_row</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">if</span> <span class="n">current_row</span><span class="p">:</span>
+        <span class="n">tabulate_input</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">current_row</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">tabulate</span><span class="o">.</span><span class="n">tabulate</span><span class="p">(</span><span class="n">tabulate_input</span><span class="p">,</span> <span class="n">tablefmt</span><span class="o">=</span><span class="s2">&quot;html&quot;</span><span class="p">)</span>
+
+
+<span class="c1"># Making a dataclass to hold our information</span>
+<span class="kn">from</span> <span class="nn">dataclasses</span> <span class="kn">import</span> <span class="n">dataclass</span>
+
+<span class="c1"># Utilities for outputting HTML</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span><span class="p">,</span> <span class="n">display</span>
+
+<span class="c1"># A dataclass automatically creates its own __init__ functions from type hints which is nice</span>
+<span class="nd">@dataclass</span>
+<span class="k">class</span> <span class="nc">DeckData</span><span class="p">:</span>
+    <span class="n">deck_code</span><span class="p">:</span> <span class="nb">str</span>
+
+    <span class="n">factions</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">cards</span><span class="p">:</span> <span class="n">Set</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>
+
+    <span class="n">games_count</span><span class="p">:</span> <span class="nb">int</span>
+    <span class="n">wins</span><span class="p">:</span> <span class="nb">int</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">winrate</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">wins</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">games_count</span>
+
+    <span class="k">def</span> <span class="nf">display</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">display</span><span class="p">(</span>
+            <span class="n">HTML</span><span class="p">(</span>
+                <span class="sa">f</span><span class="s2">&quot;&quot;&quot;&lt;h3&gt;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">deck_code</span><span class="si">}</span><span class="s2">&lt;/b&gt;&lt;/h2&gt;</span>
+<span class="s2">&lt;ul&gt;&lt;li&gt;Games: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">games_count</span><span class="si">:</span><span class="s2">,</span><span class="si">}</span><span class="s2">&lt;/li&gt;</span>
+<span class="s2">&lt;li&gt;Winrate: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">winrate</span><span class="o">*</span><span class="mi">100</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">%&lt;/li&gt;</span>
+<span class="s2">&lt;li&gt;Factions: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">factions</span><span class="si">}</span><span class="s2">&lt;/li&gt;</span>
+<span class="s2">&lt;li&gt;Decklist: </span><span class="si">{</span><span class="n">cards_table</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">cards</span><span class="p">)</span><span class="si">}</span><span class="s2">&lt;/li&gt;&quot;&quot;&quot;</span>
+            <span class="p">)</span>
+        <span class="p">)</span>
+
+
+<span class="kn">import</span> <span class="nn">lor_deckcodes</span>
+
+<span class="n">decks_data</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">latest_patch_decks</span><span class="p">:</span>
+    <span class="n">deck</span> <span class="o">=</span> <span class="n">lor_deckcodes</span><span class="o">.</span><span class="n">LoRDeck</span><span class="o">.</span><span class="n">from_deckcode</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">deck_code</span><span class="p">)</span>
+
+    <span class="c1"># We store decklist as a set of 40 unique strings as it lets use the intersection operator</span>
+    <span class="c1"># I tried storing decklists as sets of unique integers but saw no significant performance improvement</span>
+    <span class="n">cards</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">card</span> <span class="ow">in</span> <span class="n">deck</span><span class="o">.</span><span class="n">cards</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">card</span><span class="o">.</span><span class="n">count</span><span class="p">):</span>
+            <span class="n">cards</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">get_card_name</span><span class="p">(</span><span class="n">card</span><span class="o">.</span><span class="n">card_code</span><span class="p">)</span><span class="si">}</span><span class="s2">-</span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Making sure we do have 40 unique card strings in our set</span>
+    <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">cards</span><span class="p">)</span> <span class="o">==</span> <span class="n">DECK_SIZE</span>
+
+    <span class="c1"># Saving all the data we got for this specific deck code</span>
+    <span class="n">decks_data</span><span class="p">[</span><span class="n">row</span><span class="o">.</span><span class="n">deck_code</span><span class="p">]</span> <span class="o">=</span> <span class="n">DeckData</span><span class="p">(</span>
+        <span class="n">deck_code</span><span class="o">=</span><span class="n">row</span><span class="o">.</span><span class="n">deck_code</span><span class="p">,</span>
+        <span class="n">factions</span><span class="o">=</span><span class="n">row</span><span class="o">.</span><span class="n">factions</span><span class="p">,</span>
+        <span class="n">games_count</span><span class="o">=</span><span class="n">row</span><span class="o">.</span><span class="n">games_count</span><span class="p">,</span>
+        <span class="n">wins</span><span class="o">=</span><span class="n">row</span><span class="o">.</span><span class="n">wins</span><span class="p">,</span>
+        <span class="n">cards</span><span class="o">=</span><span class="n">cards</span><span class="p">,</span>
+    <span class="p">)</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Decks found: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">decks_data</span><span class="p">)</span><span class="si">:</span><span class="s2">,</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">first_deck_code</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="nb">iter</span><span class="p">(</span><span class="n">decks_data</span><span class="p">))</span>
+<span class="n">decks_data</span><span class="p">[</span><span class="n">first_deck_code</span><span class="p">]</span><span class="o">.</span><span class="n">display</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Raw cards data: &quot;</span><span class="p">,</span> <span class="n">decks_data</span><span class="p">[</span><span class="n">first_deck_code</span><span class="p">]</span><span class="o">.</span><span class="n">cards</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Decks found: 41,997
+</pre></div>
+</div>
+<div class="output text_html"><h3>CICQCAQDAMAQKBQBAEDAMFIEAIDBMGRGHICQCAYCBQHSKKACAEBAMLIBAYDB4AA</b></h2>
+<ul><li>Games: 72,677</li>
+<li>Winrate: 60.18%</li>
+<li>Factions: ["faction_Bilgewater_Name", "faction_Noxus_Name"]</li>
+<li>Decklist: <table>
+<tbody>
+<tr><td>3x Legion Saboteur    </td><td>3x Miss Fortune    </td><td>3x Zap Sprayfin</td><td>3x Riptide Sermon</td></tr>
+<tr><td>3x Noxian Fervor      </td><td>3x Legion Grenadier</td><td>3x Precious Pet</td><td>3x Marai Warden  </td></tr>
+<tr><td>3x Legion Rearguard   </td><td>3x Decimate        </td><td>3x Twisted Fate</td><td>3x Jagged Butcher</td></tr>
+<tr><td>2x Eye of Nagakabouros</td><td>2x Make it Rain    </td><td>               </td><td>                 </td></tr>
+</tbody>
+</table></li></div><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Raw cards data:  {&#39;Legion Grenadier-1&#39;, &#39;Legion Saboteur-3&#39;, &#39;Miss Fortune-3&#39;, &#39;Legion Grenadier-2&#39;, &#39;Legion Saboteur-2&#39;, &#39;Noxian Fervor-2&#39;, &#39;Zap Sprayfin-3&#39;, &#39;Riptide Sermon-1&#39;, &#39;Make it Rain-1&#39;, &#39;Legion Rearguard-2&#39;, &#39;Twisted Fate-2&#39;, &#39;Riptide Sermon-3&#39;, &#39;Eye of Nagakabouros-2&#39;, &#39;Marai Warden-1&#39;, &#39;Riptide Sermon-2&#39;, &#39;Precious Pet-1&#39;, &#39;Eye of Nagakabouros-1&#39;, &#39;Noxian Fervor-3&#39;, &#39;Legion Grenadier-3&#39;, &#39;Precious Pet-3&#39;, &#39;Jagged Butcher-2&#39;, &#39;Marai Warden-3&#39;, &#39;Noxian Fervor-1&#39;, &#39;Legion Rearguard-3&#39;, &#39;Twisted Fate-1&#39;, &#39;Decimate-1&#39;, &#39;Decimate-3&#39;, &#39;Twisted Fate-3&#39;, &#39;Miss Fortune-2&#39;, &#39;Marai Warden-2&#39;, &#39;Make it Rain-2&#39;, &#39;Zap Sprayfin-2&#39;, &#39;Jagged Butcher-3&#39;, &#39;Legion Rearguard-1&#39;, &#39;Zap Sprayfin-1&#39;, &#39;Precious Pet-2&#39;, &#39;Decimate-2&#39;, &#39;Miss Fortune-1&#39;, &#39;Jagged Butcher-1&#39;, &#39;Legion Saboteur-1&#39;}
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="implementing-incremental-constrained-cluster-growth">
+<h2>Implementing incremental constrained cluster growth<a class="headerlink" href="#implementing-incremental-constrained-cluster-growth" title="Permalink to this headline">#</a></h2>
+<section id="basic-idea">
+<h3>Basic idea<a class="headerlink" href="#basic-idea" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Define the <strong>distance</strong> from a deck to a cluster</p></li>
+<li><p>Iterate on decks in descending popularity (# games)</p></li>
+<li><p>For each deck</p>
+<ul>
+<li><p>Create a cluster containing only this deck</p></li>
+<li><p>Add decks one by one by, selecting the one with shortest distance to the cluster each step</p></li>
+</ul>
+</li>
+<li><p>Add non-overlapping clusters in descending size</p></li>
+<li><p>Re-start iteration with any remaining decks</p></li>
+</ul>
+<p>The <strong>archetype</strong> will be the aggregate decklist as defined by <a class="reference external" href="https://strategy.channelfireball.com/all-strategy/mtg/channelmagic-articles/magic-math-a-new-way-to-determine-an-aggregate-deck-list-rg-dragons/">Frank Karsten’s in this ChannelFireball article</a>.</p>
+<section id="things-that-didn-t-work-out">
+<h4>Things that didn’t work out<a class="headerlink" href="#things-that-didn-t-work-out" title="Permalink to this headline">#</a></h4>
+<ul class="simple">
+<li><p>With a direct implementation, computational time was through the roof at <strong>~24h with ~20,000 decks</strong></p>
+<ul>
+<li><p>Complexity <code class="docutils literal notranslate"><span class="pre">O(n**3)</span></code> does that</p></li>
+</ul>
+</li>
+<li><p>Even with multiple optimisations and shortcuts the method was still way too heavy and took multiple hours for each iteration</p></li>
+<li><p>I tried an idea I called <em>fast cutoff</em>, which would directly select a cluster if it contained more than 1% of all decks</p>
+<ul>
+<li><p>It did heavily speed up the process at the cost of clustering quality</p></li>
+<li><p>I was able to <em>not</em> need it anymore once I fixed my code</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="deck-factions">
+<h3>Deck factions<a class="headerlink" href="#deck-factions" title="Permalink to this headline">#</a></h3>
+<p>The most important thing to add was “pre-clustering”. <code class="docutils literal notranslate"><span class="pre">O(n**3)</span></code> complexity means that if we’re able to split the data into 100 sets, complexity goes down by 1,000,000.</p>
+<p>And there are 100 obvious sets for our data: the deck’s factions. Those are similar to deck colors in Magic or hero in Hearthstone.</p>
+<p>Forcing all decks in an archetypes to be the same factions does lose some granularity for decks that just splash 3/6 cards in a different faction, but it’s actually something we <em>want</em>. The end goal is identifying success of different strategies, and changing a splash in a deck is a new strategy.</p>
+<p>The simplification also allowed me to drop the fast cutoff idea as I was working with much smaller lists of decks to cluster at each step.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
+
+<span class="c1"># Creating faction groups</span>
+<span class="c1"># We use lists and not sets because we want to keep the decks ordered by count</span>
+<span class="n">factions_decks</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">deck_code</span> <span class="ow">in</span> <span class="n">decks_data</span><span class="p">:</span>
+    <span class="n">factions_decks</span><span class="p">[</span><span class="n">decks_data</span><span class="p">[</span><span class="n">deck_code</span><span class="p">]</span><span class="o">.</span><span class="n">factions</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">deck_code</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Found </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">factions_decks</span><span class="p">)</span><span class="si">:</span><span class="s2">,</span><span class="si">}</span><span class="s2"> different factions&quot;</span><span class="p">)</span>
+
+<span class="n">max_faction</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">factions_decks</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">factions_decks</span><span class="p">[</span><span class="n">x</span><span class="p">]))</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The faction with the most decks is&quot;</span><span class="p">,</span> <span class="n">max_faction</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Found 88 different factions
+The faction with the most decks is [&quot;faction_BandleCity_Name&quot;, &quot;faction_ShadowIsles_Name&quot;]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="distance-and-clusters">
+<h3>Distance and clusters<a class="headerlink" href="#distance-and-clusters" title="Permalink to this headline">#</a></h3>
+<section id="distance-between-two-decks">
+<h4>Distance between two decks<a class="headerlink" href="#distance-between-two-decks" title="Permalink to this headline">#</a></h4>
+<p>Distance is calculated through the intersection operator for sets applied on the set of cards in the deck: <code class="docutils literal notranslate"><span class="pre">&amp;</span></code>.</p>
+<p>This works as each copy (1-2-3) is defined as a unique string in our decklists.</p>
+</section>
+<section id="distance-from-a-deck-to-a-cluster">
+<h4>Distance from a deck to a cluster<a class="headerlink" href="#distance-from-a-deck-to-a-cluster" title="Permalink to this headline">#</a></h4>
+<p>The distance from a deck to a cluster is 0 if adding the new deck does not change the intersection of existing decks in the cluster. If it requires removing a card from the intersection to add the new deck, it’s 1, and so on and so forth.</p>
+<p>I initially implemented it wrongly, which cost me a lot of time.</p>
+<p>The right way to calculate the distance from a deck to a cluster is to use the cluster’s intersection and compare it to the decklist.</p>
+</section>
+<section id="implementation">
+<h4>Implementation<a class="headerlink" href="#implementation" title="Permalink to this headline">#</a></h4>
+<p>What really matters to us is the distance of a deck to a cluster, so it’s even easier to implement all those as part of a <code class="docutils literal notranslate"><span class="pre">Cluster</span></code> class.</p>
+<p>While we’re at it we implement the aggregate decklist code in that class as well as some basic stats handling and a beautiful display!</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">abc</span> <span class="kn">import</span> <span class="n">abstractmethod</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Counter</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Optional</span>
+
+<span class="n">type_cache</span> <span class="o">=</span> <span class="p">{}</span>
+
+
+<span class="k">def</span> <span class="nf">get_card_type</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">name</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">type_cache</span><span class="p">:</span>
+        <span class="n">card</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="n">session</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">LorCard</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">LorCard</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">astext</span> <span class="o">==</span> <span class="n">name</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">first</span><span class="p">()</span>
+        <span class="p">)</span>
+        <span class="n">type_cache</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">card</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;supertype&quot;</span><span class="p">]</span>
+
+    <span class="k">return</span> <span class="n">type_cache</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+
+
+<span class="c1"># A class we&#39;ll use to compute cluster stats and display them</span>
+<span class="k">class</span> <span class="nc">ClusterStats</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cluster</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">cluster</span> <span class="o">=</span> <span class="n">cluster</span>
+
+        <span class="n">cards_count</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">()</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">wins</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">games_count</span> <span class="o">=</span> <span class="mi">0</span>
+
+        <span class="k">for</span> <span class="n">deck_code</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">cluster</span><span class="o">.</span><span class="n">decks</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">games_count</span> <span class="o">+=</span> <span class="n">decks_data</span><span class="p">[</span><span class="n">deck_code</span><span class="p">]</span><span class="o">.</span><span class="n">games_count</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">wins</span> <span class="o">+=</span> <span class="n">decks_data</span><span class="p">[</span><span class="n">deck_code</span><span class="p">]</span><span class="o">.</span><span class="n">wins</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">factions</span> <span class="o">=</span> <span class="n">decks_data</span><span class="p">[</span><span class="n">deck_code</span><span class="p">]</span><span class="o">.</span><span class="n">factions</span>
+
+            <span class="k">for</span> <span class="n">card</span> <span class="ow">in</span> <span class="n">decks_data</span><span class="p">[</span><span class="n">deck_code</span><span class="p">]</span><span class="o">.</span><span class="n">cards</span><span class="p">:</span>
+                <span class="c1"># Instead of just using 1, we use the decklists&#39; wins</span>
+                <span class="c1">#   This makes it so not only more popular versions have more weight, but successful ones do too</span>
+                <span class="n">cards_count</span><span class="p">[</span><span class="n">card</span><span class="p">]</span> <span class="o">+=</span> <span class="n">decks_data</span><span class="p">[</span><span class="n">deck_code</span><span class="p">]</span><span class="o">.</span><span class="n">wins</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">aggregated_decklist</span> <span class="o">=</span> <span class="p">[</span><span class="n">c</span> <span class="k">for</span> <span class="n">c</span><span class="p">,</span> <span class="n">count</span> <span class="ow">in</span> <span class="n">cards_count</span><span class="o">.</span><span class="n">most_common</span><span class="p">(</span><span class="mi">40</span><span class="p">)]</span>
+
+        <span class="n">champions</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span>
+            <span class="n">c</span><span class="p">[:</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>
+            <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">aggregated_decklist</span>
+            <span class="k">if</span> <span class="n">get_card_type</span><span class="p">(</span><span class="n">c</span><span class="p">[:</span><span class="o">-</span><span class="mi">2</span><span class="p">])</span> <span class="o">==</span> <span class="s2">&quot;Champion&quot;</span>
+        <span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">title</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;&quot;&quot;</span><span class="si">{</span><span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">champions</span><span class="p">)</span><span class="si">}</span><span class="s2"> - </span><span class="si">{</span>
+            <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">n</span><span class="p">[</span><span class="mi">9</span><span class="p">:</span><span class="o">-</span><span class="mi">6</span><span class="p">]</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">factions</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">))</span>
+        <span class="si">}</span><span class="s2">&quot;&quot;&quot;</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">winrate</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">wins</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">games_count</span>
+
+    <span class="k">def</span> <span class="nf">display</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">display</span><span class="p">(</span>
+            <span class="n">HTML</span><span class="p">(</span>
+                <span class="sa">f</span><span class="s2">&quot;&quot;&quot;&lt;h3&gt;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">title</span><span class="si">}</span><span class="s2">&lt;/h3&gt;</span>
+<span class="s2">    &lt;ul&gt;</span>
+<span class="s2">    &lt;li&gt;&lt;b&gt;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">winrate</span><span class="o">*</span><span class="mi">100</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">% winrate&lt;/b&gt;&lt;/li&gt;</span>
+<span class="s2">    &lt;li&gt;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">games_count</span><span class="si">:</span><span class="s2">,</span><span class="si">}</span><span class="s2"> games&lt;/li&gt;</span>
+<span class="s2">    &lt;li&gt;</span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">cluster</span><span class="o">.</span><span class="n">decks</span><span class="p">)</span><span class="si">}</span><span class="s2"> decklists&lt;/li&gt;</span>
+<span class="s2">    &lt;li&gt;Aggregated decklist: </span><span class="si">{</span><span class="n">cards_table</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">aggregated_decklist</span><span class="p">)</span><span class="si">}</span><span class="s2">&lt;/li&gt;&lt;/ul&gt;&quot;&quot;&quot;</span>
+            <span class="p">)</span>
+        <span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">Cluster</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">center</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">decks</span> <span class="o">=</span> <span class="p">[</span><span class="n">center</span><span class="p">]</span>
+
+    <span class="k">def</span> <span class="fm">__contains__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">True</span> <span class="k">if</span> <span class="n">item</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">decks</span> <span class="k">else</span> <span class="kc">False</span>
+
+    <span class="k">def</span> <span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+        <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">decks</span><span class="p">)</span>
+
+    <span class="nd">@abstractmethod</span>
+    <span class="k">def</span> <span class="nf">distance</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">deck_code</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+        <span class="o">...</span>
+
+    <span class="nd">@abstractmethod</span>
+    <span class="k">def</span> <span class="nf">can_be_added_to_cluster</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">distance</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">bool</span><span class="p">]:</span>
+        <span class="c1"># TODO Check if we actually need that</span>
+        <span class="c1"># We will use a trilean here</span>
+        <span class="c1">#   True -&gt; can be added</span>
+        <span class="c1">#   False -&gt; cannot be added yet</span>
+        <span class="c1">#   None -&gt; will never be able to be added (useful for some distances)</span>
+
+        <span class="c1"># We use the distance as argument so we don&#39;t compute it twice but to allow for different rules</span>
+        <span class="o">...</span>
+
+    <span class="nd">@abstractmethod</span>
+    <span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">deck_code</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="o">...</span>
+
+    <span class="k">def</span> <span class="nf">get_stats</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ClusterStats</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">ClusterStats</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="centered-clusters">
+<h3>Centered clusters<a class="headerlink" href="#centered-clusters" title="Permalink to this headline">#</a></h3>
+<p>Given a <code class="docutils literal notranslate"><span class="pre">center</span></code> deck and a list of <code class="docutils literal notranslate"><span class="pre">candidates</span></code>, we want to find the “best” cluster built around <code class="docutils literal notranslate"><span class="pre">center</span></code>.</p>
+<p>To do that, we add decks one by one, taking the <em>closest</em> one to the cluster at each step.</p>
+<p>There are a few possible optimisations:</p>
+<ul class="simple">
+<li><p>If a deck has a distance 0 to the cluster, we should be able to add it instantly</p>
+<ul>
+<li><p>Distance 0 should mean adding it doesn’t change our cluster</p></li>
+</ul>
+</li>
+</ul>
+<!-- TODO CHECK 
+- Each deck whose addition would force the cluster's intersection to go below the number of `COMMON_CARDS` with the cluster can be removed directly
+    - This allows us to remove almost all decks on the first pass and then only add meaningful ones in order --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">copy</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
+<span class="kn">import</span> <span class="nn">time</span>
+
+
+<span class="k">def</span> <span class="nf">get_centered_cluster</span><span class="p">(</span>
+    <span class="n">center</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+    <span class="n">candidates</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+    <span class="n">cluster_class</span><span class="p">:</span> <span class="n">Cluster</span><span class="p">,</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Cluster</span><span class="p">:</span>
+
+    <span class="c1"># We start the cluster with the center</span>
+    <span class="n">cluster</span> <span class="o">=</span> <span class="n">cluster_class</span><span class="p">(</span><span class="n">center</span><span class="p">)</span>
+
+    <span class="c1"># We remove it from the candidates</span>
+    <span class="n">candidates</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">center</span><span class="p">)</span>
+
+    <span class="c1"># We iterate until we aren&#39;t able to add an eligible deck or we&#39;ve added them all</span>
+    <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">candidates</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+
+        <span class="c1"># This is the maximum value (fully disjointed decks)</span>
+        <span class="n">minimum_distance</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="s2">&quot;inf&quot;</span><span class="p">)</span>
+        <span class="n">minimum_deck</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="c1"># We iterate on possible members</span>
+        <span class="c1"># We copy the list because we want to be able to remove candidates during iteration</span>
+        <span class="k">for</span> <span class="n">candidate</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">(</span><span class="n">candidates</span><span class="p">):</span>
+
+            <span class="n">cluster_distance</span> <span class="o">=</span> <span class="n">cluster</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span><span class="n">candidate</span><span class="p">)</span>
+            <span class="n">can_be_added</span> <span class="o">=</span> <span class="n">cluster</span><span class="o">.</span><span class="n">can_be_added_to_cluster</span><span class="p">(</span><span class="n">cluster_distance</span><span class="p">)</span>
+
+            <span class="c1"># We check if the deck can be added to our cluster first</span>
+            <span class="k">if</span> <span class="n">can_be_added</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="c1"># We use a trilean to speed up the process with some algorithms</span>
+                <span class="n">candidates</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">candidate</span><span class="p">)</span>
+
+            <span class="k">elif</span> <span class="n">can_be_added</span> <span class="ow">is</span> <span class="kc">False</span><span class="p">:</span>
+                <span class="k">pass</span>
+
+            <span class="k">elif</span> <span class="n">can_be_added</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+                <span class="c1"># If distance = 0 we can add the deck directly (happens for common cards clustering)</span>
+                <span class="k">if</span> <span class="n">cluster_distance</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                    <span class="n">cluster</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">candidate</span><span class="p">)</span>
+                    <span class="n">candidates</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">candidate</span><span class="p">)</span>
+                    <span class="k">continue</span>
+
+                <span class="c1"># We check if we found a new closest candidate and save it if that&#39;s the case</span>
+                <span class="k">if</span> <span class="n">cluster_distance</span> <span class="o">&lt;</span> <span class="n">minimum_distance</span><span class="p">:</span>
+                    <span class="n">minimum_distance</span> <span class="o">=</span> <span class="n">cluster_distance</span>
+                    <span class="n">minimum_deck</span> <span class="o">=</span> <span class="n">candidate</span>
+
+        <span class="c1"># One step of iterations on candidates is over</span>
+
+        <span class="c1"># If we didn&#39;t find a new minimum deck, we stop</span>
+        <span class="k">if</span> <span class="n">minimum_deck</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">break</span>
+
+        <span class="c1"># Adding the deck we found to our cluster</span>
+        <span class="n">cluster</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">minimum_deck</span><span class="p">)</span>
+
+        <span class="c1"># We remove the deck from the remaining decks and continue iterating</span>
+        <span class="n">candidates</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">minimum_deck</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">cluster</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="getting-all-clusters">
+<h3>Getting all clusters<a class="headerlink" href="#getting-all-clusters" title="Permalink to this headline">#</a></h3>
+<p>Then, we make a function for getting all clusters for a list of deck codes. This one’s pretty simple.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
+
+
+<span class="k">def</span> <span class="nf">get_all_clusters</span><span class="p">(</span><span class="n">deck_codes</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">cluster_class</span><span class="p">:</span> <span class="n">Cluster</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">Cluster</span><span class="p">]:</span>
+    <span class="sd">&quot;&quot;&quot;Gets all clusters centered on each deck code</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        deck_codes (List[str]): a list of deck codes</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        List[Cluster]: all clusters found centered on each deck code</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">clusters</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">for</span> <span class="n">center</span> <span class="ow">in</span> <span class="n">deck_codes</span><span class="p">:</span>
+        <span class="c1"># We copy the list of deck codes because we change it in our code above</span>
+        <span class="n">candidates</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">deck_codes</span><span class="p">)</span>
+
+        <span class="c1"># We get the biggest cluster centered on deck</span>
+        <span class="n">clusters</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">get_centered_cluster</span><span class="p">(</span><span class="n">center</span><span class="p">,</span> <span class="n">candidates</span><span class="p">,</span> <span class="n">cluster_class</span><span class="p">))</span>
+
+    <span class="k">return</span> <span class="n">clusters</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="clustering-a-list-of-decks">
+<h3>Clustering a list of decks<a class="headerlink" href="#clustering-a-list-of-decks" title="Permalink to this headline">#</a></h3>
+<p>We now have all the necessary building blocks to make our last function. One that takes a list of deck codes and returns clusters containing all decks.</p>
+<p>Pseudocode:</p>
+<ul class="simple">
+<li><p>Call <code class="docutils literal notranslate"><span class="pre">get_all_clusters</span></code> to get all clusters centered on each remaining deck code</p></li>
+<li><p>Order them by size</p></li>
+<li><p>Add them in descending size order as long as they don’t contain any deck that’s already in our result</p>
+<ul>
+<li><p>The biggest one will always get added</p></li>
+<li><p>Smaller ones can get added directly if they have no overlap with the big clusters found in that step</p></li>
+</ul>
+</li>
+<li><p>Restart the process until all decks have been assigned to a cluster</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_best_clusters</span><span class="p">(</span><span class="n">deck_codes</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">cluster_class</span><span class="p">:</span> <span class="n">Cluster</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">Cluster</span><span class="p">]:</span>
+    <span class="sd">&quot;&quot;&quot;Gets the best clusters for the list of deck codes</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        deck_codes (List[str]): a list of deck codes</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        List[Cluster]: the best clusters found</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">clusters</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">remaining_decks</span> <span class="o">=</span> <span class="n">deck_codes</span>
+
+    <span class="k">def</span> <span class="nf">clusters_contains_deck</span><span class="p">(</span><span class="n">clusters</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Cluster</span><span class="p">],</span> <span class="n">deck</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="c1"># Return True if the deck is in any of the clusters already found</span>
+        <span class="k">return</span> <span class="nb">any</span><span class="p">(</span><span class="n">deck</span> <span class="ow">in</span> <span class="n">c</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">clusters</span><span class="p">)</span>
+
+    <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">remaining_decks</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">possible_clusters</span> <span class="o">=</span> <span class="n">get_all_clusters</span><span class="p">(</span><span class="n">remaining_decks</span><span class="p">,</span> <span class="n">cluster_class</span><span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">possible_cluster</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span>
+            <span class="n">possible_clusters</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span>
+        <span class="p">):</span>
+            <span class="c1"># If no other cluster already contains any of the decks in the current candidate cluster, we add it</span>
+            <span class="c1"># This means we will always add the biggest cluster found at that step</span>
+            <span class="k">if</span> <span class="nb">all</span><span class="p">(</span><span class="ow">not</span> <span class="n">clusters_contains_deck</span><span class="p">(</span><span class="n">clusters</span><span class="p">,</span> <span class="n">d</span><span class="p">)</span> <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">possible_cluster</span><span class="o">.</span><span class="n">decks</span><span class="p">):</span>
+                <span class="n">clusters</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">possible_cluster</span><span class="p">)</span>
+
+            <span class="c1"># Else we pass to the next possible cluster</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">continue</span>
+
+        <span class="c1"># We update our remaining decks</span>
+        <span class="n">remaining_decks</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="n">d</span> <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">deck_codes</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">clusters_contains_deck</span><span class="p">(</span><span class="n">clusters</span><span class="p">,</span> <span class="n">d</span><span class="p">)</span>
+        <span class="p">]</span>
+
+    <span class="k">return</span> <span class="n">clusters</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="clustering-based-on-common-cards">
+<h2>Clustering based on common cards<a class="headerlink" href="#clustering-based-on-common-cards" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>All decks in an archetype must share <code class="docutils literal notranslate"><span class="pre">ARCHETYPE_SIZE</span></code> cards</p></li>
+<li><p>Any deck whose addition would make the cluster intersection go below <code class="docutils literal notranslate"><span class="pre">ARCHETYPE_SIZE</span></code> can directly be eliminated</p>
+<ul>
+<li><p>Adding more decks will make the cluster <em>more</em> stringent with future additions</p></li>
+</ul>
+</li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ARCHETYPE_SIZE</span> <span class="o">=</span> <span class="n">DECK_SIZE</span> <span class="o">-</span> <span class="mi">10</span>
+
+<span class="k">class</span> <span class="nc">CommonCardsCluster</span><span class="p">(</span><span class="n">Cluster</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">center</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">center</span><span class="p">)</span>
+
+        <span class="c1"># Saving the intersection of the decklists in our cluster will help speed up the process</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">intersection</span> <span class="o">=</span> <span class="n">decks_data</span><span class="p">[</span><span class="n">center</span><span class="p">]</span><span class="o">.</span><span class="n">cards</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">archetype_size</span> <span class="o">=</span> <span class="n">ARCHETYPE_SIZE</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">deck_to_deck_distance</span><span class="p">(</span><span class="n">dc_1</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">dc_2</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+        <span class="c1"># A small class method for validation</span>
+        <span class="k">return</span> <span class="n">DECK_SIZE</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span>
+            <span class="c1"># &amp; is the intersection operator for sets</span>
+            <span class="n">decks_data</span><span class="p">[</span><span class="n">dc_1</span><span class="p">]</span><span class="o">.</span><span class="n">cards</span>
+            <span class="o">&amp;</span> <span class="n">decks_data</span><span class="p">[</span><span class="n">dc_2</span><span class="p">]</span><span class="o">.</span><span class="n">cards</span>
+        <span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">distance</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">deck_code</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+        <span class="c1"># If the cluster_intersection is fully contained in the decks_data cards, cluster_intersection = cluster + deck intersetion and len = 0</span>
+        <span class="c1"># This will always be &gt;= 0 because at most there&#39;s full overlap between a deck and a cluster&#39;s intersection</span>
+        <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">intersection</span><span class="p">)</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span>
+            <span class="c1"># &amp; is the intersection operator for sets</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">intersection</span>
+            <span class="o">&amp;</span> <span class="n">decks_data</span><span class="p">[</span><span class="n">deck_code</span><span class="p">]</span><span class="o">.</span><span class="n">cards</span>
+        <span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">can_be_added_to_cluster</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">distance</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">bool</span><span class="p">]:</span>
+        <span class="c1"># If adding the new deck would make the intersection go over the archetype size, it will never be able to be added</span>
+        <span class="c1"># For example if we currently have an intersection of 30 and an archetype size of 28, the max distance to add is 2</span>
+        <span class="k">if</span> <span class="n">distance</span> <span class="o">&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">intersection</span><span class="p">)</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">archetype_size</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">True</span>
+
+    <span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">deck_code</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">decks</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">deck_code</span><span class="p">)</span>
+        <span class="c1"># &amp; is the intersection operator for sets</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">intersection</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">intersection</span> <span class="o">&amp;</span> <span class="n">decks_data</span><span class="p">[</span><span class="n">deck_code</span><span class="p">]</span><span class="o">.</span><span class="n">cards</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">deck_code</span> <span class="ow">in</span> <span class="n">decks_data</span><span class="p">:</span>
+    <span class="c1"># A deck code has 100% overlap with itself</span>
+    <span class="k">assert</span> <span class="n">CommonCardsCluster</span><span class="o">.</span><span class="n">deck_to_deck_distance</span><span class="p">(</span><span class="n">deck_code</span><span class="p">,</span> <span class="n">deck_code</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
+
+    <span class="k">if</span> <span class="n">deck_code</span> <span class="o">!=</span> <span class="n">first_deck_code</span><span class="p">:</span>
+        <span class="c1"># deck-to-deck distance is always &gt; 0 as they&#39;re distinct and &lt;= 40 as that&#39;s the maximum difference</span>
+        <span class="k">assert</span> <span class="p">(</span>
+            <span class="mi">0</span>
+            <span class="o">&lt;</span> <span class="n">CommonCardsCluster</span><span class="o">.</span><span class="n">deck_to_deck_distance</span><span class="p">(</span><span class="n">deck_code</span><span class="p">,</span> <span class="n">first_deck_code</span><span class="p">)</span>
+            <span class="o">&lt;=</span> <span class="mi">40</span>
+        <span class="p">)</span>
+
+        <span class="c1"># In this specific case, the distance to the cluster is the same as the distance to the deck:</span>
+        <span class="c1">#   it&#39;s the number of non-overlapping cards</span>
+        <span class="n">cluster</span> <span class="o">=</span> <span class="n">CommonCardsCluster</span><span class="p">(</span><span class="n">first_deck_code</span><span class="p">)</span>
+
+        <span class="k">assert</span> <span class="n">cluster</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span><span class="n">deck_code</span><span class="p">)</span> <span class="o">==</span> <span class="n">CommonCardsCluster</span><span class="o">.</span><span class="n">deck_to_deck_distance</span><span class="p">(</span>
+            <span class="n">deck_code</span><span class="p">,</span> <span class="n">first_deck_code</span>
+        <span class="p">)</span>
+
+<span class="c1"># Validation of the centered clusters code</span>
+<span class="k">for</span> <span class="n">deck</span> <span class="ow">in</span> <span class="n">factions_decks</span><span class="p">[</span><span class="n">max_faction</span><span class="p">][:</span><span class="mi">200</span><span class="p">]:</span>
+
+    <span class="c1"># Only checking out of 200 decks for speed</span>
+    <span class="n">cluster</span> <span class="o">=</span> <span class="n">get_centered_cluster</span><span class="p">(</span>
+        <span class="n">deck</span><span class="p">,</span>
+        <span class="n">factions_decks</span><span class="p">[</span><span class="n">max_faction</span><span class="p">][:</span><span class="mi">200</span><span class="p">],</span>
+        <span class="n">CommonCardsCluster</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="c1"># We check the number of cards common to all decks in the cluster</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">cluster</span><span class="o">.</span><span class="n">decks</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="c1"># If have more than one deck, their intersection is at most 39 cards</span>
+        <span class="k">assert</span> <span class="mi">40</span> <span class="o">&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">cluster</span><span class="o">.</span><span class="n">intersection</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">ARCHETYPE_SIZE</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="c1"># A few decks simple have no good neigbors, we check the distance is &gt; DECK_SIZE - ARCHETYPE_SIZE</span>
+        <span class="k">assert</span> <span class="nb">min</span><span class="p">(</span><span class="n">cluster</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span><span class="n">d</span><span class="p">)</span> <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">factions_decks</span><span class="p">[</span><span class="n">max_faction</span><span class="p">][:</span><span class="mi">200</span><span class="p">]</span> <span class="k">if</span> <span class="n">d</span> <span class="o">!=</span> <span class="n">deck</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">DECK_SIZE</span> <span class="o">-</span> <span class="n">ARCHETYPE_SIZE</span>
+
+<span class="c1"># Validation of the best clusters code</span>
+<span class="n">clusters</span> <span class="o">=</span> <span class="n">get_best_clusters</span><span class="p">(</span><span class="n">factions_decks</span><span class="p">[</span><span class="n">max_faction</span><span class="p">][:</span><span class="mi">200</span><span class="p">],</span> <span class="n">cluster_class</span><span class="o">=</span><span class="n">CommonCardsCluster</span><span class="p">)</span>
+
+<span class="c1"># We clustered 200 decks, the sum of clusters lengths should be 200</span>
+<span class="k">assert</span> <span class="nb">sum</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">clusters</span><span class="p">)</span> <span class="o">==</span> <span class="mi">200</span>
+
+<span class="c1"># Checking we have the right intersection sizes</span>
+<span class="k">for</span> <span class="n">cluster</span> <span class="ow">in</span> <span class="n">clusters</span><span class="p">:</span>
+    <span class="k">assert</span> <span class="mi">40</span> <span class="o">&gt;=</span> <span class="nb">len</span><span class="p">(</span><span class="n">cluster</span><span class="o">.</span><span class="n">intersection</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">ARCHETYPE_SIZE</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="putting-it-all-together">
+<h3>Putting it all together<a class="headerlink" href="#putting-it-all-together" title="Permalink to this headline">#</a></h3>
+<section id="parameter-selection">
+<h4>Parameter selection<a class="headerlink" href="#parameter-selection" title="Permalink to this headline">#</a></h4>
+<p>Selecting the right <code class="docutils literal notranslate"><span class="pre">ARCHETYPE_SIZE</span></code> is crucial so I experimented with a few different values. Keep in mind we have ~30,000 decklists.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>ARCHETYPE_SIZE</p></th>
+<th class="head"><p>ARCHETYPES</p></th>
+<th class="head"><p>AVG DECK/ARCHETYPE FOR TOP 100</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>30</p></td>
+<td><p>10132</p></td>
+<td><p>53</p></td>
+</tr>
+<tr class="row-odd"><td><p>28</p></td>
+<td><p>8847</p></td>
+<td><p>65</p></td>
+</tr>
+<tr class="row-even"><td><p>25</p></td>
+<td><p>7032</p></td>
+<td><p>80</p></td>
+</tr>
+</tbody>
+</table>
+<p><code class="docutils literal notranslate"><span class="pre">ARCHETYPE_SIZE=28</span></code> looks like a good spot for archetype size and is coherent with the intuition of what defines an archetype. It allows for 12 cards to be different between decklists, which is 4 individual playsets of cards.</p>
+<p>At the same time, the most popular archetype (Senna Veigar) contains over <strong>500 different decks</strong> which is starting to obscure a lot of individual card choices which may be meaningful.</p>
+<p>A dynamic <code class="docutils literal notranslate"><span class="pre">ARCHETYPE_SIZE</span></code> might be what’s needed, in particular for decks which have a lot of “flex” slots. Smaller changes in those popular decks could create new archetypes, and fringe decks could get grouped more easily to allow for easier analysis. This might be something I explore in the future.</p>
+</section>
+<section id="analysing-the-results">
+<h4>Analysing the results<a class="headerlink" href="#analysing-the-results" title="Permalink to this headline">#</a></h4>
+<p>And finally we get to the fun part, running it and finding out what’s the best deck in Legends of Runeterra right now!</p>
+<p>Or so I thought. Let’s take a look at the result.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># This will be a list of lists containing deck codes</span>
+<span class="n">common_cards_cluster</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="c1"># Progress visualization</span>
+<span class="kn">from</span> <span class="nn">tqdm.notebook</span> <span class="kn">import</span> <span class="n">tqdm</span>
+
+<span class="c1"># Running the clustering process for all regions takes a few minutes</span>
+<span class="c1"># It could be heavily optimized but it&#39;s good enough for now</span>
+<span class="k">for</span> <span class="n">faction</span> <span class="ow">in</span> <span class="n">tqdm</span><span class="p">(</span><span class="n">factions_decks</span><span class="p">):</span>
+    <span class="n">best_clusters</span> <span class="o">=</span> <span class="n">get_best_clusters</span><span class="p">(</span><span class="n">factions_decks</span><span class="p">[</span><span class="n">faction</span><span class="p">],</span> <span class="n">CommonCardsCluster</span><span class="p">)</span>
+    <span class="n">common_cards_cluster</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">best_clusters</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "9a6c2ad877b340379377b031ab598916"}
+</script><div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="nn">Input In [10],</span> in <span class="ni">&lt;cell line: 9&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="c1"># Running the clustering process for all regions takes a few minutes</span>
+<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="c1"># It could be heavily optimized but it&#39;s good enough for now</span>
+<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="k">for</span> <span class="n">faction</span> <span class="ow">in</span> <span class="n">tqdm</span><span class="p">(</span><span class="n">factions_decks</span><span class="p">):</span>
+<span class="ne">---&gt; </span><span class="mi">10</span>     <span class="n">best_clusters</span> <span class="o">=</span> <span class="n">get_best_clusters</span><span class="p">(</span><span class="n">factions_decks</span><span class="p">[</span><span class="n">faction</span><span class="p">],</span> <span class="n">CommonCardsCluster</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">11</span>     <span class="n">common_cards_cluster</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">best_clusters</span><span class="p">)</span>
+
+<span class="nn">Input In [7],</span> in <span class="ni">get_best_clusters</span><span class="nt">(deck_codes, cluster_class)</span>
+<span class="g g-Whitespace">     </span><span class="mi">15</span>     <span class="k">return</span> <span class="nb">any</span><span class="p">(</span><span class="n">deck</span> <span class="ow">in</span> <span class="n">c</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">clusters</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">17</span> <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">remaining_decks</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+<span class="ne">---&gt; </span><span class="mi">18</span>     <span class="n">possible_clusters</span> <span class="o">=</span> <span class="n">get_all_clusters</span><span class="p">(</span><span class="n">remaining_decks</span><span class="p">,</span> <span class="n">cluster_class</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">20</span>     <span class="k">for</span> <span class="n">possible_cluster</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span>
+<span class="g g-Whitespace">     </span><span class="mi">21</span>         <span class="n">possible_clusters</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span>
+<span class="g g-Whitespace">     </span><span class="mi">22</span>     <span class="p">):</span>
+<span class="g g-Whitespace">     </span><span class="mi">23</span>         <span class="c1"># If no other cluster already contains any of the decks in the current candidate cluster, we add it</span>
+<span class="g g-Whitespace">     </span><span class="mi">24</span>         <span class="c1"># This means we will always add the biggest cluster found at that step</span>
+<span class="g g-Whitespace">     </span><span class="mi">25</span>         <span class="k">if</span> <span class="nb">all</span><span class="p">(</span><span class="ow">not</span> <span class="n">clusters_contains_deck</span><span class="p">(</span><span class="n">clusters</span><span class="p">,</span> <span class="n">d</span><span class="p">)</span> <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">possible_cluster</span><span class="o">.</span><span class="n">decks</span><span class="p">):</span>
+
+<span class="nn">Input In [6],</span> in <span class="ni">get_all_clusters</span><span class="nt">(deck_codes, cluster_class)</span>
+<span class="g g-Whitespace">     </span><span class="mi">17</span>     <span class="n">candidates</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">deck_codes</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">19</span>     <span class="c1"># We get the biggest cluster centered on deck</span>
+<span class="ne">---&gt; </span><span class="mi">20</span>     <span class="n">clusters</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">get_centered_cluster</span><span class="p">(</span><span class="n">center</span><span class="p">,</span> <span class="n">candidates</span><span class="p">,</span> <span class="n">cluster_class</span><span class="p">))</span>
+<span class="g g-Whitespace">     </span><span class="mi">22</span> <span class="k">return</span> <span class="n">clusters</span>
+
+<span class="nn">Input In [5],</span> in <span class="ni">get_centered_cluster</span><span class="nt">(center, candidates, cluster_class)</span>
+<span class="g g-Whitespace">     </span><span class="mi">25</span> <span class="c1"># We iterate on possible members</span>
+<span class="g g-Whitespace">     </span><span class="mi">26</span> <span class="c1"># We copy the list because we want to be able to remove candidates during iteration</span>
+<span class="g g-Whitespace">     </span><span class="mi">27</span> <span class="k">for</span> <span class="n">candidate</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">(</span><span class="n">candidates</span><span class="p">):</span>
+<span class="ne">---&gt; </span><span class="mi">29</span>     <span class="n">cluster_distance</span> <span class="o">=</span> <span class="n">cluster</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span><span class="n">candidate</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">30</span>     <span class="n">can_be_added</span> <span class="o">=</span> <span class="n">cluster</span><span class="o">.</span><span class="n">can_be_added_to_cluster</span><span class="p">(</span><span class="n">cluster_distance</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">32</span>     <span class="c1"># We check if the deck can be added to our cluster first</span>
+
+<span class="nn">Input In [8],</span> in <span class="ni">CommonCardsCluster.distance</span><span class="nt">(self, deck_code)</span>
+<span class="g g-Whitespace">     </span><span class="mi">21</span> <span class="k">def</span> <span class="nf">distance</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">deck_code</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="g g-Whitespace">     </span><span class="mi">22</span>     <span class="c1"># If the cluster_intersection is fully contained in the decks_data cards, cluster_intersection = cluster + deck intersetion and len = 0</span>
+<span class="g g-Whitespace">     </span><span class="mi">23</span>     <span class="c1"># This will always be &gt;= 0 because at most there&#39;s full overlap between a deck and a cluster&#39;s intersection</span>
+<span class="ne">---&gt; </span><span class="mi">24</span>     <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">intersection</span><span class="p">)</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span>
+<span class="g g-Whitespace">     </span><span class="mi">25</span>         <span class="c1"># &amp; is the intersection operator for sets</span>
+<span class="g g-Whitespace">     </span><span class="mi">26</span>         <span class="bp">self</span><span class="o">.</span><span class="n">intersection</span>
+<span class="g g-Whitespace">     </span><span class="mi">27</span>         <span class="o">&amp;</span> <span class="n">decks_data</span><span class="p">[</span><span class="n">deck_code</span><span class="p">]</span><span class="o">.</span><span class="n">cards</span>
+<span class="g g-Whitespace">     </span><span class="mi">28</span>     <span class="p">)</span>
+
+<span class="ne">KeyboardInterrupt</span>: 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># We&#39;ll take a look at the 100 archetypes with the most games</span>
+<span class="k">for</span> <span class="n">cluster</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">common_cards_cluster</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)[:</span><span class="mi">100</span><span class="p">]:</span>
+    <span class="n">stats</span> <span class="o">=</span> <span class="n">cluster</span><span class="o">.</span><span class="n">get_stats</span><span class="p">()</span>
+
+    <span class="k">if</span> <span class="s2">&quot;Miss Fortune&quot;</span> <span class="ow">in</span> <span class="n">stats</span><span class="o">.</span><span class="n">title</span> <span class="ow">and</span> <span class="s2">&quot;Twisted Fate&quot;</span> <span class="ow">in</span> <span class="n">stats</span><span class="o">.</span><span class="n">title</span><span class="p">:</span>
+        <span class="n">stats</span><span class="o">.</span><span class="n">display</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><h3>Miss Fortune Twisted Fate - Bilgewater Noxus</h3>
+    <ul>
+    <li><b>59.54% winrate</b></li>
+    <li>127,094 games</li>
+    <li>257 decklists</li>
+    <li>Aggregated decklist: <table>
+<tbody>
+<tr><td>3x Precious Pet       </td><td>3x Marai Warden  </td><td>3x Legion Saboteur </td><td>3x Decimate      </td></tr>
+<tr><td>3x Noxian Fervor      </td><td>3x Jagged Butcher</td><td>3x Legion Rearguard</td><td>3x Zap Sprayfin  </td></tr>
+<tr><td>3x Legion Grenadier   </td><td>3x Twisted Fate  </td><td>3x Miss Fortune    </td><td>3x Riptide Sermon</td></tr>
+<tr><td>2x Eye of Nagakabouros</td><td>2x Make it Rain  </td><td>                   </td><td>                 </td></tr>
+</tbody>
+</table></li></ul></div><div class="output text_html"><h3>Miss Fortune Twisted Fate - Bilgewater Noxus</h3>
+    <ul>
+    <li><b>58.01% winrate</b></li>
+    <li>2,939 games</li>
+    <li>51 decklists</li>
+    <li>Aggregated decklist: <table>
+<tbody>
+<tr><td>3x Marai Warden  </td><td>3x Legion Saboteur    </td><td>3x Legion Grenadier</td><td>3x Noxian Fervor   </td></tr>
+<tr><td>3x Twisted Fate  </td><td>3x Miss Fortune       </td><td>3x Decimate        </td><td>3x Legion Rearguard</td></tr>
+<tr><td>3x Zap Sprayfin  </td><td>3x Eye of Nagakabouros</td><td>3x Precious Pet    </td><td>3x Riptide Sermon  </td></tr>
+<tr><td>2x Jagged Butcher</td><td>2x Make it Rain       </td><td>                   </td><td>                   </td></tr>
+</tbody>
+</table></li></ul></div><div class="output text_html"><h3>Miss Fortune Twisted Fate - Bilgewater Noxus</h3>
+    <ul>
+    <li><b>58.58% winrate</b></li>
+    <li>1,137 games</li>
+    <li>32 decklists</li>
+    <li>Aggregated decklist: <table>
+<tbody>
+<tr><td>3x Marai Warden    </td><td>3x Legion Saboteur</td><td>3x Zap Sprayfin  </td><td>3x Decimate           </td></tr>
+<tr><td>3x Legion Grenadier</td><td>3x Noxian Fervor  </td><td>3x Miss Fortune  </td><td>3x Legion Rearguard   </td></tr>
+<tr><td>3x Jagged Butcher  </td><td>3x Riptide Sermon </td><td>3x Twisted Fate  </td><td>2x Eye of Nagakabouros</td></tr>
+<tr><td>2x Make it Rain    </td><td>2x Precious Pet   </td><td>1x Tentacle Smash</td><td>                      </td></tr>
+</tbody>
+</table></li></ul></div><div class="output text_html"><h3>Gangplank Miss Fortune Twisted Fate - Bilgewater Noxus</h3>
+    <ul>
+    <li><b>56.78% winrate</b></li>
+    <li>2,892 games</li>
+    <li>31 decklists</li>
+    <li>Aggregated decklist: <table>
+<tbody>
+<tr><td>3x Legion Saboteur</td><td>3x Zap Sprayfin     </td><td>3x Decimate        </td><td>3x Imperial Demolitionist</td></tr>
+<tr><td>3x Noxian Fervor  </td><td>3x Crackshot Corsair</td><td>3x Miss Fortune    </td><td>3x Legion Rearguard      </td></tr>
+<tr><td>3x Marai Warden   </td><td>3x Precious Pet     </td><td>3x Legion Grenadier</td><td>2x Island Navigator      </td></tr>
+<tr><td>2x Twisted Fate   </td><td>1x Gangplank        </td><td>1x Jagged Butcher  </td><td>1x Arachnoid Sentry      </td></tr>
+</tbody>
+</table></li></ul></div></div>
+</div>
+<p>As we can see, we have 3 archetypes that are… Pretty much the same MF-TF aggro deck. The differences in their aggregate decklists are minimal, and they should not be 3 different archetypes, or split differently at least.</p>
+<p>I think this is due to the fact that players will try pretty much <em>any</em> change to a decklist, which means each individual card will get cut from the decklist at some point. Archetypes aren’t really defined by cards they <em>all</em> have in common, but more by <em>how many</em> cards they have in common.</p>
+<p>So it’s time to implement our second distance!</p>
+</section>
+</section>
+</section>
+<section id="clustering-based-on-cards-differences">
+<h2>Clustering based on cards differences<a class="headerlink" href="#clustering-based-on-cards-differences" title="Permalink to this headline">#</a></h2>
+<p>Let’s take the opposite approach:</p>
+<ul class="simple">
+<li><p>The distance of a deck to a cluster is the <strong>maximum</strong> number of different cards it has with a deck in the cluster</p></li>
+<li><p>We will add new decks by minimizing this maximum distance</p></li>
+<li><p>We will set a limit on the maximum distance between two decks in an archetype</p></li>
+</ul>
+<p>The goal is to add decks that differ slightly from eachother, whichever cards the players decide to change.</p>
+<p>Even though the number seems high at <code class="docutils literal notranslate"><span class="pre">MAX_DIFFERENCE=15</span></code>, it’s the <em>maximum</em> difference between two arbitrary decks in the cluster. As the clusters are formed iteratively, similar decks will get grouped together early and hopefuly it won’t catch too many “parallel” archetypes.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># This will be the maximum number of different cards 2 different decks can have while in the same cluster</span>
+<span class="n">MAX_DIFFERENCE</span> <span class="o">=</span> <span class="mi">15</span>
+
+
+<span class="c1"># Global distance cache</span>
+<span class="n">decks_distance_cache</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">dict</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">deck_to_deck_distance</span><span class="p">(</span><span class="n">dc_1</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">dc_2</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+    <span class="c1"># This time we will use this distance heavily and add a distance cache</span>
+
+    <span class="c1"># We sort the decks</span>
+    <span class="n">d1</span><span class="p">,</span> <span class="n">d2</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">((</span><span class="n">dc_1</span><span class="p">,</span> <span class="n">dc_2</span><span class="p">))</span>
+
+    <span class="k">if</span> <span class="n">d2</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">decks_distance_cache</span><span class="p">[</span><span class="n">d1</span><span class="p">]:</span>
+        <span class="n">decks_distance_cache</span><span class="p">[</span><span class="n">d1</span><span class="p">][</span><span class="n">d2</span><span class="p">]</span> <span class="o">=</span> <span class="n">DECK_SIZE</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span>
+            <span class="c1"># &amp; is the intersection operator for sets</span>
+            <span class="n">decks_data</span><span class="p">[</span><span class="n">d1</span><span class="p">]</span><span class="o">.</span><span class="n">cards</span>
+            <span class="o">&amp;</span> <span class="n">decks_data</span><span class="p">[</span><span class="n">d2</span><span class="p">]</span><span class="o">.</span><span class="n">cards</span>
+        <span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">decks_distance_cache</span><span class="p">[</span><span class="n">d1</span><span class="p">][</span><span class="n">d2</span><span class="p">]</span>
+
+
+<span class="k">class</span> <span class="nc">DifferenceBasedCluster</span><span class="p">(</span><span class="n">Cluster</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">center</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">center</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">max_difference</span> <span class="o">=</span> <span class="n">MAX_DIFFERENCE</span>
+
+        <span class="c1"># Internal cluster distance cache to speed up max search</span>
+        <span class="c1"># Each deck will point to its maximum distance to the cluster</span>
+        <span class="c1"># Which means when iterating a deck, we only need to check what&#39;s biggest between the max distance in the cache and the one with the last deck added</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">cluster_distance_cache</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="mi">0</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">distance</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">deck_code</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+        <span class="c1"># We could do max(self.deck_to_deck_distance(d, deck_code) for d in self.decks)</span>
+        <span class="c1"># But we want to speed things up and any deck with a distance &gt; MAX_DIFFERENCE can be ruled out directly</span>
+        <span class="n">max_distance</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">cluster_distance_cache</span><span class="p">[</span><span class="n">deck_code</span><span class="p">],</span> <span class="n">deck_to_deck_distance</span><span class="p">(</span><span class="n">deck_code</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">decks</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span>
+
+        <span class="c1"># In this situation the deck we selected will be too far, we return the maximum value and we&#39;ll remove the deck</span>
+        <span class="k">if</span> <span class="n">max_distance</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_difference</span><span class="p">:</span>
+            <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="s2">&quot;inf&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Else we save the new value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">cluster_distance_cache</span><span class="p">[</span><span class="n">deck_code</span><span class="p">]</span> <span class="o">=</span> <span class="n">max_distance</span>
+        
+        <span class="k">return</span> <span class="n">max_distance</span>
+
+    <span class="k">def</span> <span class="nf">can_be_added_to_cluster</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">distance</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">bool</span><span class="p">]:</span>
+        <span class="c1"># By now I realize this function was superfluous, and we could have relied on distance() returning float(&quot;inf&quot;) as our way to prune decks</span>
+        <span class="c1">#   Refactoring notebooks is a huge pain though so I won&#39;t change it :D</span>
+
+        <span class="c1"># If adding the new deck would make the intersection go over the archetype size, it will never be able to be added</span>
+        <span class="c1"># For example if we currently have an intersection of 30 and an archetype size of 28, the max distance to add is 2</span>
+        <span class="k">if</span> <span class="n">distance</span> <span class="o">==</span> <span class="nb">float</span><span class="p">(</span><span class="s2">&quot;inf&quot;</span><span class="p">):</span>
+            <span class="k">return</span> <span class="kc">None</span>
+
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">distance</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_difference</span>
+
+    <span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">deck_code</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">decks</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">deck_code</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">deck_code</span> <span class="ow">in</span> <span class="n">decks_data</span><span class="p">:</span>
+    <span class="c1"># A deck code has 100% overlap with itself</span>
+    <span class="k">assert</span> <span class="n">deck_to_deck_distance</span><span class="p">(</span><span class="n">deck_code</span><span class="p">,</span> <span class="n">deck_code</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
+
+    <span class="k">if</span> <span class="n">deck_code</span> <span class="o">!=</span> <span class="n">first_deck_code</span><span class="p">:</span>
+        <span class="c1"># deck-to-deck distance is always &gt; 0 as they&#39;re distinct and &lt;= 40 as that&#39;s the maximum difference</span>
+        <span class="k">assert</span> <span class="mi">0</span> <span class="o">&lt;</span> <span class="n">deck_to_deck_distance</span><span class="p">(</span><span class="n">deck_code</span><span class="p">,</span> <span class="n">first_deck_code</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">40</span>
+
+        <span class="c1"># In this specific case, the distance to the cluster is the same as the distance to the deck:</span>
+        <span class="c1">#   it&#39;s the number of non-overlapping cards</span>
+        <span class="n">cluster</span> <span class="o">=</span> <span class="n">DifferenceBasedCluster</span><span class="p">(</span><span class="n">first_deck_code</span><span class="p">)</span>
+
+        <span class="c1"># Our cluster distance returns float(&quot;inf&quot;) if deck is too far, so we need to check &gt;= here</span>
+        <span class="k">assert</span> <span class="n">cluster</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span><span class="n">deck_code</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">deck_to_deck_distance</span><span class="p">(</span>
+            <span class="n">deck_code</span><span class="p">,</span> <span class="n">first_deck_code</span>
+        <span class="p">)</span>
+
+<span class="c1"># Validation of the centered clusters code</span>
+<span class="k">for</span> <span class="n">deck</span> <span class="ow">in</span> <span class="n">factions_decks</span><span class="p">[</span><span class="n">max_faction</span><span class="p">][:</span><span class="mi">200</span><span class="p">]:</span>
+
+    <span class="c1"># Only checking out of 200 decks for speed</span>
+    <span class="n">cluster</span> <span class="o">=</span> <span class="n">get_centered_cluster</span><span class="p">(</span>
+        <span class="n">deck</span><span class="p">,</span>
+        <span class="n">factions_decks</span><span class="p">[</span><span class="n">max_faction</span><span class="p">][:</span><span class="mi">200</span><span class="p">],</span>
+        <span class="n">DifferenceBasedCluster</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">cluster</span><span class="o">.</span><span class="n">decks</span><span class="p">)</span>
+
+<span class="c1"># Validation of the best clusters code</span>
+<span class="n">clusters</span> <span class="o">=</span> <span class="n">get_best_clusters</span><span class="p">(</span>
+    <span class="n">factions_decks</span><span class="p">[</span><span class="n">max_faction</span><span class="p">][:</span><span class="mi">200</span><span class="p">],</span>
+    <span class="n">cluster_class</span><span class="o">=</span><span class="n">DifferenceBasedCluster</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="c1"># We clustered 200 decks, the sum of clusters lengths should be 200</span>
+<span class="k">assert</span> <span class="nb">sum</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">clusters</span><span class="p">)</span> <span class="o">==</span> <span class="mi">200</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="checking-results">
+<h3>Checking results<a class="headerlink" href="#checking-results" title="Permalink to this headline">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># This will be a list of lists containing deck codes</span>
+<span class="n">difference_based_clusters</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="c1"># Progress visualization</span>
+<span class="kn">from</span> <span class="nn">tqdm.notebook</span> <span class="kn">import</span> <span class="n">tqdm</span>
+
+<span class="c1"># Running the clustering process for all regions is ~1 hour with that algorithm</span>
+<span class="c1"># It could be heavily optimized but let&#39;s say it&#39;s ok for now</span>
+<span class="k">for</span> <span class="n">faction</span> <span class="ow">in</span> <span class="n">tqdm</span><span class="p">(</span><span class="n">factions_decks</span><span class="p">):</span>
+    <span class="n">best_clusters</span> <span class="o">=</span> <span class="n">get_best_clusters</span><span class="p">(</span><span class="n">factions_decks</span><span class="p">[</span><span class="n">faction</span><span class="p">],</span> <span class="n">DifferenceBasedCluster</span><span class="p">)</span>
+    <span class="n">difference_based_clusters</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">best_clusters</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "5a88d0dd1778418eae610c1bd963b4d9", "version_major": 2, "version_minor": 0}
+</script></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># We&#39;ll take a look at the 1000 archetypes with the most games</span>
+<span class="k">for</span> <span class="n">cluster</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">difference_based_clusters</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)[:</span><span class="mi">100</span><span class="p">]:</span>
+    <span class="n">stats</span> <span class="o">=</span> <span class="n">cluster</span><span class="o">.</span><span class="n">get_stats</span><span class="p">()</span>
+
+    <span class="k">if</span> <span class="n">stats</span><span class="o">.</span><span class="n">title</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;Miss Fortune Twisted Fate&quot;</span><span class="p">):</span>
+        <span class="n">stats</span><span class="o">.</span><span class="n">display</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><h3>Miss Fortune Twisted Fate - Bilgewater Noxus</h3>
+    <ul>
+    <li><b>59.46% winrate</b></li>
+    <li>136,131 games</li>
+    <li>506 decklists</li>
+    <li>Aggregated decklist: <table>
+<tbody>
+<tr><td>3x Legion Saboteur    </td><td>3x Noxian Fervor</td><td>3x Decimate    </td><td>3x Legion Rearguard</td></tr>
+<tr><td>3x Marai Warden       </td><td>3x Zap Sprayfin </td><td>3x Precious Pet</td><td>3x Jagged Butcher  </td></tr>
+<tr><td>3x Legion Grenadier   </td><td>3x Twisted Fate </td><td>3x Miss Fortune</td><td>3x Riptide Sermon  </td></tr>
+<tr><td>2x Eye of Nagakabouros</td><td>2x Make it Rain </td><td>               </td><td>                   </td></tr>
+</tbody>
+</table></li></ul></div></div>
+</div>
+<p>Looks better! We only have a single pirates aggro list that properly catches the decklists from the 3 previous ones we had.</p>
+<p>So after all this… Let’s take a look at the best decks and call it a day :D</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Let&#39;s take a look at the 100 archetypes with the most games and print the 10 highest winrates amongst tho</span>
+<span class="k">for</span> <span class="n">cluster</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span>
+    <span class="nb">sorted</span><span class="p">(</span><span class="n">difference_based_clusters</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)[:</span><span class="mi">100</span><span class="p">],</span>
+    <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">get_stats</span><span class="p">()</span><span class="o">.</span><span class="n">winrate</span><span class="p">,</span>
+    <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="p">)[:</span><span class="mi">10</span><span class="p">]:</span>
+    <span class="n">stats</span> <span class="o">=</span> <span class="n">cluster</span><span class="o">.</span><span class="n">get_stats</span><span class="p">()</span>
+    <span class="n">stats</span><span class="o">.</span><span class="n">display</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><h3>Miss Fortune Twisted Fate - Bilgewater Noxus</h3>
+    <ul>
+    <li><b>59.45% winrate</b></li>
+    <li>137,768 games</li>
+    <li>506 decklists</li>
+    <li>Aggregated decklist: <table>
+<tbody>
+<tr><td>3x Legion Saboteur    </td><td>3x Noxian Fervor</td><td>3x Decimate    </td><td>3x Legion Rearguard</td></tr>
+<tr><td>3x Marai Warden       </td><td>3x Zap Sprayfin </td><td>3x Precious Pet</td><td>3x Jagged Butcher  </td></tr>
+<tr><td>3x Legion Grenadier   </td><td>3x Twisted Fate </td><td>3x Miss Fortune</td><td>3x Riptide Sermon  </td></tr>
+<tr><td>2x Eye of Nagakabouros</td><td>2x Make it Rain </td><td>               </td><td>                   </td></tr>
+</tbody>
+</table></li></ul></div><div class="output text_html"><h3>Ziggs Katarina Annie - Noxus Shurima</h3>
+    <ul>
+    <li><b>58.10% winrate</b></li>
+    <li>4,881 games</li>
+    <li>40 decklists</li>
+    <li>Aggregated decklist: <table>
+<tbody>
+<tr><td>3x Legion Saboteur </td><td>3x Treasure Seeker </td><td>3x Imperial Demolitionist</td><td>3x Decimate     </td></tr>
+<tr><td>3x Legion Rearguard</td><td>3x Merciless Hunter</td><td>3x Legion Grenadier      </td><td>3x Ruin Runner  </td></tr>
+<tr><td>3x Ruinous Path    </td><td>3x Baccai Reaper   </td><td>3x Annie                 </td><td>2x Noxian Fervor</td></tr>
+<tr><td>2x Ziggs           </td><td>2x Might           </td><td>1x Katarina              </td><td>                </td></tr>
+</tbody>
+</table></li></ul></div><div class="output text_html"><h3>Taric Poppy - Demacia MtTargon</h3>
+    <ul>
+    <li><b>57.50% winrate</b></li>
+    <li>25,699 games</li>
+    <li>296 decklists</li>
+    <li>Aggregated decklist: <table>
+<tbody>
+<tr><td>3x Golden Aegis         </td><td>3x Petricite Broadwing </td><td>3x Poppy              </td><td>3x Esmus, Breath of the World</td></tr>
+<tr><td>3x Taric                </td><td>3x Fleetfeather Tracker</td><td>3x Mountain Sojourners</td><td>3x Pale Cascade              </td></tr>
+<tr><td>3x Laurent Protege      </td><td>2x Relentless Pursuit  </td><td>2x Tyari the Traveler </td><td>2x Guiding Touch             </td></tr>
+<tr><td>2x Solari Soldier       </td><td>1x Concerted Strike    </td><td>1x Bastion            </td><td>1x Ranger&#x27;s Resolve          </td></tr>
+<tr><td>1x Brightsteel Protector</td><td>1x Sharpsight          </td><td>                      </td><td>                             </td></tr>
+</tbody>
+</table></li></ul></div><div class="output text_html"><h3>Annie Jhin - Jhin Noxus</h3>
+    <ul>
+    <li><b>57.35% winrate</b></li>
+    <li>69,715 games</li>
+    <li>463 decklists</li>
+    <li>Aggregated decklist: <table>
+<tbody>
+<tr><td>3x Legion Saboteur       </td><td>3x Boomcrew Rookie </td><td>3x Noxian Fervor</td><td>3x Jhin            </td></tr>
+<tr><td>3x Annie                 </td><td>3x Tusk Speaker    </td><td>3x Decimate     </td><td>3x Legion Rearguard</td></tr>
+<tr><td>3x Imperial Demolitionist</td><td>3x Solari Sunhawk  </td><td>3x The Stagehand</td><td>3x Doombeast       </td></tr>
+<tr><td>3x Crackshot Corsair     </td><td>1x Arachnoid Sentry</td><td>                </td><td>                   </td></tr>
+</tbody>
+</table></li></ul></div><div class="output text_html"><h3>Gnar Sejuani - BandleCity Freljord</h3>
+    <ul>
+    <li><b>57.34% winrate</b></li>
+    <li>3,122 games</li>
+    <li>57 decklists</li>
+    <li>Aggregated decklist: <table>
+<tbody>
+<tr><td>3x Teenydactyl </td><td>3x Pokey Stick</td><td>3x Inventive Chemist  </td><td>3x Sejuani      </td></tr>
+<tr><td>3x Gnar        </td><td>3x Troll Chant</td><td>3x Chief Nakotak      </td><td>3x Tusk Speaker </td></tr>
+<tr><td>3x Bitsy Lizard</td><td>3x Poison Dart</td><td>3x Ursine Spiritwalker</td><td>2x Three Sisters</td></tr>
+<tr><td>2x Spotted Toad</td><td>2x Minitee    </td><td>1x Elixir of Iron     </td><td>                </td></tr>
+</tbody>
+</table></li></ul></div><div class="output text_html"><h3>Elise Gwen - Noxus ShadowIsles</h3>
+    <ul>
+    <li><b>57.14% winrate</b></li>
+    <li>27,051 games</li>
+    <li>287 decklists</li>
+    <li>Aggregated decklist: <table>
+<tbody>
+<tr><td>3x Decimate          </td><td>3x Precious Pet    </td><td>3x Noxian Fervor         </td><td>3x Arachnoid Horror</td></tr>
+<tr><td>3x Doombeast         </td><td>3x Stygian Onlooker</td><td>3x Elise                 </td><td>3x House Spider    </td></tr>
+<tr><td>3x Frenzied Skitterer</td><td>3x Legion Saboteur </td><td>2x Imperial Demolitionist</td><td>2x Stalking Shadows</td></tr>
+<tr><td>2x Gwen              </td><td>2x Boisterous Host </td><td>2x Phantom Butler        </td><td>                   </td></tr>
+</tbody>
+</table></li></ul></div><div class="output text_html"><h3>Gangplank Miss Fortune Twisted Fate - Bilgewater Noxus</h3>
+    <ul>
+    <li><b>57.04% winrate</b></li>
+    <li>3,054 games</li>
+    <li>48 decklists</li>
+    <li>Aggregated decklist: <table>
+<tbody>
+<tr><td>3x Noxian Fervor</td><td>3x Miss Fortune     </td><td>3x Legion Saboteur       </td><td>3x Legion Rearguard</td></tr>
+<tr><td>3x Decimate     </td><td>3x Crackshot Corsair</td><td>3x Imperial Demolitionist</td><td>3x Zap Sprayfin    </td></tr>
+<tr><td>3x Marai Warden </td><td>3x Precious Pet     </td><td>3x Legion Grenadier      </td><td>2x Island Navigator</td></tr>
+<tr><td>2x Twisted Fate </td><td>2x Arachnoid Sentry </td><td>1x Gangplank             </td><td>                   </td></tr>
+</tbody>
+</table></li></ul></div><div class="output text_html"><h3>Viego Evelynn - Evelynn ShadowIsles</h3>
+    <ul>
+    <li><b>56.95% winrate</b></li>
+    <li>83,699 games</li>
+    <li>610 decklists</li>
+    <li>Aggregated decklist: <table>
+<tbody>
+<tr><td>3x Camavoran Soldier   </td><td>3x Viego      </td><td>3x Evelynn   </td><td>3x Sultur    </td></tr>
+<tr><td>3x Glimpse Beyond      </td><td>3x Hate Spike </td><td>3x Domination</td><td>3x Vile Feast</td></tr>
+<tr><td>3x Invasive Hydravine  </td><td>3x Black Spear</td><td>2x Vengeance </td><td>2x Vora      </td></tr>
+<tr><td>2x Neverglade Collector</td><td>2x Atrocity   </td><td>2x Barkbeast </td><td>             </td></tr>
+</tbody>
+</table></li></ul></div><div class="output text_html"><h3>Gwen Elise Katarina - Noxus ShadowIsles</h3>
+    <ul>
+    <li><b>56.83% winrate</b></li>
+    <li>39,115 games</li>
+    <li>249 decklists</li>
+    <li>Aggregated decklist: <table>
+<tbody>
+<tr><td>3x Boisterous Host</td><td>3x Phantom Butler </td><td>3x Gwen            </td><td>3x Ravenous Flock  </td></tr>
+<tr><td>3x Fallen Reckoner</td><td>3x Ruined Reckoner</td><td>3x House Spider    </td><td>3x Legion Rearguard</td></tr>
+<tr><td>3x Vile Feast     </td><td>2x Eternal Dancers</td><td>2x Arachnoid Sentry</td><td>2x The Harrowing   </td></tr>
+<tr><td>2x Hate Spike     </td><td>2x Katarina       </td><td>2x Glimpse Beyond  </td><td>1x Elise           </td></tr>
+</tbody>
+</table></li></ul></div><div class="output text_html"><h3>Shyvana Aurelion Sol - Demacia MtTargon</h3>
+    <ul>
+    <li><b>56.81% winrate</b></li>
+    <li>5,497 games</li>
+    <li>87 decklists</li>
+    <li>Aggregated decklist: <table>
+<tbody>
+<tr><td>3x Shyvana           </td><td>3x Dragon Chow           </td><td>3x Herald of Dragons   </td><td>3x Dragon&#x27;s Clutch</td></tr>
+<tr><td>3x Single Combat     </td><td>3x Ruined Dragonguard    </td><td>3x Screeching Dragon   </td><td>3x Sharpsight     </td></tr>
+<tr><td>3x Wounded Whiteflame</td><td>3x Dragonguard Lieutenant</td><td>3x Strafing Strike     </td><td>2x Eclipse Dragon </td></tr>
+<tr><td>2x Aurelion Sol      </td><td>2x Concerted Strike      </td><td>1x Kadregrin the Ruined</td><td>                  </td></tr>
+</tbody>
+</table></li></ul></div></div>
+</div>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="conclusion">
+<h1>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">#</a></h1>
+<p>Because clustering is still excruciatingly slow, I’m not really satisfied with this first approach.</p>
+<p>At the same time we can use heuristics for clustering. For Legends of Runeterra, this can simply be looking at champions and regions.</p>
+<p>If you have any other idea for how to implement clustering for card games in an even more game-agnostic way, don’t hestitate! I’ll still be looking at the subject moving forward, even though this blogpost already took me much more time than expected as my first notebook-based blog post.</p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By The Jupyter Book community<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
