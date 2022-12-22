@@ -138,9 +138,9 @@ Obsidian promised me *almost* everything I wanted:
 
 But being customizable is both a blessing and a curse. It means that while you *can* find solutions to do exactly what you want, you *need* to find it. Obsidian without plugins is almost unusable.
 
-You know, I love plugins. Emacs, Neovim, and VS Code all use plugins perfectly. But they're open source dev tools and the few plugins there are usually well maintained.
+You know, I love plugins. Emacs, Neovim, and VS Code all use plugins perfectly. But they're open source dev tools and the plugins usually have a long history.
 
-While in Obsidian those plugins are small open source projects, sometimes not updated and not ready to react to breaking changes from Obsidian, and conflicting with each other. Not to mention that Obsidian itself is **not** open source, which really irks me when it relies so much on open source plugins to be functional.
+In Obsidian those plugins are small projects, sometimes not ready to react to breaking changes from Obsidian, and conflicting with each other. Not to mention that Obsidian itself is **not** open source, which really irks me when it relies so much on open source plugins to be functional.
 
 But I pressed on and made Obsidian pretty much exactly what I had in mind:
 
