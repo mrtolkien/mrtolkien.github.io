@@ -68,6 +68,9 @@ author:
   avatar: "/assets/images/bio-photo.jpg"
   bio: "From esports caster to full-stack developer"
   links:
+    - label: "Mastodon"
+      icon: "fab fa-fw fa-mastodon"
+      url: "https://fosstodon.org/@tolki"
     - label: "Twitch"
       icon: "fab fa-fw fa-twitch"
       url: "https://www.twitch.tv/tolkicasts"
