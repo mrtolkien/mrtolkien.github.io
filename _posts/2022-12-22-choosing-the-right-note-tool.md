@@ -67,7 +67,12 @@ I started by watching a video on the subject by a Youtuber I like: [Knowledge Ma
 
 In this video, he talks about the book [Building a Second Brain](https://www.buildingasecondbrain.com/), so I started by reading the book. And it ticked.
 
-Tiago Forte offers a simple note-taking system. I'll keep it simple here, but I recommend to read the book if you're interested.
+Tiago Forte offers a simple note-taking system based on 4 steps. He calls it the `CODE` system:
+
+- Capture
+- Organize
+- Distill
+- Express
 
 ## Capture
 
@@ -80,7 +85,7 @@ It works because it lets you stay in the flow. When you see a cool social media 
 
 ## Organize
 
-When you have some time, organize the notes that were in your `Inbox` folder. Tiago Forte offers a simple system with 4 folders, based on **actionability** of the information.
+When you have some time, organize the notes that were in your `Inbox` folder. Tiago Forte offers a simple system with 4 folders, based on **actionability** of the information
 
 ### PARA
 
