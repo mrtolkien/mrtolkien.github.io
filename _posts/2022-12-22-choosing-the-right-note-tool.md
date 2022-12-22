@@ -5,6 +5,8 @@ tags:
 - Notion
 - Obsidian
 - PKM
+header:
+  image: /assets/images/obs_not.png
 ---
 
 The biggest reason I've managed to enter [École polytechnique](https://en.wikipedia.org/wiki/%C3%89cole_polytechnique) is my note-taking love coupled with my ability to synthetize.
@@ -19,7 +21,7 @@ So let's walk through this chronologically, from my first digital notes up to re
 
 I created my [Evernote](https://en.wikipedia.org/wiki/Evernote) account in early 2011 and used it regularly until 2014.
 
-![Evernote]("assets/images/Pasted image 20221222203617.png")
+![Evernote](https://i.imgur.com/8uk8w6g.png)
 
 It was messy, my notes looked like shit, but it worked for me. It was a tool that was ahead of its time, and I was not using even 10% of its features.
 
@@ -29,7 +31,7 @@ So I switched to something that fit my needs and was just released, [Google Keep
 
 For seven years, Google Keep was good enough for me. I used it to take short notes, write tasks lists, and share small snippets of information. I used its tagging system and search to quickly find the information that was relevant to me. I used its reminders features for any time-sensitive task or information.
 
-![Keep]("assets/images/Pasted image 20221222205305.png")
+![Keep](https://i.imgur.com/TBxwvBp.png)
 
 It was basic and very limited, but it mostly worked. Taking notes was quick, finding information was quick. It had good keyboards shortcuts too, which made it super fast to use for me.
 
@@ -117,7 +119,7 @@ You see, Notion databases are simply lists of notes. And notes in databases can 
 
 And database are very inflexible. They can have relationships to other database rows, but not to pages. If you try to move a row from a database into a normal page, it's buggy as hell and you can't `ctrl+z` if you made a mistake. If you want to switch from a database to a list of pages, god help you.
 
-![Notion]("assets/images/Pasted image 20221222214747.png")
+![Notion](https://i.imgur.com/162EPKD.png)
 
 I ended up almost destroying my last 18 months of notes because I was trying to put some structure on it. Add to that all of my previous pet peeves and I finally got the motivation to give Obsidian a real try.
 
@@ -137,7 +139,7 @@ While in Obsidian those plugins are small open source projects, sometimes not up
 
 But I pressed on and made Obsidian pretty much exactly what I had in mind:
 
-![Obsidian]("assets/images/Pasted image 20221222224641.png")
+![Obsidian](https://i.imgur.com/fEaxJxZ.png)
 
 It mostly worked. This took me two days, but I got to a point I was happy with. It included:
 
