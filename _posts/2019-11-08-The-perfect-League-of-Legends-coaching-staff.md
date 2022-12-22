@@ -45,11 +45,11 @@ So we were six, with some responsibilities crossing from one to another, but all
 
 In my eyes, a team needs:
 
-*   Strong training direction and structure. Making sure players’ time is not wasted should be the #1 focus of any team.
-*   Picks and bans preparation, done closely with players, to make sure everybody is on the same page regarding match-ups and compositions.
-*   Map movement (“macro”) and communication coaching, as it is the most important skill in competitive while being almost nonexistent in solo queue.
-*   Scouting reports, since making sure the team is ready to exploit weaknesses of opponents is crucial.
-*   Moral support and clear interlocutors for the players. Pro player’s life is rough and taxing, and making sure the players know they are well supported and taken care of goes a long way.
+* Strong training direction and structure. Making sure players’ time is not wasted should be the #1 focus of any team.
+* Picks and bans preparation, done closely with players, to make sure everybody is on the same page regarding match-ups and compositions.
+* Map movement (“macro”) and communication coaching, as it is the most important skill in competitive while being almost nonexistent in solo queue.
+* Scouting reports, since making sure the team is ready to exploit weaknesses of opponents is crucial.
+* Moral support and clear interlocutors for the players. Pro player’s life is rough and taxing, and making sure the players know they are well supported and taken care of goes a long way.
 
 At Splyce, we checked all those boxes one way or another. Some points were a joint effort from all the coaching staff, while others were more specific to one or two people.
 
@@ -71,10 +71,10 @@ There needs to be a **leading figure** who will be the main interface between pl
 
 They need to:
 
-*   Lead scrims reviews as it is the main opportunity to pass information from the coaching staff to the players
-*   Regularly have one-on-one meetings with players and help them break through any plateau they face
-*   Be the one defining training goals through interacting with both the players and the coaching staff
-*   Support the players and protect them when needed
+* Lead scrims reviews as it is the main opportunity to pass information from the coaching staff to the players
+* Regularly have one-on-one meetings with players and help them break through any plateau they face
+* Be the one defining training goals through interacting with both the players and the coaching staff
+* Support the players and protect them when needed
 
 Somebody like **Kkoma** in 2015–2016 embodies my vision of a head coach, being very close to the players while being their bridge to the rest of the coaching staff.
 
@@ -92,9 +92,9 @@ I think that in a perfect staff setup, their roles are clearly differentiated. W
 
 Therefore, I see them needing to:
 
-*   Have the deepest game knowledge on the team, from lane matchups to macro through team compositions
-*   Help the head coach take decisions by presenting him relevant information
-*   Help players improve by giving more targeted feedback than the head coach
+* Have the deepest game knowledge on the team, from lane matchups to macro through team compositions
+* Help the head coach take decisions by presenting him relevant information
+* Help players improve by giving more targeted feedback than the head coach
 
 **Duke** fits my image of a good strategic coach, and it was actually his job’s name. He has great game knowledge and was the one giving information to the rest of the team, but wasn’t always the one managing the players individually.
 
@@ -110,10 +110,10 @@ In my eyes, the analyst is the ultimate “shadow” position. The analyst shoul
 
 For me, the analyst’s role is to:
 
-*   Validate the strategic coach’s opinion about the game
-*   Make sure the team’s game understanding doesn’t become inbred and bring objectivity to the process
-*   Analyze the opponents (with data and VODs)
-*   Do the research pertaining to any question players or coaches have about the game
+* Validate the strategic coach’s opinion about the game
+* Make sure the team’s game understanding doesn’t become inbred and bring objectivity to the process
+* Analyze the opponents (with data and VODs)
+* Do the research pertaining to any question players or coaches have about the game
 
 As I see it, the main interlocutor to the analyst should be the strategic coach. The strategic coach should actively seek validation from the analyst before bringing information to the rest of the team. Conversely, the analyst should go to the strategic coach with new information regularly, making sure they are aware of the latest trends before anybody.
 
