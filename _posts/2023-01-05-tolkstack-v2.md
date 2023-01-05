@@ -10,7 +10,6 @@ tags:
 header:
   image: /assets/images/2023_01.png
 comments: true
-layout: post
 ---
 
 In January 2020 [I made a blog post explaining my tech stack](https://blog.tolki.dev/development/lol-data-stack/). At the time of writing I was leaning heavily into Python, Postgres, SQLAlchemy, FastAPI, and Docker.
@@ -163,3 +162,27 @@ So no K8s at work just yet despite using `docker` almost everywhere already!
   - Nvim in the future
 - Github Copilot is a gamechanger
 - Rust but still using Python for work!
+
+{% if page.comments %}
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://blog-tolki.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+{% endif %}
+
+<script id="dsq-count-scr" src="//blog-tolki.disqus.com/count.js" async></script>
