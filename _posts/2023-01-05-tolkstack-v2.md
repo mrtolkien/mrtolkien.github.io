@@ -163,6 +163,7 @@ So no K8s at work just yet despite using `docker` almost everywhere already!
 - Github Copilot is a gamechanger
 - Rust but still using Python for work!
 
+<!-- TODO Clean that up into a layout, but layouts/post.html destroyed all the css! -->
 {% if page.comments %}
 <div id="disqus_thread"></div>
 <script>
