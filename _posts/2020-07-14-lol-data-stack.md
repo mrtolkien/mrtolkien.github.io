@@ -62,7 +62,7 @@ Using Docker on Windows for python development through Pycharm is still a relati
 
 Despite that, suffering through all this was definitely worth it, as I can now run the latest version of my parser on any server by simply typing:
 
-```
+```shell
 docker-compose pull && docker-compose run -d
 ```
 
