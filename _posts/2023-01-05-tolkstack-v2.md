@@ -7,6 +7,8 @@ tags:
   - PostgreSQL
   - VSCode
   - Vim
+header:
+  image: /assets/images/2023_01.png
 ---
 
 In January 2020 [I made a blog post explaining my tech stack](https://blog.tolki.dev/development/lol-data-stack/). At the time of writing I was leaning heavily into Python, Postgres, SQLAlchemy, FastAPI, and Docker.
