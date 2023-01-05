@@ -9,7 +9,7 @@ tags:
   - Vim
 ---
 
-In January 2020 [I made a blog post recapitulating where my tech stack was at](https://blog.tolki.dev/development/lol-data-stack/). At the time of writing I was leaning heavily into Python, Postgres, SQLAlchemy, FastAPI, and Docker.
+In January 2020 [I made a blog post explaining my tech stack](https://blog.tolki.dev/development/lol-data-stack/). At the time of writing I was leaning heavily into Python, Postgres, SQLAlchemy, FastAPI, and Docker.
 I had plans to switch from PyCharm to VS Code and finally ditch Windows for a Debian variant.
 
 While some of those tech choices have changed I'm pretty happy with what I decided on back then. But I am now at a crossroads where I will heavily change my stack and it went through a few iterations in those last three years. I think now is a good time to review those changes and decide on the next steps!
